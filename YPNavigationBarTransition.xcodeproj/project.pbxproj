@@ -31,7 +31,7 @@
 		E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646F1FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h */; };
 		E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
 		E8B064731FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
-		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */; };
 		E8B0647A1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B0647B1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */; };
