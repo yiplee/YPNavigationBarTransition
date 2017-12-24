@@ -7,32 +7,10 @@
 //
 
 #import "YPNavigationBarTransitionCenter.h"
-#import "YPBarConfiguration.h"
 #import "UIToolbar+YPConfigure.h"
 #import "UINavigationBar+YPConfigure.h"
-#import "YPNavigationBarTransitionCenterProxy.h"
 #import "UIViewController+YPNavigationBarTransition.h"
-
-BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to);
-
-@interface YPNavigationBarTransitionCenter ()
-<
-UINavigationControllerDelegate,
-UIToolbarDelegate
->
-{
-    __weak UINavigationController *_navigationController;
-}
-
-@property (nonatomic, strong) UIToolbar *fromViewControllerFakeBar;
-@property (nonatomic, strong) UIToolbar *toViewControllerFakeBar;
-
-@property (nonatomic, strong, readonly) YPBarConfiguration *defaultBarConfigure;
-@property (nonatomic, strong, readonly) YPBarConfiguration *currentBarConfigure;
-
-@property (nonatomic, strong) YPNavigationBarTransitionCenterProxy *delegateProxy;
-
-@end
+#import "YPNavigationBarTransitionCenterInternal.h"
 
 BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to) {
     BOOL showFakeBar = NO;
