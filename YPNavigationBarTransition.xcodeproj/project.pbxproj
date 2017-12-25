@@ -156,22 +156,12 @@
 			children = (
 				E8B064261FEF4FBC007332E8 /* YPNavigationBarTransition.h */,
 				E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */,
-				E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */,
-				E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */,
-				E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */,
-				E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */,
-				E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */,
-				E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */,
-				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
-				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B0646F1FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h */,
 				E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */,
-				E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */,
-				E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */,
-				E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */,
 				E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */,
 				E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */,
 				E8B064271FEF4FBC007332E8 /* Info.plist */,
+				E8B0647E1FF08B68007332E8 /* internal */,
 			);
 			path = YPNavigationBarTransition;
 			sourceTree = "<group>";
@@ -199,6 +189,24 @@
 				E8B064521FEF5039007332E8 /* main.m */,
 			);
 			path = "YPNavigationBarTransition-Example";
+			sourceTree = "<group>";
+		};
+		E8B0647E1FF08B68007332E8 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */,
+				E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */,
+				E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */,
+				E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */,
+				E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */,
+				E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */,
+				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
+				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
+				E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */,
+				E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */,
+				E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */,
+			);
+			path = internal;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
