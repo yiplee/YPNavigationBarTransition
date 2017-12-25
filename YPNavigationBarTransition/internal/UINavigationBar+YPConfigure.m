@@ -29,7 +29,7 @@
     
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
-        self.translucent = NO;
+        self.translucent = YES;
         [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
     } else {
         self.translucent = configure.translucent;

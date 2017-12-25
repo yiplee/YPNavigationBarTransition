@@ -13,5 +13,6 @@
 + (UIImage *) yp_transparentImage;
 
 + (UIImage *) yp_imageWithColor:(UIColor *)color;
++ (UIImage *) yp_imageWithColor:(UIColor *)color size:(CGSize) size;
 
 @end

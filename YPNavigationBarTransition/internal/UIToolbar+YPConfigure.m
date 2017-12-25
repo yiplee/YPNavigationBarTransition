@@ -15,8 +15,7 @@
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
-        self.barTintColor = nil;
-        self.translucent = NO;
+        self.translucent = YES;
         [self setBackgroundImage:transpanrentImage forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     } else {
         self.translucent = configure.translucent;

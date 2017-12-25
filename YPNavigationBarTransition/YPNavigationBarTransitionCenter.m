@@ -144,9 +144,13 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
     }
     
-    if (showFakeBar) showConfigure.transparent = YES;
-    [navigationBar yp_applyBarConfiguration:showConfigure];
-    showConfigure.transparent = isTransparent;
+    if (showConfigure.isVisible || viewController == navigationController.topViewController) {
+        if (showFakeBar) showConfigure.transparent = YES;
+        [navigationBar yp_applyBarConfiguration:showConfigure];
+        showConfigure.transparent = isTransparent;
+    } else {
+        [navigationBar yp_adjustWithBarStyle:showConfigure.barStyle tintColor:showConfigure.tintColor];
+    }
     
     [navigationController.transitionCoordinator
      animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
@@ -169,6 +173,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
              if (toVC && [showConfigure isVisible]) {
                  CGRect fakeBarFrame = [toVC yp_fakeBarFrame];
                  if (!CGRectIsNull(fakeBarFrame)) {
+                     if (toVC.extendedLayoutIncludesOpaqueBars ||
+                         showConfigure.translucent) {
+                         fakeBarFrame.origin.y = 0;
+                     }
                      UIToolbar *fakeBar = self.toViewControllerFakeBar;
                      [fakeBar yp_applyBarConfiguration:showConfigure];
                      fakeBar.frame = fakeBarFrame;

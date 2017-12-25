@@ -28,7 +28,7 @@
     
     do {
         _hidden = configurations & YPNavigationBarHidden;
-        if (_hidden) break;
+//        if (_hidden) break;
         
         _barStyle = configurations & YPNavigationBarStyleBlack ? UIBarStyleBlack : UIBarStyleDefault;
         if (!tintColor) {
