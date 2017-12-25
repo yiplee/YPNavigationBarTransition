@@ -53,7 +53,7 @@
 #pragma mark - YPNavigationBarConfigureStyle
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
-    return YPNavigationBarConfigurationsDefault | YPNavigationBarStyleBlack | YPNavigationBarBackgroundStyleColor;
+    return YPNavigationBarStyleBlack | YPNavigationBarBackgroundStyleOpaque | YPNavigationBarBackgroundStyleColor;
 }
 
 - (UIColor *) yp_navigationBarTintColor {

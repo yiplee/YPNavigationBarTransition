@@ -36,6 +36,10 @@
 		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064811FF13466007332E8 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064801FF13466007332E8 /* YPNavigationController.m */; };
 		E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064831FF138E5007332E8 /* YPDemoViewController.m */; };
+		E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
+		E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
+		E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */; };
+		E8B064931FF16081007332E8 /* UIImage+color.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064921FF16081007332E8 /* UIImage+color.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +107,14 @@
 		E8B064801FF13466007332E8 /* YPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		E8B064821FF138E5007332E8 /* YPDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoViewController.h; sourceTree = "<group>"; };
 		E8B064831FF138E5007332E8 /* YPDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoViewController.m; sourceTree = "<group>"; };
+		E8B064851FF14C85007332E8 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoConfigureViewController.h; sourceTree = "<group>"; };
+		E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoConfigureViewController.m; sourceTree = "<group>"; };
+		E8B064881FF14C9D007332E8 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoContainerViewController.h; sourceTree = "<group>"; };
+		E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoContainerViewController.m; sourceTree = "<group>"; };
+		E8B0648E1FF15D8B007332E8 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
+		E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
+		E8B064911FF16081007332E8 /* UIImage+color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+color.h"; sourceTree = "<group>"; };
+		E8B064921FF16081007332E8 /* UIImage+color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+color.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +197,17 @@
 				E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */,
 				E8B064511FEF5039007332E8 /* Info.plist */,
 				E8B064521FEF5039007332E8 /* main.m */,
+				E8B064911FF16081007332E8 /* UIImage+color.h */,
+				E8B064921FF16081007332E8 /* UIImage+color.m */,
 				E8B0647F1FF13466007332E8 /* YPNavigationController.h */,
 				E8B064801FF13466007332E8 /* YPNavigationController.m */,
 				E8B064821FF138E5007332E8 /* YPDemoViewController.h */,
 				E8B064831FF138E5007332E8 /* YPDemoViewController.m */,
+				E8B064851FF14C85007332E8 /* YPDemoConfigureViewController.h */,
+				E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */,
+				E8B064881FF14C9D007332E8 /* YPDemoContainerViewController.h */,
+				E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */,
+				E8B0648D1FF15D6E007332E8 /* cells */,
 			);
 			path = "YPNavigationBarTransition-Example";
 			sourceTree = "<group>";
@@ -209,6 +228,15 @@
 				E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */,
 			);
 			path = internal;
+			sourceTree = "<group>";
+		};
+		E8B0648D1FF15D6E007332E8 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				E8B0648E1FF15D8B007332E8 /* YPDemoSwitchCell.h */,
+				E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */,
+			);
+			path = cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,8 +416,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B064811FF13466007332E8 /* YPNavigationController.m in Sources */,
+				E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */,
+				E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */,
 				E8B064531FEF5039007332E8 /* main.m in Sources */,
 				E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */,
+				E8B064931FF16081007332E8 /* UIImage+color.m in Sources */,
+				E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */,
 				E8B064451FEF5039007332E8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
