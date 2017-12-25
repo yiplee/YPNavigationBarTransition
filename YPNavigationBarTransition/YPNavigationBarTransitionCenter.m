@@ -24,8 +24,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         }
         
         if (from.backgroundImage && to.backgroundImage) {
-            if (to.backgroundImageIdentifier &&
-                [from.backgroundImageIdentifier isEqualToString:to.backgroundImageIdentifier]) {
+            NSString *const fromImageName = from.backgroundImageIdentifier;
+            NSString *const toImageName   = to.backgroundImageIdentifier;
+            if (fromImageName && toImageName) {
+                showFakeBar = ![fromImageName isEqualToString:toImageName];
                 break;
             }
             
