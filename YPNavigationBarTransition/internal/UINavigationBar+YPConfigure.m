@@ -19,6 +19,12 @@
 }
 
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {
+#if DEBUG
+    if (@available(iOS 11,*)) {
+        NSAssert(!self.prefersLargeTitles, @"large titles is not supported");
+    }
+#endif
+    
     [self yp_adjustWithBarStyle:configure.barStyle tintColor:configure.tintColor];
     
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
