@@ -28,9 +28,11 @@
     NSParameterAssert([self yp_hasCustomNavigationBarStyle]);
     
     UINavigationBar *navigationBar = [self yp_navigationBar];
-    id<YPNavigationBarConfigureStyle> owner = (id<YPNavigationBarConfigureStyle>)self;
-    YPBarConfiguration *configuration = [[YPBarConfiguration alloc] initWithBarConfigurationOwner:owner];
-    [navigationBar yp_applyBarConfiguration:configuration];
+    if (navigationBar.topItem == self.navigationItem) {
+        id<YPNavigationBarConfigureStyle> owner = (id<YPNavigationBarConfigureStyle>)self;
+        YPBarConfiguration *configuration = [[YPBarConfiguration alloc] initWithBarConfigurationOwner:owner];
+        [navigationBar yp_applyBarConfiguration:configuration];
+    }
 }
 
 - (CGRect) yp_fakeBarFrame {

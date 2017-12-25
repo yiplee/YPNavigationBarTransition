@@ -18,6 +18,7 @@ UINavigationControllerDelegate,
 UIToolbarDelegate
 >
 {
+    BOOL _isTransitionNavigationBar;
     __weak UINavigationController *_navigationController;
 }
 

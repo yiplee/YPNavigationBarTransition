@@ -9,6 +9,7 @@
 #import "UINavigationBar+YPConfigure.h"
 #import "YPBarConfiguration.h"
 #import "UIImage+YPConfigure.h"
+#import <objc/runtime.h>
 
 @implementation UINavigationBar (YPConfigure)
 
@@ -38,6 +39,16 @@
     }
     
     self.shadowImage = transpanrentImage;
+    
+    [self setCurrentBarConfigure:configure];
+}
+
+- (YPBarConfiguration *) currentBarConfigure {
+    return objc_getAssociatedObject(self, @selector(currentBarConfigure));
+}
+
+- (void) setCurrentBarConfigure:(YPBarConfiguration *)currentBarConfigure {
+    objc_setAssociatedObject(self, @selector(currentBarConfigure), currentBarConfigure, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

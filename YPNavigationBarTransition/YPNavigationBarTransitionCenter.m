@@ -118,8 +118,12 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 
 #pragma mark - transition
 
+- (YPBarConfiguration *) currentBarConfigure {
+    return [_navigationController.navigationBar currentBarConfigure];
+}
+
 - (void) willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    YPBarConfiguration *const currentConfigure = self.currentBarConfigure;
+    YPBarConfiguration *currentConfigure = self.currentBarConfigure ?: self.defaultBarConfigure;
     YPBarConfiguration *showConfigure = self.defaultBarConfigure;
     if ([viewController yp_hasCustomNavigationBarStyle]) {
         id<YPNavigationBarConfigureStyle> owner = (id<YPNavigationBarConfigureStyle>)viewController;
@@ -131,6 +135,8 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     
     BOOL showFakeBar = YPTransitionNeedShowFakeBar(currentConfigure, showConfigure);
     BOOL const isTransparent = showConfigure.transparent;
+    
+    _isTransitionNavigationBar = YES;
     
     if (showConfigure.hidden != _navigationController.navigationBarHidden) {
         [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
@@ -175,11 +181,14 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
              [self removeFakeBars];
              [navigationBar yp_applyBarConfiguration:currentConfigure];
          }
+         
+         if (self) self->_isTransitionNavigationBar = NO;
      }];
     
     void (^popInteractionEndBlock)(id<UIViewControllerTransitionCoordinatorContext>) =
     ^(id<UIViewControllerTransitionCoordinatorContext> context){
         if ([context isCancelled]) {
+            // revert statusbar's style
             [navigationBar yp_adjustWithBarStyle:currentConfigure.barStyle
                                        tintColor:currentConfigure.tintColor];
         }
@@ -204,7 +213,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     UINavigationBar *const navigationBar = _navigationController.navigationBar;
     [navigationBar yp_applyBarConfiguration:showConfigure];
     
-    _currentBarConfigure = showConfigure;
+    _isTransitionNavigationBar = NO;
 }
 
 #pragma mark - UINavigationControllerDelegate
