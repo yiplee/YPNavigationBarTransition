@@ -84,6 +84,16 @@ UITableViewDataSource
         _barHidden = sender.isOn;
     } else if (tag == 1) {
         _transparent = sender.isOn;
+        
+        if (_transparent && _barStyle != UIBarStyleDefault) {
+            // 为了更好的 demo 展示效果
+            // bar 全透明之后把 barStyle 设置成 UIBarStyleDefault
+            _barStyle = UIBarStyleDefault;
+            
+            NSIndexPath *barStyleIndexPath = [NSIndexPath indexPathForRow:3 inSection:0];
+            YPDemoSwitchCell *cell = [_tableView cellForRowAtIndexPath:barStyleIndexPath];
+            [cell.switcher setOn:NO animated:YES];
+        }
     } else if (tag == 2) {
         _translucent = sender.isOn;
     } else {
@@ -99,7 +109,7 @@ UITableViewDataSource
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) return 4;
-    else if (section == 1) return 1;
+    else if (section == 1) return 2;
     else return 0;
 }
 
@@ -114,16 +124,16 @@ UITableViewDataSource
         BOOL isOn = NO;
         
         if (row == 0) {
-            title = @"hidden";
+            title = @"Hidden";
             isOn = _barHidden;
         } else if (row == 1) {
-            title = @"transparent";
+            title = @"Transparent";
             isOn = _transparent;
         } else if (row == 2) {
-            title = @"translucent";
+            title = @"Translucent";
             isOn = _translucent;
         } else {
-            title = @"black bar style";
+            title = @"Black Bar Style";
             isOn = _barStyle == UIBarStyleBlack;
         }
         
@@ -142,8 +152,13 @@ UITableViewDataSource
         NSString *title = nil;
         
         if (section == 1) { // colors
-            title = @"black";
-            image = [UIImage yp_imageWithColor:[UIColor blackColor] size:CGSizeMake(28, 28)];
+            if (row == 0) {
+                title = @"Black";
+                image = [UIImage yp_imageWithColor:[UIColor blackColor] size:CGSizeMake(28, 28)];
+            } else if (row == 1) {
+                title = @"White";
+                image = [UIImage yp_imageWithColor:[UIColor whiteColor] size:CGSizeMake(28, 28)];
+            }
         }
         
         cell.imageView.image = image;
@@ -159,6 +174,19 @@ UITableViewDataSource
     else return nil;
 }
 
+- (NSString *) tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
+    if (section == 0) {
+        return
+        @"bar style 会影响状态栏的样式\n"
+        "bar style 是 UIBarStyleBlack 的时候状态栏为白色\n"
+        "bar style 是 UIBarStyleDefault 的时候状态栏为黑色";
+    } else if (section == 1) {
+        return @"选择偏白的颜色的时候，记得关闭 Black Bar Style";
+    }
+    
+    return nil;
+}
+
 #pragma mark - UITableViewDelegate
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -172,6 +200,8 @@ UITableViewDataSource
     if (section == 1) {
         if (row == 0) {
             [self showNextViewControllerWithColor:[UIColor blackColor]];
+        } else if (row == 1) {
+            [self showNextViewControllerWithColor:[UIColor whiteColor]];
         }
     }
     
