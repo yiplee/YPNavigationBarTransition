@@ -6,7 +6,7 @@
 //  Copyright © 2017 yiplee. All rights reserved.
 //
 
-#import "YPNavigationBarTransitionCenter.h"
+#import <YPNavigationBarTransition/YPNavigationBarTransitionCenter.h>
 #import "YPNavigationBarTransitionCenterProxy.h"
 #import "YPBarConfiguration.h"
 

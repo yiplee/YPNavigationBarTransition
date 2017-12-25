@@ -6,7 +6,7 @@
 //  Copyright © 2017 yiplee. All rights reserved.
 //
 
-#import "YPNavigationBarProtocol.h"
+#import <YPNavigationBarTransition/YPNavigationBarProtocol.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

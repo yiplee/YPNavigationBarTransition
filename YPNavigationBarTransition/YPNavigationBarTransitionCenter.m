@@ -6,10 +6,9 @@
 //  Copyright © 2017 yiplee. All rights reserved.
 //
 
-#import "YPNavigationBarTransitionCenter.h"
 #import "UIToolbar+YPConfigure.h"
 #import "UINavigationBar+YPConfigure.h"
-#import "UIViewController+YPNavigationBarTransition.h"
+#import <YPNavigationBarTransition/UIViewController+YPNavigationBarTransition.h>
 #import "YPNavigationBarTransitionCenterInternal.h"
 
 BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to) {
