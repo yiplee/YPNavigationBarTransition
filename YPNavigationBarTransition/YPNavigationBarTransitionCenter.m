@@ -144,7 +144,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
     }
     
-    if (showConfigure.isVisible || viewController == navigationController.topViewController) {
+    if (!showConfigure.hidden) {
         if (showFakeBar) showConfigure.transparent = YES;
         [navigationBar yp_applyBarConfiguration:showConfigure];
         showConfigure.transparent = isTransparent;
