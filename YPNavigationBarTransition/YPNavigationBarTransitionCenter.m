@@ -140,7 +140,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     
     _isTransitionNavigationBar = YES;
     
-    if (showConfigure.hidden != _navigationController.navigationBarHidden) {
+    if (showConfigure.hidden != navigationController.navigationBarHidden) {
         [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
     }
     
@@ -182,6 +182,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
          if ([context isCancelled]) {
              [self removeFakeBars];
              [navigationBar yp_applyBarConfiguration:currentConfigure];
+             
+             if (currentConfigure.hidden != navigationController.navigationBarHidden) {
+                 [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
+             }
          }
          
          if (self) self->_isTransitionNavigationBar = NO;
@@ -199,7 +203,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     if (@available(iOS 10,*)) {
         [navigationController.transitionCoordinator notifyWhenInteractionChangesUsingBlock:popInteractionEndBlock];
     } else {
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
         [navigationController.transitionCoordinator notifyWhenInteractionEndsUsingBlock:popInteractionEndBlock];
+#pragma GCC diagnostic pop
     }
 }
 
