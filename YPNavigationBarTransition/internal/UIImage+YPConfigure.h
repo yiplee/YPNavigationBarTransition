@@ -12,4 +12,6 @@
 
 + (UIImage *) yp_transparentImage;
 
++ (UIImage *) yp_imageWithColor:(UIColor *)color;
+
 @end

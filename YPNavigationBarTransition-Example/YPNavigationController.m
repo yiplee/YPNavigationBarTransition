@@ -11,7 +11,7 @@
 
 @interface YPNavigationController ()<YPNavigationBarConfigureStyle>
 
-@property (nonatomic, strong) YPNavigationBarTransitionCenter *transitionCenter;
+@property (nonatomic, strong, readwrite) YPNavigationBarTransitionCenter *transitionCenter;
 
 @end
 
@@ -42,13 +42,13 @@
     _transitionCenter.navigationController = self;
 }
 
-- (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
-    _transitionCenter.navigationDelegate = delegate;
-}
-
-- (id<UINavigationControllerDelegate>) delegate {
-    return _transitionCenter.navigationDelegate;
-}
+//- (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
+//    _transitionCenter.navigationDelegate = delegate;
+//}
+//
+//- (id<UINavigationControllerDelegate>) delegate {
+//    return _transitionCenter.navigationDelegate;
+//}
 
 #pragma mark - YPNavigationBarConfigureStyle
 

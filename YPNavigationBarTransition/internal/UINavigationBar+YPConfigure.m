@@ -23,19 +23,16 @@
     
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
-        self.barTintColor = nil;
+        self.translucent = NO;
         [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
     } else {
         self.translucent = configure.translucent;
-        UIImage* const backgroundImage = configure.backgroundImage;
-        
-        if (backgroundImage) {
-            self.barTintColor = nil;
-            [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
-        } else {
-            self.barTintColor = configure.backgroundColor;
-            [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
+        UIImage* backgroundImage = configure.backgroundImage;
+        if (!backgroundImage) {
+            backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
         }
+        
+        [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     }
     
     self.shadowImage = transpanrentImage;

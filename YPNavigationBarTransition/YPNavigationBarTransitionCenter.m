@@ -52,7 +52,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 }
 
 - (instancetype) initWithDefaultBarConfiguration:(id<YPNavigationBarConfigureStyle>)_default {
-    NSParameterAssert(_defaultBarConfigure);
+    NSParameterAssert(_default);
     self = [super init];
     if (self) {
         _defaultBarConfigure = [[YPBarConfiguration alloc] initWithBarConfigurationOwner:_default];
@@ -85,7 +85,8 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 }
 
 - (void) updateNavigationControllerDelegate {
-    _navigationController.delegate = (id<UINavigationControllerDelegate>)self.delegateProxy ?: self;
+    id<UINavigationControllerDelegate> delegate = (id<UINavigationControllerDelegate>)self.delegateProxy ?: self;
+    _navigationController.delegate = delegate;
 }
 
 #pragma mark - fakeBar

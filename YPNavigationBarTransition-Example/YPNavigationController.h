@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class YPNavigationBarTransitionCenter;
+
 @interface YPNavigationController : UINavigationController
+
+@property (nonatomic, strong, readonly) YPNavigationBarTransitionCenter *transitionCenter;
 
 @end
