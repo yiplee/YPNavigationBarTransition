@@ -9,9 +9,13 @@
 #import "YPNavigationController.h"
 @import YPNavigationBarTransition;
 
-@interface YPNavigationController ()<YPNavigationBarConfigureStyle>
+@interface YPNavigationController ()
+<
+YPNavigationBarConfigureStyle,
+UIGestureRecognizerDelegate
+>
 
-@property (nonatomic, strong, readwrite) YPNavigationBarTransitionCenter *transitionCenter;
+@property (nonatomic, strong) YPNavigationBarTransitionCenter *transitionCenter;
 
 @end
 
@@ -35,6 +39,11 @@
     return self;
 }
 
+- (void) viewDidLoad {
+    [super viewDidLoad];
+    self.interactivePopGestureRecognizer.delegate = self;
+}
+
 - (void) createTransitionCenter {
     NSParameterAssert(!_transitionCenter && !self.delegate);
     
@@ -42,13 +51,15 @@
     _transitionCenter.navigationController = self;
 }
 
-//- (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
-//    _transitionCenter.navigationDelegate = delegate;
-//}
-//
-//- (id<UINavigationControllerDelegate>) delegate {
-//    return _transitionCenter.navigationDelegate;
-//}
+#pragma mark - UIGestureRecognizerDelegate
+
+- (BOOL) gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+    if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        return self.viewControllers.count > 1;
+    }
+    
+    return YES;
+}
 
 #pragma mark - YPNavigationBarConfigureStyle
 
