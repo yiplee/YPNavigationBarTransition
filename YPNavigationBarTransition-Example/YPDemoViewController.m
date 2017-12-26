@@ -33,6 +33,11 @@
     confView.frame = self.view.bounds;
     [self.view addSubview:confView];
     [conf didMoveToParentViewController:self];
+    
+    UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                 target:nil
+                                                                                 action:nil];
+    self.navigationItem.rightBarButtonItem = shareButton;
 }
 
 @end

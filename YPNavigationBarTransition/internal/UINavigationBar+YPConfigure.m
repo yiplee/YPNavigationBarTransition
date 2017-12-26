@@ -16,6 +16,8 @@
 - (void) yp_adjustWithBarStyle:(UIBarStyle)barStyle tintColor:(UIColor *)tintColor {
     self.barStyle = barStyle;
     self.tintColor = tintColor;
+    
+    self.topItem.titleView.tintColor = tintColor;
 }
 
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {

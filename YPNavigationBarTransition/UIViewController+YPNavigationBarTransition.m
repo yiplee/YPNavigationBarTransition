@@ -41,7 +41,7 @@
     
     UIView *backgroundView = [navigationBar valueForKey:@"_backgroundView"];
     CGRect frame = [backgroundView.superview convertRect:backgroundView.frame toView:self.view];
-    frame.origin.x = 0;
+    frame.origin.x = self.view.bounds.origin.x;
     return frame;
 }
 
