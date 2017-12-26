@@ -7,7 +7,7 @@
 //
 
 #import "YPNavigationController.h"
-@import YPNavigationBarTransition;
+#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 
 @interface YPNavigationController ()
 <

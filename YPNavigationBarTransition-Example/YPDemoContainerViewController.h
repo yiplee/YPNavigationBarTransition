@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@import YPNavigationBarTransition;
+#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 
 @interface YPDemoContainerViewController : UIViewController<YPNavigationBarConfigureStyle>
 

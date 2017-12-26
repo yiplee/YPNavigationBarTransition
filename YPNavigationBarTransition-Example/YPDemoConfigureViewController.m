@@ -11,7 +11,7 @@
 #import "YPDemoSwitchCell.h"
 #import "UIImage+YPConfigure.h"
 
-@import YPNavigationBarTransition;
+#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 
 @interface YPDemoConfigureViewController ()
 <
