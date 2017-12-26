@@ -8,6 +8,7 @@
 
 #import "YPDemoViewController.h"
 #import "YPDemoConfigureViewController.h"
+#import "YPNavigationTitleLabel.h"
 
 @interface YPDemoViewController ()
 
@@ -38,6 +39,11 @@
                                                                                  target:nil
                                                                                  action:nil];
     self.navigationItem.rightBarButtonItem = shareButton;
+    
+    YPNavigationTitleLabel *titleView = [YPNavigationTitleLabel new];
+    titleView.text = self.title;
+    [titleView sizeToFit];
+    self.navigationItem.titleView = titleView;
 }
 
 @end

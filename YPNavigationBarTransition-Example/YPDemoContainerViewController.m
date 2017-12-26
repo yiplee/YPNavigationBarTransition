@@ -8,6 +8,7 @@
 
 #import "YPDemoContainerViewController.h"
 #import "YPDemoConfigureViewController.h"
+#import "YPNavigationTitleLabel.h"
 
 @interface YPDemoContainerViewController ()
 
@@ -26,6 +27,29 @@
     confView.frame = self.view.bounds;
     [self.view addSubview:confView];
     [conf didMoveToParentViewController:self];
+    
+    YPNavigationTitleLabel *titleView = nil;
+    if ([self.navigationItem.titleView isKindOfClass:YPNavigationTitleLabel.class]) {
+        titleView = (YPNavigationTitleLabel *)self.navigationItem.titleView;
+    }
+    titleView.textColor = self.configurations & YPNavigationBarStyleBlack ? [UIColor whiteColor] : [UIColor blackColor];
+}
+
+- (void) setTitle:(NSString *)title {
+    [super setTitle:title];
+    
+    YPNavigationTitleLabel *titleView = nil;
+    if ([self.navigationItem.titleView isKindOfClass:YPNavigationTitleLabel.class]) {
+        titleView = (YPNavigationTitleLabel *)self.navigationItem.titleView;
+    }
+    
+    if (!titleView) {
+        titleView = [YPNavigationTitleLabel new];
+    }
+    
+    titleView.text = title;
+    [titleView sizeToFit];
+    self.navigationItem.titleView = titleView;
 }
 
 #pragma mark - YPNavigationBarConfigureStyle

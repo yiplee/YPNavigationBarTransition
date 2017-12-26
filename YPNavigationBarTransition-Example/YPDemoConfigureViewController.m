@@ -9,7 +9,6 @@
 #import "YPDemoConfigureViewController.h"
 #import "YPDemoContainerViewController.h"
 #import "YPDemoSwitchCell.h"
-#import "UIImage+color.h"
 #import "UIImage+YPConfigure.h"
 
 @import YPNavigationBarTransition;
