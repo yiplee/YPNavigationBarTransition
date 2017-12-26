@@ -22,7 +22,9 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
             break;
         }
         
-        if (from.backgroundImage && to.backgroundImage) {
+        if (from.useSystemBarBackground && to.useSystemBarBackground) {
+            showFakeBar = from.barStyle != to.barStyle;
+        } else if (from.backgroundImage && to.backgroundImage) {
             NSString *const fromImageName = from.backgroundImageIdentifier;
             NSString *const toImageName   = to.backgroundImageIdentifier;
             if (fromImageName && toImageName) {

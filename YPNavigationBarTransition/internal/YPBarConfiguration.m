@@ -28,7 +28,6 @@
     
     do {
         _hidden = configurations & YPNavigationBarHidden;
-//        if (_hidden) break;
         
         _barStyle = configurations & YPNavigationBarStyleBlack ? UIBarStyleBlack : UIBarStyleDefault;
         if (!tintColor) {
@@ -43,11 +42,7 @@
         if ((configurations & YPNavigationBarBackgroundStyleImage) && _backgroundImage) {
             _backgroundImage = backgroundImage;
             _backgroundImageIdentifier = [backgroundImageIdentifier copy];
-        } else {
-            if (!backgroundColor) {
-                backgroundColor = _barStyle == UIBarStyleBlack ? [UIColor blackColor] : [UIColor whiteColor];
-            }
-            
+        } else if (configurations & YPNavigationBarBackgroundStyleColor){
             _backgroundColor = backgroundColor;
         }
     } while (0);
@@ -84,6 +79,10 @@
 
 - (BOOL) isVisible {
     return !self.hidden && !self.transparent;
+}
+
+- (BOOL) useSystemBarBackground {
+    return !self.backgroundColor && !self.backgroundImage;
 }
 
 @end

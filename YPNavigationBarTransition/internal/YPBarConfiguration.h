@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL) isVisible;
 
+- (BOOL) useSystemBarBackground;
+
 @end
 
 NS_ASSUME_NONNULL_END

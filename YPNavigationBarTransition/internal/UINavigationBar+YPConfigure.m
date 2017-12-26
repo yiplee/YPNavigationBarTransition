@@ -37,7 +37,7 @@
         barBackgroundView.alpha = 1;
         self.translucent = configure.translucent;
         UIImage* backgroundImage = configure.backgroundImage;
-        if (!backgroundImage) {
+        if (!backgroundImage && configure.backgroundColor) {
             backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
         }
         

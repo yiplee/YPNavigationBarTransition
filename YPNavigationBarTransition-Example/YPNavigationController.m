@@ -64,7 +64,7 @@ UIGestureRecognizerDelegate
 #pragma mark - YPNavigationBarConfigureStyle
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
-    return YPNavigationBarStyleBlack | YPNavigationBarBackgroundStyleOpaque | YPNavigationBarBackgroundStyleColor;
+    return YPNavigationBarStyleBlack | YPNavigationBarBackgroundStyleTranslucent | YPNavigationBarBackgroundStyleNone;
 }
 
 - (UIColor *) yp_navigationBarTintColor {

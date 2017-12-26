@@ -11,7 +11,7 @@
 
 typedef NS_ENUM(NSUInteger, YPNavigationBarConfigurations) {
     YPNavigationBarShow   = 0,          // show navigationBar
-    YPNavigationBarHidden = 1,     // hide navigationBar
+    YPNavigationBarHidden = 1,          // hide navigationBar
     
     // bar style
     YPNavigationBarStyleLight = 0 << 4,  // UIbarStyleDefault
@@ -22,8 +22,9 @@ typedef NS_ENUM(NSUInteger, YPNavigationBarConfigurations) {
     YPNavigationBarBackgroundStyleTransparent = 2 << 8,
     
     // bar background
-    YPNavigationBarBackgroundStyleColor = 0 << 16,
-    YPNavigationBarBackgroundStyleImage = 1 << 16,
+    YPNavigationBarBackgroundStyleNone  = 0 << 16,
+    YPNavigationBarBackgroundStyleColor = 1 << 16,
+    YPNavigationBarBackgroundStyleImage = 2 << 16,
     
     YPNavigationBarConfigurationsDefault = 0,
 };

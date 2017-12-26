@@ -13,6 +13,8 @@
 @implementation UIToolbar (YPConfigure)
 
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {
+    self.barStyle = configure.barStyle;
+    
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
         self.translucent = YES;
@@ -20,7 +22,7 @@
     } else {
         self.translucent = configure.translucent;
         UIImage* backgroundImage = configure.backgroundImage;
-        if (!backgroundImage) {
+        if (!backgroundImage && configure.backgroundColor) {
             backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
         }
         
