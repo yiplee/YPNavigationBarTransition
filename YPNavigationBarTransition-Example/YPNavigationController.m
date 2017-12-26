@@ -71,8 +71,4 @@ UIGestureRecognizerDelegate
     return [UIColor whiteColor];
 }
 
-- (UIColor *) yp_navigationBackgroundColor {
-    return [UIColor blackColor];
-}
-
 @end
