@@ -14,6 +14,24 @@
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
+		<key>YPNavigationBarTransitionTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>E8B064221FEF4FBC007332E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E8B0642B1FEF4FBC007332E8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

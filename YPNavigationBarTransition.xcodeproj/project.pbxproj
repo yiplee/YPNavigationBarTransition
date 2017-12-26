@@ -10,7 +10,6 @@
 		4E288849EF5177BECE833524 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */; };
 		E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */; };
 		E8B0642D1FEF4FBC007332E8 /* YPNavigationBarTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B064231FEF4FBC007332E8 /* YPNavigationBarTransition.framework */; };
-		E8B064321FEF4FBC007332E8 /* YPNavigationBarTransitionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064311FEF4FBC007332E8 /* YPNavigationBarTransitionTests.m */; };
 		E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064261FEF4FBC007332E8 /* YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064451FEF5039007332E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064441FEF5039007332E8 /* AppDelegate.m */; };
 		E8B0644D1FEF5039007332E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B0644C1FEF5039007332E8 /* Assets.xcassets */; };
@@ -19,7 +18,6 @@
 		E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */; };
-		E8B064621FEFA95E007332E8 /* YPBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */; };
 		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */; };
 		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -28,7 +26,6 @@
 		E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */; };
 		E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646F1FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
-		E8B064731FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
 		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */; };
 		E8B0647A1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -39,6 +36,8 @@
 		E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
 		E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
 		E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */; };
+		E8B064951FF2D054007332E8 /* barStyleDiffSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */; };
+		E8B064991FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */; };
 		F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -65,7 +64,6 @@
 		E8B064261FEF4FBC007332E8 /* YPNavigationBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationBarTransition.h; sourceTree = "<group>"; };
 		E8B064271FEF4FBC007332E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B0642C1FEF4FBC007332E8 /* YPNavigationBarTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPNavigationBarTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8B064311FEF4FBC007332E8 /* YPNavigationBarTransitionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationBarTransitionTests.m; sourceTree = "<group>"; };
 		E8B064331FEF4FBC007332E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B064411FEF5039007332E8 /* YPNavigationBarTransition-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YPNavigationBarTransition-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B064431FEF5039007332E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -100,6 +98,9 @@
 		E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoContainerViewController.m; sourceTree = "<group>"; };
 		E8B0648E1FF15D8B007332E8 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
 		E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
+		E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barStyleDiffSpec.m; sourceTree = "<group>"; };
+		E8B064971FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentBlackBarStyleObject.h; sourceTree = "<group>"; };
+		E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentBlackBarStyleObject.m; sourceTree = "<group>"; };
 		EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,8 +182,9 @@
 		E8B064301FEF4FBC007332E8 /* YPNavigationBarTransitionTests */ = {
 			isa = PBXGroup;
 			children = (
-				E8B064311FEF4FBC007332E8 /* YPNavigationBarTransitionTests.m */,
 				E8B064331FEF4FBC007332E8 /* Info.plist */,
+				E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */,
+				E8B064961FF2D1A7007332E8 /* objects */,
 			);
 			path = YPNavigationBarTransitionTests;
 			sourceTree = "<group>";
@@ -236,6 +238,15 @@
 				E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		E8B064961FF2D1A7007332E8 /* objects */ = {
+			isa = PBXGroup;
+			children = (
+				E8B064971FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.h */,
+				E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */,
+			);
+			path = objects;
 			sourceTree = "<group>";
 		};
 		FD2D9A9F595738803EF822ED /* Pods */ = {
@@ -518,9 +529,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B064731FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */,
-				E8B064321FEF4FBC007332E8 /* YPNavigationBarTransitionTests.m in Sources */,
-				E8B064621FEFA95E007332E8 /* YPBarConfiguration.m in Sources */,
+				E8B064991FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m in Sources */,
+				E8B064951FF2D054007332E8 /* barStyleDiffSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
