@@ -35,6 +35,8 @@
         }
         _tintColor = tintColor;
         
+        if (_hidden) break;
+        
         _transparent = configurations & YPNavigationBarBackgroundStyleTransparent;
         if (_transparent) break;
         _translucent = !(configurations & YPNavigationBarBackgroundStyleOpaque);
@@ -65,7 +67,7 @@
     if (!(configurations & YPNavigationBarBackgroundStyleTransparent)) {
         if (configurations & YPNavigationBarBackgroundStyleImage) {
             backgroundImage = [owner yp_navigationBackgroundImageWithIdentifier:&imageIdentifier];
-        } else {
+        } else if (configurations & YPNavigationBarBackgroundStyleColor) {
             backgroundColor = [owner yp_navigationBackgroundColor];
         }
     }
