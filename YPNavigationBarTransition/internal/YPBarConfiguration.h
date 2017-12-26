@@ -12,14 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface YPBarConfiguration : NSObject
 
-@property (nonatomic, assign) BOOL hidden;
-@property (nonatomic, assign) UIBarStyle barStyle;
-@property (nonatomic, assign) BOOL translucent;
-@property (nonatomic, assign) BOOL transparent;
-@property (nonatomic, strong) UIColor *tintColor;
-@property (nonatomic, strong, nullable) UIColor *backgroundColor;
-@property (nonatomic, strong, nullable) UIImage *backgroundImage;
-@property (nonatomic, strong, nullable) NSString *backgroundImageIdentifier;
+@property (nonatomic, assign, readonly) BOOL hidden;
+@property (nonatomic, assign, readonly) UIBarStyle barStyle;
+@property (nonatomic, assign, readonly) BOOL translucent;
+@property (nonatomic, assign, readonly) BOOL transparent;
+@property (nonatomic, strong, readonly) UIColor *tintColor;
+@property (nonatomic, strong, readonly, nullable) UIColor *backgroundColor;
+@property (nonatomic, strong, readonly, nullable) UIImage *backgroundImage;
+@property (nonatomic, strong, readonly, nullable) NSString *backgroundImageIdentifier;
 
 - (instancetype) init NS_UNAVAILABLE;
 - (instancetype) initWithBarConfigurations:(YPNavigationBarConfigurations)configurations

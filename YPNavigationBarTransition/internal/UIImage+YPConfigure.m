@@ -11,7 +11,7 @@
 @implementation UIImage (YPConfigure)
 
 + (UIImage *) yp_transparentImage {
-    return [UIImage new];
+    return [self new];
 }
 
 + (UIImage *) yp_imageWithColor:(UIColor *)color {

@@ -16,8 +16,6 @@
 - (void) yp_adjustWithBarStyle:(UIBarStyle)barStyle tintColor:(UIColor *)tintColor {
     self.barStyle = barStyle;
     self.tintColor = tintColor;
-    
-    self.topItem.titleView.tintColor = tintColor;
 }
 
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {
@@ -29,11 +27,14 @@
     
     [self yp_adjustWithBarStyle:configure.barStyle tintColor:configure.tintColor];
     
+    UIView *barBackgroundView = [self valueForKey:@"_backgroundView"];
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
+        barBackgroundView.alpha = 0;
         self.translucent = YES;
         [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
     } else {
+        barBackgroundView.alpha = 1;
         self.translucent = configure.translucent;
         UIImage* backgroundImage = configure.backgroundImage;
         if (!backgroundImage) {

@@ -136,7 +136,6 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     UINavigationBar *const navigationBar = navigationController.navigationBar;
     
     BOOL showFakeBar = YPTransitionNeedShowFakeBar(currentConfigure, showConfigure);
-    BOOL const isTransparent = showConfigure.transparent;
     
     _isTransitionNavigationBar = YES;
     
@@ -144,10 +143,19 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
     }
     
+    YPBarConfiguration *transparentConfigure = nil;
+    if (showFakeBar) {
+        YPNavigationBarConfigurations transparentConf = YPNavigationBarConfigurationsDefault | YPNavigationBarBackgroundStyleTransparent;
+        if (showConfigure.barStyle == UIBarStyleBlack) transparentConf |= YPNavigationBarStyleBlack;
+        transparentConfigure = [[YPBarConfiguration alloc] initWithBarConfigurations:transparentConf
+                                                                           tintColor:showConfigure.tintColor
+                                                                     backgroundColor:nil
+                                                                     backgroundImage:nil
+                                                           backgroundImageIdentifier:nil];
+    }
+    
     if (!showConfigure.hidden) {
-        if (showFakeBar) showConfigure.transparent = YES;
-        [navigationBar yp_applyBarConfiguration:showConfigure];
-        showConfigure.transparent = isTransparent;
+        [navigationBar yp_applyBarConfiguration:transparentConfigure ?: showConfigure];
     } else {
         [navigationBar yp_adjustWithBarStyle:showConfigure.barStyle tintColor:showConfigure.tintColor];
     }
@@ -174,7 +182,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
                  CGRect fakeBarFrame = [toVC yp_fakeBarFrame];
                  if (!CGRectIsNull(fakeBarFrame)) {
                      if (toVC.extendedLayoutIncludesOpaqueBars ||
-                         showConfigure.translucent) {
+                         navigationBar.translucent) {
                          fakeBarFrame.origin.y = 0;
                      }
                      UIToolbar *fakeBar = self.toViewControllerFakeBar;
@@ -239,14 +247,14 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
        willShowViewController:(UIViewController *)viewController
                      animated:(BOOL)animated {
     NSParameterAssert(navigationController == _navigationController);
-    
+
     id<UINavigationControllerDelegate> navigationDelegate = _navigationDelegate;
     if ([navigationDelegate respondsToSelector:@selector(navigationController:willShowViewController:animated:)]) {
         [navigationDelegate navigationController:navigationController
                           willShowViewController:viewController
                                         animated:animated];
     }
-    
+
     [self willShowViewController:viewController animated:animated];
 }
 
@@ -254,14 +262,14 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         didShowViewController:(UIViewController *)viewController
                      animated:(BOOL)animated {
     NSParameterAssert(navigationController == _navigationController);
-    
+
     id<UINavigationControllerDelegate> navigationDelegate = _navigationDelegate;
     if ([navigationDelegate respondsToSelector:@selector(navigationController:didShowViewController:animated:)]) {
         [navigationDelegate navigationController:navigationController
                            didShowViewController:viewController
                                         animated:animated];
     }
-    
+
     [self didShowViewController:viewController];
 }
 
