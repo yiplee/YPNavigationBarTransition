@@ -30,6 +30,7 @@ UITableViewDataSource
     UIBarStyle _barStyle;
     
     NSArray<NSDictionary *> *_colors;
+    NSArray<NSString *> *_imageNames;
 }
 
 - (void) loadView {
@@ -48,7 +49,7 @@ UITableViewDataSource
     [_tableView registerClass:[YPDemoSwitchCell class] forCellReuseIdentifier:@"switch"];
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"action"];
     
-    _translucent = YES;
+    _translucent = NO;
     _barStyle = UIBarStyleBlack;
     
     _colors = @[
@@ -58,6 +59,12 @@ UITableViewDataSource
       @{@"TableView Background Color" : _tableView.backgroundColor},
       @{@"Red" : [UIColor redColor]}
       ];
+    
+    _imageNames = @[@"green",
+                    @"blue",
+                    @"purple",
+                    @"red",
+                    @"yellow"];
 }
 
 - (void) showNextViewControllerWithColor:(UIColor *)color {
@@ -83,6 +90,35 @@ UITableViewDataSource
     
     controller.configurations = conf;
     controller.backgroundColor = color;
+    
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void) showNextViewControllerWithBackgroundImageName:(NSString *)imageName {
+    YPDemoContainerViewController *controller = [YPDemoContainerViewController new];
+    controller.title = imageName;
+    
+    YPNavigationBarConfigurations conf = YPNavigationBarConfigurationsDefault;
+    if (_barHidden) {
+        conf |= YPNavigationBarHidden;
+    }
+    
+    if (_transparent) {
+        conf |= YPNavigationBarBackgroundStyleTransparent;
+    } else if (!_translucent) {
+        conf |= YPNavigationBarBackgroundStyleOpaque;
+    }
+    
+    if (_barStyle == UIBarStyleBlack) {
+        conf |= YPNavigationBarStyleBlack;
+    }
+    
+    conf |= YPNavigationBarBackgroundStyleImage;
+    
+    controller.configurations = conf;
+    controller.backgroundImage = [[UIImage imageNamed:imageName] resizableImageWithCapInsets:UIEdgeInsetsZero
+                                                                                resizingMode:UIImageResizingModeStretch];
+    controller.backgroundImageName = imageName;
     
     [self.navigationController pushViewController:controller animated:YES];
 }
@@ -113,12 +149,13 @@ UITableViewDataSource
 #pragma mark - UITableViewDataSource
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) return 4;
     else if (section == 1) return _colors.count;
+    else if (section == 2) return _imageNames.count;
     else return 0;
 }
 
@@ -169,6 +206,9 @@ UITableViewDataSource
             }
             
             image = [UIImage yp_imageWithColor:c size:CGSizeMake(32, 32)];
+        } else if (section == 2) { // images
+            title = _imageNames[row];
+            image = [UIImage imageNamed:title];
         }
         
         cell.imageView.image = image;
@@ -181,6 +221,7 @@ UITableViewDataSource
 - (NSString *) tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if (section == 0) return @"Next Controller Bar Style";
     else if (section == 1) return @"Colors";
+    else if (section == 2) return @"Images";
     else return nil;
 }
 
@@ -192,6 +233,8 @@ UITableViewDataSource
         "bar style 是 UIBarStyleDefault 的时候状态栏为黑色";
     } else if (section == 1) {
         return @"选择偏白的颜色的时候，记得关闭 Black Bar Style";
+    } else if (section == 2) {
+        return @"选择图片为背景的时候建议关掉半透明效果";
     }
     
     return nil;
@@ -211,6 +254,9 @@ UITableViewDataSource
         id color = _colors[row].allValues.firstObject;
         if (color == [NSNull null]) color = nil;
         [self showNextViewControllerWithColor:color];
+    } else if (section == 2) {
+        NSString *imageName = _imageNames[row];
+        [self showNextViewControllerWithBackgroundImageName:imageName];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:NO];

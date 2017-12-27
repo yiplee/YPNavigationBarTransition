@@ -36,14 +36,23 @@
     [conf didMoveToParentViewController:self];
     
     UIBarButtonItem *shareButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
-                                                                                 target:nil
-                                                                                 action:nil];
+                                                                                 target:self
+                                                                                 action:@selector(shareAction:)];
     self.navigationItem.rightBarButtonItem = shareButton;
     
     YPNavigationTitleLabel *titleView = [YPNavigationTitleLabel new];
     titleView.text = self.title;
     [titleView sizeToFit];
     self.navigationItem.titleView = titleView;
+}
+
+- (void) shareAction:(id)sender {
+    NSString *const githubLink = @"https://github.com/yiplee/YPNavigationBarTransition";
+    NSURL *shareURL = [NSURL URLWithString:githubLink];
+    UIActivityViewController *share = [[UIActivityViewController alloc] initWithActivityItems:@[shareURL]
+                                                                        applicationActivities:nil];
+    share.popoverPresentationController.barButtonItem = sender;
+    [self presentViewController:share animated:YES completion:nil];
 }
 
 @end
