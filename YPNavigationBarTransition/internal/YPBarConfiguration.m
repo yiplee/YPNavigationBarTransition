@@ -57,7 +57,7 @@ SOFTWARE.
         if (_transparent) break;
         _translucent = !(configurations & YPNavigationBarBackgroundStyleOpaque);
         
-        if ((configurations & YPNavigationBarBackgroundStyleImage) && _backgroundImage) {
+        if ((configurations & YPNavigationBarBackgroundStyleImage) && backgroundImage) {
             _backgroundImage = backgroundImage;
             _backgroundImageIdentifier = [backgroundImageIdentifier copy];
         } else if (configurations & YPNavigationBarBackgroundStyleColor){
