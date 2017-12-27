@@ -187,7 +187,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
              UIViewController *const toVC  = [context viewControllerForKey:UITransitionContextToViewControllerKey];
              
              if (fromVC && [currentConfigure isVisible]) {
-                 CGRect fakeBarFrame = [fromVC yp_fakeBarFrame];
+                 CGRect fakeBarFrame = [fromVC yp_fakeBarFrameForNavigationBar:navigationBar];
                  if (!CGRectIsNull(fakeBarFrame)) {
                      UIToolbar *fakeBar = self.fromViewControllerFakeBar;
                      [fakeBar yp_applyBarConfiguration:currentConfigure];
@@ -197,7 +197,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
              }
              
              if (toVC && [showConfigure isVisible]) {
-                 CGRect fakeBarFrame = [toVC yp_fakeBarFrame];
+                 CGRect fakeBarFrame = [toVC yp_fakeBarFrameForNavigationBar:navigationBar];
                  if (!CGRectIsNull(fakeBarFrame)) {
                      if (toVC.extendedLayoutIncludesOpaqueBars ||
                          navigationBar.translucent) {

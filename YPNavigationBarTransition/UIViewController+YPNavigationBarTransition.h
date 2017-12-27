@@ -30,6 +30,6 @@ SOFTWARE.
 
 - (void) yp_refreshNavigationBarStyle;
 
-- (CGRect) yp_fakeBarFrame;
+- (CGRect) yp_fakeBarFrameForNavigationBar:(UINavigationBar *)navigationBar;
 
 @end
