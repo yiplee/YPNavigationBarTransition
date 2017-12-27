@@ -33,6 +33,11 @@
         titleView = (YPNavigationTitleLabel *)self.navigationItem.titleView;
     }
     titleView.textColor = self.configurations & YPNavigationBarStyleBlack ? [UIColor whiteColor] : [UIColor blackColor];
+    
+    UIBarButtonItem *popToRoot = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop
+                                                                               target:self
+                                                                               action:@selector(popToRoot:)];
+    self.navigationItem.rightBarButtonItem = popToRoot;
 }
 
 - (void) setTitle:(NSString *)title {
@@ -50,6 +55,10 @@
     titleView.text = title;
     [titleView sizeToFit];
     self.navigationItem.titleView = titleView;
+}
+
+- (void) popToRoot:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 #pragma mark - YPNavigationBarConfigureStyle
