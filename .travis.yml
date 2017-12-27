@@ -1,3 +1,3 @@
 language: objective-c
 script:
-  - xctool -workspace YPNavigationBarTransition.xcworkspace -scheme YPNavigationBarTransition  run-tests -test-sdk iphonesimulator
+  - xctool -workspace YPNavigationBarTransition.xcworkspace -scheme YPNavigationBarTransitionTests  run-tests -test-sdk iphonesimulator
