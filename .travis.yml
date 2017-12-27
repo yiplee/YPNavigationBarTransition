@@ -1,3 +1,25 @@
 language: objective-c
-xcode_workspace: YPNavigationBarTransition.xcworkspace
-xcode_scheme: YPNavigationBarTransition
+osx_image: xcode9.2
+gemfile: Gemfile
+
+cache:
+  - cocoapods
+  - bundler
+
+env:
+   global:
+   - LANG=en_US.UTF-8
+   - WORKSPACE="YPNavigationBarTransition.xcworkspace"
+   - IOS_SCHEME="YPNavigationBarTransition"
+   - IOS_SDK=iphonesimulator11.2
+   - EXAMPLE_SCHEME="YPNavigationBarTransition-Example"
+
+   matrix:
+   - DESTINATION="OS=8.2,name=iPhone 6"
+   - DESTINATION="OS=9.0,name=iPhone 6s"
+   - DESTINATION="OS=10.0,name=iPhone 7"
+   - DESTINATION="OS=11.2,name=iPhone 8"
+
+script:
+   - xcodebuild build build-for-testing -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | bundle exec xcpretty -c;
+   - xcodebuild analyze test-without-building -workspace "$WORKSPACE" -scheme "$IOS_SCHEME" -sdk "$IOS_SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=YES | bundle exec xcpretty -c;
