@@ -28,6 +28,8 @@ UITableViewDataSource
     BOOL _transparent;
     BOOL _translucent;
     UIBarStyle _barStyle;
+    
+    NSArray<NSDictionary *> *_colors;
 }
 
 - (void) loadView {
@@ -48,6 +50,14 @@ UITableViewDataSource
     
     _translucent = YES;
     _barStyle = UIBarStyleBlack;
+    
+    _colors = @[
+      @{@"None" : [NSNull null]},
+      @{@"Black" : [UIColor blackColor]},
+      @{@"White" : [UIColor whiteColor]},
+      @{@"TableView Background Color" : _tableView.backgroundColor},
+      @{@"Red" : [UIColor redColor]}
+      ];
 }
 
 - (void) showNextViewControllerWithColor:(UIColor *)color {
@@ -69,7 +79,7 @@ UITableViewDataSource
         conf |= YPNavigationBarStyleBlack;
     }
     
-    conf |= YPNavigationBarBackgroundStyleColor;
+    if (color) conf |= YPNavigationBarBackgroundStyleColor;
     
     controller.configurations = conf;
     controller.backgroundColor = color;
@@ -108,7 +118,7 @@ UITableViewDataSource
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) return 4;
-    else if (section == 1) return 2;
+    else if (section == 1) return _colors.count;
     else return 0;
 }
 
@@ -151,13 +161,14 @@ UITableViewDataSource
         NSString *title = nil;
         
         if (section == 1) { // colors
-            if (row == 0) {
-                title = @"Black";
-                image = [UIImage yp_imageWithColor:[UIColor blackColor] size:CGSizeMake(28, 28)];
-            } else if (row == 1) {
-                title = @"White";
-                image = [UIImage yp_imageWithColor:[UIColor whiteColor] size:CGSizeMake(28, 28)];
+            NSDictionary *color = _colors[row];
+            title = color.allKeys.firstObject;
+            id c = color.allValues.firstObject;
+            if (c == [NSNull null]) {
+                c = [UIColor clearColor];
             }
+            
+            image = [UIImage yp_imageWithColor:c size:CGSizeMake(32, 32)];
         }
         
         cell.imageView.image = image;
@@ -197,11 +208,9 @@ UITableViewDataSource
     NSInteger const row     = indexPath.row;
     
     if (section == 1) {
-        if (row == 0) {
-            [self showNextViewControllerWithColor:[UIColor blackColor]];
-        } else if (row == 1) {
-            [self showNextViewControllerWithColor:[UIColor whiteColor]];
-        }
+        id color = _colors[row].allValues.firstObject;
+        if (color == [NSNull null]) color = nil;
+        [self showNextViewControllerWithColor:color];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:NO];

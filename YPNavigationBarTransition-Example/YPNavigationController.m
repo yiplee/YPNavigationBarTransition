@@ -42,6 +42,7 @@ UIGestureRecognizerDelegate
 - (void) viewDidLoad {
     [super viewDidLoad];
     self.interactivePopGestureRecognizer.delegate = self;
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void) createTransitionCenter {
