@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "YPNavigationBarTransition"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A full functions Library make navigation bar transition as you like."
   s.description  = "A full functions Library make navigation bar transition as you like. Custom backgroud color and image are supported."                  
 
