@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.extendedLayoutIncludesOpaqueBars = YES;
+    
     YPDemoConfigureViewController *conf = [YPDemoConfigureViewController new];
     [self addChildViewController:conf];
     
