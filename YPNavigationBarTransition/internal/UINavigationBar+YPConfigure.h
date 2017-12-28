@@ -33,4 +33,6 @@ SOFTWARE.
 - (void) yp_adjustWithBarStyle:(UIBarStyle)barStyle tintColor:(UIColor *)tintColor;
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure;
 
+- (UIView *) yp_backgroundView;
+
 @end
