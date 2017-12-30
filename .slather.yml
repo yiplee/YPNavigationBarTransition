@@ -6,3 +6,4 @@ scheme: YPNavigationBarTransitionLibrary
 source_directory: YPNavigationBarTransition
 ignore:
   - Pods/*
+  - YPNavigationBarTransitionTests/*
