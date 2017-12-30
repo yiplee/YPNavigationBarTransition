@@ -142,6 +142,7 @@
     
     CGFloat progress = scrollView.contentOffset.y + scrollView.contentInset.top;
     CGFloat gradientProgress = MIN(1, MAX(0, progress  / headerHeight));
+    gradientProgress = gradientProgress * gradientProgress * gradientProgress * gradientProgress;
     if (gradientProgress != _gradientProgress) {
         _gradientProgress = gradientProgress;
         self.titleLabel.textColor = _gradientProgress == 1 ? [self yp_navigationBarTintColor] : [UIColor clearColor];
