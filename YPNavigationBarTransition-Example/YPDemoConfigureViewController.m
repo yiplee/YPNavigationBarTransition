@@ -8,6 +8,8 @@
 
 #import "YPDemoConfigureViewController.h"
 #import "YPDemoContainerViewController.h"
+#import "YPGradientDemoViewController.h"
+
 #import "YPDemoSwitchCell.h"
 #import "UIImage+YPConfigure.h"
 
@@ -19,7 +21,7 @@ UITableViewDelegate,
 UITableViewDataSource
 >
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong, readwrite) UITableView *tableView;
 
 @end
 
@@ -149,13 +151,14 @@ UITableViewDataSource
 #pragma mark - UITableViewDataSource
 
 - (NSInteger) numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (section == 0) return 4;
     else if (section == 1) return _colors.count;
     else if (section == 2) return _imageNames.count;
+    else if (section == 3) return 1;
     else return 0;
 }
 
@@ -209,6 +212,8 @@ UITableViewDataSource
         } else if (section == 2) { // images
             title = _imageNames[row];
             image = [UIImage imageNamed:title];
+        } else if (section == 3) {
+            title = @"Dynamic Gradient Bar";
         }
         
         cell.imageView.image = image;
@@ -232,9 +237,11 @@ UITableViewDataSource
         "bar style 是 UIBarStyleBlack 的时候状态栏为白色\n"
         "bar style 是 UIBarStyleDefault 的时候状态栏为黑色";
     } else if (section == 1) {
-        return @"选择偏白的颜色的时候，记得关闭 Black Bar Style";
+        return @"选择偏白的颜色的时候，关闭 Black Bar Style 展示效果更好";
     } else if (section == 2) {
         return @"选择图片为背景的时候建议关掉半透明效果";
+    } else if (section == 3) {
+        return @"style 根据页面滑动距离动态改变";
     }
     
     return nil;
@@ -257,6 +264,9 @@ UITableViewDataSource
     } else if (section == 2) {
         NSString *imageName = _imageNames[row];
         [self showNextViewControllerWithBackgroundImageName:imageName];
+    } else if (section == 3) {
+        YPGradientDemoViewController *demo = [YPGradientDemoViewController new];
+        [self.navigationController pushViewController:demo animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:NO];

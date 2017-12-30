@@ -10,4 +10,6 @@
 
 @interface YPDemoConfigureViewController : UIViewController
 
+@property (nonatomic, strong, readonly) UITableView *tableView;
+
 @end
