@@ -26,8 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"Dynamic Gradient Bar";
+    
     _titleLabel = [YPNavigationTitleLabel new];
-    _titleLabel.text = @"Dynamic Gradient Bar";
+    _titleLabel.textColor = [UIColor clearColor];
+    _titleLabel.text = self.title;
     self.navigationItem.titleView = _titleLabel;
     
     self.extendedLayoutIncludesOpaqueBars = YES;
@@ -141,7 +144,7 @@
     CGFloat gradientProgress = MIN(1, MAX(0, progress  / headerHeight));
     if (gradientProgress != _gradientProgress) {
         _gradientProgress = gradientProgress;
-        self.titleLabel.textColor = [self yp_navigationBarTintColor];
+        self.titleLabel.textColor = _gradientProgress == 1 ? [self yp_navigationBarTintColor] : [UIColor clearColor];
         [self yp_refreshNavigationBarStyle];
     }
     
