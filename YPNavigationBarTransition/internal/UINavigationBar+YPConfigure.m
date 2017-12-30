@@ -33,6 +33,10 @@ SOFTWARE.
     self.tintColor = tintColor;
 }
 
+- (UIView *) yp_backgroundView {
+    return [self valueForKey:@"_backgroundView"];
+}
+
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {
 #if DEBUG
     if (@available(iOS 11,*)) {
@@ -42,7 +46,7 @@ SOFTWARE.
     
     [self yp_adjustWithBarStyle:configure.barStyle tintColor:configure.tintColor];
     
-    UIView *barBackgroundView = [self valueForKey:@"_backgroundView"];
+    UIView *barBackgroundView = [self yp_backgroundView];
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
         barBackgroundView.alpha = 0;

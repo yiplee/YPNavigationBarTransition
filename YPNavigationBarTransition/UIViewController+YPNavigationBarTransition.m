@@ -54,7 +54,7 @@ SOFTWARE.
 - (CGRect) yp_fakeBarFrameForNavigationBar:(UINavigationBar *)navigationBar {
     if (!navigationBar) return CGRectNull;
     
-    UIView *backgroundView = [navigationBar valueForKey:@"_backgroundView"];
+    UIView *backgroundView = [navigationBar yp_backgroundView];
     CGRect frame = [backgroundView.superview convertRect:backgroundView.frame toView:self.view];
     frame.origin.x = self.view.bounds.origin.x;
     return frame;
