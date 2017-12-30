@@ -9,6 +9,9 @@
         <img src="https://img.shields.io/cocoapods/v/YPNavigationBarTransition.svg?style=flat"
              alt="Pods Version">
     </a>
+    <a href='https://coveralls.io/github/yiplee/YPNavigationBarTransition'>
+        <img src='https://coveralls.io/repos/github/yiplee/YPNavigationBarTransition/badge.svg' alt='Coverage Status' />
+    </a>
     <a href="https://github.com/Carthage/Carthage">
         <img src="https://img.shields.io/badge/Carthage-compatible-brightgreen.svg?style=flat"
              alt="Carthage Compatible">
