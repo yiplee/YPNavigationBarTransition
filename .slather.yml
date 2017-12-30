@@ -1,0 +1,8 @@
+ci_service: travis_ci
+coverage_service: coveralls
+xcodeproj: YPNavigationBarTransition.xcodeproj
+workspace: YPNavigationBarTransition.xcworkspace
+scheme: YPNavigationBarTransitionLibrary
+source_directory: YPNavigationBarTransition
+ignore:
+  - Pods/*
