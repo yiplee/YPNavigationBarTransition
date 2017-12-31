@@ -3,11 +3,11 @@ Pod::Spec.new do |s|
 
   s.name         = "YPNavigationBarTransition"
   s.version      = "1.0.2"
-  s.summary      = "A full functions Library make navigation bar transition as you like."
-  s.description  = "A full functions Library make navigation bar transition as you like. Custom backgroud color and image are supported."                  
+  s.summary      = "A Fully functional UINavigationBar framework for making bar transition more natural!"
+  s.description  = "A Fully functional UINavigationBar framework for making bar transition more natural! You don't need to call any UINavigationBar api, implementing YPNavigationBarConfigureStyle protocol for your view controller instead."               
 
   s.homepage     = "http://github.com/yiplee/YPNavigationBarTransition"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+  s.screenshots  = "https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-01.gif", "https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-02.gif"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
