@@ -20,8 +20,10 @@
 
 A Fully functional `UINavigationBar` framework for making bar transition more natural! You don't need to call any `UINavigationBar` api, implementing `YPNavigationBarConfigureStyle` protocol for your view controller instead.
 
-![YPNavigationBarTransition](https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-01.gif)
-![YPnavigationBarTransition](https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-02.gif)
+<p>
+    <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-01.gif" width=300>
+    <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-02.gif" width=300>
+</p>
 
 ## Requirements
 
