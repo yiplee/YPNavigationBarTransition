@@ -52,6 +52,14 @@ UIGestureRecognizerDelegate
     _transitionCenter.navigationController = self;
 }
 
+- (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
+    if (![_transitionCenter validateInnerNavigationDelegate:delegate]) {
+        _transitionCenter.navigationDelegate = delegate;
+    } else {
+        [super setDelegate:delegate];
+    }
+}
+
 #pragma mark - UIGestureRecognizerDelegate
 
 - (BOOL) gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {

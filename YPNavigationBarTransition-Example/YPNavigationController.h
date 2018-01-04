@@ -12,6 +12,4 @@
 
 @interface YPNavigationController : UINavigationController
 
-@property (nonatomic, strong, readonly) YPNavigationBarTransitionCenter *transitionCenter;
-
 @end
