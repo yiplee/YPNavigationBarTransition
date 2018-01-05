@@ -92,6 +92,8 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 }
 
 - (void) setNavigationDelegate:(id<UINavigationControllerDelegate>)navigationDelegate {
+    if ([self validateInnerNavigationDelegate:navigationDelegate]) return;
+    
     if (_navigationDelegate != navigationDelegate) {
         _navigationDelegate = navigationDelegate;
         
@@ -105,6 +107,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 - (void) updateNavigationControllerDelegate {
     id<UINavigationControllerDelegate> delegate = (id<UINavigationControllerDelegate>)self.delegateProxy ?: self;
     _navigationController.delegate = delegate;
+}
+
+- (BOOL) validateInnerNavigationDelegate:(id)delegate {
+    return delegate && (delegate == self || delegate == self.delegateProxy);
 }
 
 #pragma mark - fakeBar

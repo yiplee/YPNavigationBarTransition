@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, nullable) id<UINavigationControllerDelegate> navigationDelegate;
 @property (nonatomic, weak, nullable) UINavigationController *navigationController;
 
+- (BOOL) validateInnerNavigationDelegate:(nullable id)delegate;
+
 @end
 
 NS_ASSUME_NONNULL_END
