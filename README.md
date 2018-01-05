@@ -20,6 +20,15 @@
 
 A Fully functional `UINavigationBar` framework for making bar transition more natural! You don't need to call any `UINavigationBar` api, implementing `YPNavigationBarConfigureStyle` protocol for your view controller instead.
 
+## features
+
+- **Hidden** navigationBar
+- Transparent & translucent bar
+- Pure color bar
+- Background image bar
+- **dynamic** update style
+- clear Shadow line
+
 <p>
     <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
         <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-01.gif" width=300>
