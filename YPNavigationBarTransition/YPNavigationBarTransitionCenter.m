@@ -181,7 +181,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     if (!showConfigure.hidden) {
         [navigationBar yp_applyBarConfiguration:transparentConfigure ?: showConfigure];
     } else {
-        [navigationBar yp_adjustWithBarStyle:showConfigure.barStyle tintColor:showConfigure.tintColor];
+        [navigationBar yp_adjustWithBarStyle:showConfigure.barStyle tintColor:currentConfigure.tintColor];
     }
     
     [navigationController.transitionCoordinator
