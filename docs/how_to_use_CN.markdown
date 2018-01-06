@@ -57,8 +57,7 @@ bar style 是 YPNavigationBarStyleLight 的话，将使用黑色作为 tintColor
 ```objective-c
 - (UIImage *) yp_navigationBackgroundImageWithIdentifier:(NSString **)identifier;
 ```
-**[optional]** navigation bar background image,`identifier`作为 image 的 id 使用，
-，同 id 的图片看作是同一张图片，在判断是否需要使用 fake bar 的时候需要用到。如果 bar configuration
+**[optional]** navigation bar background image,`identifier`作为 image 的 id 使用，同 id 的图片看作是同一张图片，在判断是否需要使用 fake bar 的时候需要用到。如果 bar configuration
 使用了 YPNavigationBarBackgroundStyleImage，这个方法一定要实现。
 
 ```objective-c
@@ -75,7 +74,7 @@ YPNavigationBarTransitionCenter 需要提供一个默认 configure style id<YPNa
 ### 最佳实践 ###
 
 **默认 YPNavigationBarConfigureStyle 实现** 建议 subclass 一个 UINavigationController 并且实现 YPNavigationBarConfigureStyle 协议
-来作为默认配置使用，并将 YPNavigationBarTransitionCenter 封装在里面。可以参考 Example 里面的 [YPNavigationController](https://github.com/yiplee/YPNavigationBarTransition/blob/master/YPNavigationBarTransition-Example/YPDemoConfigureViewController.m)。
+来作为默认配置使用，并将 YPNavigationBarTransitionCenter 封装在里面。可以参考 Example 里面的 [YPNavigationController](https://github.com/yiplee/YPNavigationBarTransition/blob/master/YPNavigationBarTransition-Example/YPNavigationController.m)。
 
 **NavigationItem Title** 建议使用一个 UILabel 作为 navigationItem 的 titleView 来展现页面 title，这样可以让页面完全自己控制 title 的颜色、
 字体等等，并且还可以实现 subtitle。可以参考 Example 里面的 [YPNavigationTitleLabel](https://github.com/yiplee/YPNavigationBarTransition/blob/master/YPNavigationBarTransition-Example/YPNavigationTitleLabel.m)。
