@@ -36,6 +36,9 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
     <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
         <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-02.gif" width=300>
     </a>
+    <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
+        <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-03.gif" width=300>
+    </a>
 </p>
 
 ## Requirements
