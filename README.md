@@ -22,11 +22,10 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
 
 ## features
 
-- **Hidden** navigationBar
 - Transparent & translucent bar
 - Pure color bar
 - Background image bar
-- **dynamic** update style
+- update navigationBar style **dynamicly**
 - clear Shadow line
 
 <p>
