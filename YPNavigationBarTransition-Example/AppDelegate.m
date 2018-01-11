@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "YPDemoViewController.h"
-#import "YPNavigationController.h"
 
 @interface AppDelegate ()
 
@@ -22,7 +21,7 @@
     _window = [[UIWindow alloc] initWithFrame:frame];
     
     UIViewController *root = [YPDemoViewController new];
-    YPNavigationController *nav = [[YPNavigationController alloc] initWithRootViewController:root];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:root];
     _window.rootViewController = nav;
     [_window makeKeyAndVisible];
     

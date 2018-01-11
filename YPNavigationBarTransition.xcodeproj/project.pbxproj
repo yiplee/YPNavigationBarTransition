@@ -31,10 +31,7 @@
 		E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
 		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */; };
-		E8B0647A1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E8B0647B1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */; };
 		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E8B064811FF13466007332E8 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064801FF13466007332E8 /* YPNavigationController.m */; };
 		E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064831FF138E5007332E8 /* YPDemoViewController.m */; };
 		E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
 		E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
@@ -93,11 +90,7 @@
 		E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationBarTransitionCenter.m; sourceTree = "<group>"; };
 		E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YPNavigationBarTransition.h"; sourceTree = "<group>"; };
 		E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YPNavigationBarTransition.m"; sourceTree = "<group>"; };
-		E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationBarTransitionCenterProxy.h; sourceTree = "<group>"; };
-		E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationBarTransitionCenterProxy.m; sourceTree = "<group>"; };
 		E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationBarTransitionCenterInternal.h; sourceTree = "<group>"; };
-		E8B0647F1FF13466007332E8 /* YPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
-		E8B064801FF13466007332E8 /* YPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		E8B064821FF138E5007332E8 /* YPDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoViewController.h; sourceTree = "<group>"; };
 		E8B064831FF138E5007332E8 /* YPDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoViewController.m; sourceTree = "<group>"; };
 		E8B064851FF14C85007332E8 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoConfigureViewController.h; sourceTree = "<group>"; };
@@ -209,8 +202,6 @@
 				E8B064521FEF5039007332E8 /* main.m */,
 				E823C3D81FF25B7F0079E90A /* YPNavigationTitleLabel.h */,
 				E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */,
-				E8B0647F1FF13466007332E8 /* YPNavigationController.h */,
-				E8B064801FF13466007332E8 /* YPNavigationController.m */,
 				E8B064821FF138E5007332E8 /* YPDemoViewController.h */,
 				E8B064831FF138E5007332E8 /* YPDemoViewController.m */,
 				E8B064851FF14C85007332E8 /* YPDemoConfigureViewController.h */,
@@ -236,8 +227,6 @@
 				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
 				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */,
-				E8B064781FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h */,
-				E8B064791FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m */,
 			);
 			path = internal;
 			sourceTree = "<group>";
@@ -285,7 +274,6 @@
 				E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */,
 				E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */,
 				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
-				E8B0647A1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.h in Headers */,
 				E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */,
 				E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */,
 				E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */,
@@ -530,7 +518,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */,
-				E8B0647B1FEFFC8F007332E8 /* YPNavigationBarTransitionCenterProxy.m in Sources */,
 				E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */,
 				E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */,
 				E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */,
@@ -553,7 +540,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B064811FF13466007332E8 /* YPNavigationController.m in Sources */,
 				E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */,
 				E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */,
 				E8B064531FEF5039007332E8 /* main.m in Sources */,
