@@ -52,7 +52,7 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your `Podfile`:
 
 ```ruby
-pod 'YPNavigationBarTransition', '~> 1.0'
+pod 'YPNavigationBarTransition', '~> 2.0'
 ```
 
 ### Carthage
@@ -60,7 +60,7 @@ pod 'YPNavigationBarTransition', '~> 1.0'
 For [Carthage](https://github.com/Carthage/Carthage), add the following to your `Cartfile`:
 
 ```ruby
-github "yiplee/YPNavigationBarTransition" ~> 1.0
+github "yiplee/YPNavigationBarTransition" ~> 2.0
 ```
 
 ## Getting Started

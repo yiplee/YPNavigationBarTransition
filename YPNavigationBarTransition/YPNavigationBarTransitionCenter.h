@@ -29,12 +29,11 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YPNavigationBarTransitionCenter : NSObject
 
 - (instancetype) init NS_UNAVAILABLE;
++ (instancetype) new NS_UNAVAILABLE;
 - (instancetype) initWithDefaultBarConfiguration:(id<YPNavigationBarConfigureStyle>)_default NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, weak, nullable) id<UINavigationControllerDelegate> navigationDelegate;
-@property (nonatomic, weak, nullable) UINavigationController *navigationController;
-
-- (BOOL) validateInnerNavigationDelegate:(nullable id)delegate;
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated;
+- (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated;
 
 @end
 

@@ -65,10 +65,6 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 
 @implementation YPNavigationBarTransitionCenter
 
-- (void) dealloc {
-    _navigationController.delegate = nil;
-}
-
 - (instancetype) initWithDefaultBarConfiguration:(id<YPNavigationBarConfigureStyle>)_default {
     NSParameterAssert(_default);
     self = [super init];
@@ -77,40 +73,6 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     }
     
     return self;
-}
-
-- (void) setNavigationController:(UINavigationController *)navigationController {
-    if (_navigationController != navigationController) {
-        _navigationController = navigationController;
-        
-        if (_navigationController && !_navigationController.navigationBarHidden) {
-            [self didShowViewController:_navigationController.topViewController];
-        }
-        
-        [self updateNavigationControllerDelegate];
-    }
-}
-
-- (void) setNavigationDelegate:(id<UINavigationControllerDelegate>)navigationDelegate {
-    if ([self validateInnerNavigationDelegate:navigationDelegate]) return;
-    
-    if (_navigationDelegate != navigationDelegate) {
-        _navigationDelegate = navigationDelegate;
-        
-        _navigationController.delegate = nil;
-        self.delegateProxy = [[YPNavigationBarTransitionCenterProxy alloc] initWithNavigationControllerDelegate:_navigationDelegate
-                                                                                                    interceptor:self];
-        [self updateNavigationControllerDelegate];
-    }
-}
-
-- (void) updateNavigationControllerDelegate {
-    id<UINavigationControllerDelegate> delegate = (id<UINavigationControllerDelegate>)self.delegateProxy ?: self;
-    _navigationController.delegate = delegate;
-}
-
-- (BOOL) validateInnerNavigationDelegate:(id)delegate {
-    return delegate && (delegate == self || delegate == self.delegateProxy);
 }
 
 #pragma mark - fakeBar
@@ -144,19 +106,16 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 
 #pragma mark - transition
 
-- (YPBarConfiguration *) currentBarConfigure {
-    return [_navigationController.navigationBar currentBarConfigure];
-}
-
-- (void) willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    YPBarConfiguration *currentConfigure = self.currentBarConfigure ?: self.defaultBarConfigure;
+- (void) navigationController:(UINavigationController *)navigationController
+       willShowViewController:(UIViewController *)viewController
+                     animated:(BOOL)animated {
+    YPBarConfiguration *currentConfigure = [navigationController.navigationBar currentBarConfigure] ?: self.defaultBarConfigure;
     YPBarConfiguration *showConfigure = self.defaultBarConfigure;
     if ([viewController yp_hasCustomNavigationBarStyle]) {
         id<YPNavigationBarConfigureStyle> owner = (id<YPNavigationBarConfigureStyle>)viewController;
         showConfigure = [[YPBarConfiguration alloc] initWithBarConfigurationOwner:owner];
     }
     
-    UINavigationController *const navigationController = _navigationController;
     UINavigationBar *const navigationBar = navigationController.navigationBar;
     
     BOOL showFakeBar = YPTransitionNeedShowFakeBar(currentConfigure, showConfigure);
@@ -250,7 +209,9 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     }
 }
 
-- (void) didShowViewController:(UIViewController *)viewController {
+- (void) navigationController:(UINavigationController *)navigationController
+        didShowViewController:(UIViewController *)viewController
+                     animated:(BOOL)animated {
     [self removeFakeBars];
     
     YPBarConfiguration *showConfigure = self.defaultBarConfigure;
@@ -259,42 +220,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         showConfigure = [[YPBarConfiguration alloc] initWithBarConfigurationOwner:owner];
     }
     
-    UINavigationBar *const navigationBar = _navigationController.navigationBar;
+    UINavigationBar *const navigationBar = navigationController.navigationBar;
     [navigationBar yp_applyBarConfiguration:showConfigure];
     
     _isTransitionNavigationBar = NO;
-}
-
-#pragma mark - UINavigationControllerDelegate
-
-- (void) navigationController:(UINavigationController *)navigationController
-       willShowViewController:(UIViewController *)viewController
-                     animated:(BOOL)animated {
-    NSParameterAssert(navigationController == _navigationController);
-
-    id<UINavigationControllerDelegate> navigationDelegate = _navigationDelegate;
-    if ([navigationDelegate respondsToSelector:@selector(navigationController:willShowViewController:animated:)]) {
-        [navigationDelegate navigationController:navigationController
-                          willShowViewController:viewController
-                                        animated:animated];
-    }
-
-    [self willShowViewController:viewController animated:animated];
-}
-
-- (void) navigationController:(UINavigationController *)navigationController
-        didShowViewController:(UIViewController *)viewController
-                     animated:(BOOL)animated {
-    NSParameterAssert(navigationController == _navigationController);
-
-    id<UINavigationControllerDelegate> navigationDelegate = _navigationDelegate;
-    if ([navigationDelegate respondsToSelector:@selector(navigationController:didShowViewController:animated:)]) {
-        [navigationDelegate navigationController:navigationController
-                           didShowViewController:viewController
-                                        animated:animated];
-    }
-
-    [self didShowViewController:viewController];
 }
 
 @end
