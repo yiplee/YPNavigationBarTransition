@@ -43,9 +43,9 @@ SOFTWARE.
     if (!self) return nil;
     
     do {
-        _hidden = configurations & YPNavigationBarHidden;
+        _hidden = (configurations & YPNavigationBarHidden) > 0;
         
-        _barStyle = configurations & YPNavigationBarStyleBlack ? UIBarStyleBlack : UIBarStyleDefault;
+        _barStyle = (configurations & YPNavigationBarStyleBlack) > 0 ? UIBarStyleBlack : UIBarStyleDefault;
         if (!tintColor) {
             tintColor = _barStyle == UIBarStyleBlack ? [UIColor whiteColor] : [UIColor blackColor];
         }
@@ -53,11 +53,11 @@ SOFTWARE.
         
         if (_hidden) break;
         
-        _transparent = configurations & YPNavigationBarBackgroundStyleTransparent;
+        _transparent = (configurations & YPNavigationBarBackgroundStyleTransparent) > 0;
         if (_transparent) break;
-        _translucent = !(configurations & YPNavigationBarBackgroundStyleOpaque);
+        _translucent = (configurations & YPNavigationBarBackgroundStyleOpaque) == 0;
         
-        if ((configurations & YPNavigationBarBackgroundStyleImage) && backgroundImage) {
+        if ((configurations & YPNavigationBarBackgroundStyleImage) > 0 && backgroundImage) {
             _backgroundImage = backgroundImage;
             _backgroundImageIdentifier = [backgroundImageIdentifier copy];
         } else if (configurations & YPNavigationBarBackgroundStyleColor){
