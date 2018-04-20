@@ -69,7 +69,7 @@ bar style 是 YPNavigationBarStyleLight 的话，将使用黑色作为 tintColor
 ### YPNavigationBarTransitionCenter ###
 
 YPNavigationBarTransitionCenter 需要提供一个默认 configure style id<YPNavigationBarConfigureStyle> 来初始化，
-它接管 navigationController 的 delegate，通过 navigationDelegate 转发 navigationController 的 delegate 消息。
+<del>它接管 navigationController 的 delegate，通过 navigationDelegate 转发 navigationController 的 delegate 消息。</del>
 
 ### 最佳实践 ###
 
