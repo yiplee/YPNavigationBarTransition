@@ -80,7 +80,12 @@ UINavigationControllerDelegate
     [super viewDidLoad];
     
     _center = [[YPNavigationBarTransitionCenter alloc] initWithDefaultBarConfiguration:self];
-    self.delegate = self;
+    if (!self.delegate) {
+        self.delegate = self;
+    }
+    
+    self.interactivePopGestureRecognizer.delegate = self;
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
