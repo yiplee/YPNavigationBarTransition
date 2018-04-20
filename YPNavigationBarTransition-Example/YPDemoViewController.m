@@ -10,16 +10,6 @@
 #import "YPDemoConfigureViewController.h"
 #import "YPNavigationTitleLabel.h"
 
-@interface YPDemoViewController ()
-<
-UINavigationControllerDelegate,
-YPNavigationBarConfigureStyle
->
-
-@property (nonatomic, strong) YPNavigationBarTransitionCenter *transitionCenter;
-
-@end
-
 @implementation YPDemoViewController
 
 - (void) viewDidLoad {
@@ -50,10 +40,6 @@ YPNavigationBarConfigureStyle
     titleView.text = self.title;
     [titleView sizeToFit];
     self.navigationItem.titleView = titleView;
-    
-    self.navigationController.delegate = self;
-    
-    _transitionCenter = [[YPNavigationBarTransitionCenter alloc] initWithDefaultBarConfiguration:self];
 }
 
 - (void) shareAction:(id)sender {
@@ -63,30 +49,6 @@ YPNavigationBarConfigureStyle
                                                                         applicationActivities:nil];
     share.popoverPresentationController.barButtonItem = sender;
     [self presentViewController:share animated:YES completion:nil];
-}
-
-#pragma mark - UINavigationControllerDelegate
-
-- (void) navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    [_transitionCenter navigationController:navigationController
-                     willShowViewController:viewController
-                                   animated:animated];
-}
-
-- (void) navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    [_transitionCenter navigationController:navigationController
-                      didShowViewController:viewController
-                                   animated:animated];
-}
-
-#pragma mark - YPNavigationBarConfigureStyle
-
-- (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
-    return YPNavigationBarStyleBlack | YPNavigationBarBackgroundStyleTranslucent | YPNavigationBarBackgroundStyleNone;
-}
-
-- (UIColor *) yp_navigationBarTintColor {
-    return [UIColor whiteColor];
 }
 
 @end

@@ -38,6 +38,7 @@
 		E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */; };
 		E8B064951FF2D054007332E8 /* barStyleDiffSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */; };
 		E8B064991FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */; };
+		E8BD65822089F73200E65DC6 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD65812089F73200E65DC6 /* YPNavigationController.m */; };
 		F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +103,8 @@
 		E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barStyleDiffSpec.m; sourceTree = "<group>"; };
 		E8B064971FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentBlackBarStyleObject.h; sourceTree = "<group>"; };
 		E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentBlackBarStyleObject.m; sourceTree = "<group>"; };
+		E8BD65802089F73200E65DC6 /* YPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
+		E8BD65812089F73200E65DC6 /* YPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +213,8 @@
 				E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */,
 				E82CC1401FF77A9100A0AE23 /* YPGradientDemoViewController.h */,
 				E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */,
+				E8BD65802089F73200E65DC6 /* YPNavigationController.h */,
+				E8BD65812089F73200E65DC6 /* YPNavigationController.m */,
 				E8B0648D1FF15D6E007332E8 /* cells */,
 			);
 			path = "YPNavigationBarTransition-Example";
@@ -545,6 +550,7 @@
 				E8B064531FEF5039007332E8 /* main.m in Sources */,
 				E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */,
 				E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */,
+				E8BD65822089F73200E65DC6 /* YPNavigationController.m in Sources */,
 				E82CC1421FF77A9100A0AE23 /* YPGradientDemoViewController.m in Sources */,
 				E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */,
 				E8B064451FEF5039007332E8 /* AppDelegate.m in Sources */,

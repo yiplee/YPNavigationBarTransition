@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 
 @interface YPDemoViewController : UIViewController
 
