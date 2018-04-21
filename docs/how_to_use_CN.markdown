@@ -1,6 +1,6 @@
 ## 怎么使用 YPNavigationBarTransition ##
 
-YPNavigationBarTransition 依靠接管 UINavigationController 的 delegate 来实现自动管理 navigationBar 的切换。
+YPNavigationBarTransition 依靠 UINavigationControllerDelegate 的 willShow & didShow 驱动来实现自动管理 navigationBar 的切换。
 对于每一个对 navigationBar 的样式有自定义需求的 viewController，可以通过实现 ```YPNavigationBarConfigureStyle``` 协议来实现。
 每次 navigationController push 或者 pop viewController 的时候，YPNavigationBarTransition 通过对比当前 navigationBar 
 的样式和目标 viewController 指定的样式来判断是否需要添加 fake bar （用 UIToolbar）来模拟 navigation bar 的切换。
