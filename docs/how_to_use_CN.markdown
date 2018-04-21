@@ -66,10 +66,10 @@ bar style 是 YPNavigationBarStyleLight 的话，将使用黑色作为 tintColor
 **[optional]** navigation bar background color。如果 bar configuration
 使用了 YPNavigationBarBackgroundStyleColor，这个方法一定要实现。
 
-### YPNavigationBarTransitionCenter ###
+### 动态改变 NavigationBar 的样式 ###
 
-YPNavigationBarTransitionCenter 需要提供一个默认 configure style id<YPNavigationBarConfigureStyle> 来初始化，
-<del>它接管 navigationController 的 delegate，通过 navigationDelegate 转发 navigationController 的 delegate 消息。</del>
+在合适的时机调用 UIViewController 的方法 yp_refreshNavigationBarStyle，即可将 UIViewController 实现的 ```YPNavigationBarConfigureStyle``` 当前
+样式同步到 navigation bar 上。参考 Example 里面的 [YPGradientDemoViewController](https://github.com/yiplee/YPNavigationBarTransition/blob/c1c1b4d839fe79848d08791b99bd648e3fb013e8/YPNavigationBarTransition-Example/YPGradientDemoViewController.m#L149)
 
 ### 最佳实践 ###
 
