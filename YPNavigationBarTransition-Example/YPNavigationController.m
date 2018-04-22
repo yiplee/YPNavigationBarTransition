@@ -16,12 +16,16 @@ static BOOL isInterceptedSelector(SEL sel) {
             );
 }
 
+/*
+ *  _YPNavigationControllerProxy 用来转发 UINavigationControllerDelegate 的消息
+ *  在拦截 delegate 消息的同时，还能让 YPNavigationController 的 delegate 正常工作
+ */ 
 @interface _YPNavigationControllerProxy : NSProxy
 
 - (instancetype) initWithNavigationTarget:(nullable id<UINavigationControllerDelegate>)navigationTarget
                               interceptor:(YPNavigationController *)interceptor;
-- (instancetype)init NS_UNAVAILABLE;
-+ (instancetype)new NS_UNAVAILABLE;
+- (instancetype) init NS_UNAVAILABLE;
++ (instancetype) new NS_UNAVAILABLE;
 
 @end
 
@@ -84,7 +88,17 @@ UINavigationControllerDelegate
         self.delegate = self;
     }
     
+    /*
+     * 如果 push 了一个 navigationbar hidden 的页面，左滑返回会失效
+     * 这里接管左滑手势的 delegate 修复这个问题
+     */
     self.interactivePopGestureRecognizer.delegate = self;
+
+    /*
+     * 默认是黑色，在左滑返回的时候可能会看到 navigation bar 边上出现黑色阴影
+     * 这里改成白色修复这个问题
+     * 如果你的 app 本来就是黑色风格，可以不加这一句
+     */
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
@@ -92,7 +106,7 @@ UINavigationControllerDelegate
     if (delegate == self || delegate == nil) {
         _navigationDelegate = nil;
         _delegateProxy = nil;
-        super.delegate = delegate;
+        super.delegate = self;
     } else {
         _navigationDelegate = delegate;
         _delegateProxy = [[_YPNavigationControllerProxy alloc] initWithNavigationTarget:_navigationDelegate
@@ -143,6 +157,11 @@ UINavigationControllerDelegate
     return YES;
 }
 
+
+/*
+ * 这里是默认的配置，没有实现自己的 style 的 viewController，会采用这个默认配置
+ * ！！！请改成你自己的 app 的设计样式 ！！！
+ */
 #pragma mark - YPNavigationBarConfigureStyle
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
