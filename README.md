@@ -29,13 +29,25 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
 - Background image bar 支持设置 navigation bar 背景图片
 - Update navigationBar style **dynamicly** 可以动态调整 navigation bar 样式
 
+### 不同颜色和透明度的 bar 之间的切换
+
 <p>
     <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
         <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-01.gif" width=300>
     </a>
+</p>
+
+### 图片背景的 navigation bar
+
+<p>
     <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
         <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-02.gif" width=300>
     </a>
+</p>
+
+### 动态调整 navigation bar 样式
+
+<p>
     <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
         <img src="https://raw.githubusercontent.com/yiplee/YPNavigationBarTransition/master/screenshots/gif-03.gif" width=300>
     </a>
