@@ -20,13 +20,14 @@
 
 A Fully functional `UINavigationBar` framework for making bar transition more natural! You don't need to call any `UINavigationBar` api, implementing `YPNavigationBarConfigureStyle` protocol for your view controller instead.
 
+类似微信 UINavigationBar 效果的切换方案，支持任意透明半透明图片背景等等不同样式的 UINavigationBar 的切换。
+
 ## features
 
-- Transparent & translucent bar
-- Pure color bar
-- Background image bar
-- update navigationBar style **dynamicly**
-- clear Shadow line
+- Transparent & translucent navigation bar  支持不透明、全透明和半透明的 navigation bar
+- Pure color bar 支持设置 navigation bar 背景颜色
+- Background image bar 支持设置 navigation bar 背景图片
+- Update navigationBar style **dynamicly** 可以动态调整 navigation bar 样式
 
 <p>
     <a href="https://www.youtube.com/watch?v=u8Y-pvqE9_4">
