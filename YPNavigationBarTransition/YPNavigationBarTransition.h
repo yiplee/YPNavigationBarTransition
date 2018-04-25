@@ -31,6 +31,7 @@ FOUNDATION_EXPORT double YPNavigationBarTransitionVersionNumber;
 FOUNDATION_EXPORT const unsigned char YPNavigationBarTransitionVersionString[];
 
 #import <YPNavigationBarTransition/YPNavigationBarProtocol.h>
+#import <YPNavigationBarTransition/YPNavigationController.h>
 #import <YPNavigationBarTransition/YPNavigationBarTransitionCenter.h>
 #import <YPNavigationBarTransition/UIViewController+YPNavigationBarTransition.h>
 

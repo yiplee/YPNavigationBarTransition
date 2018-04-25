@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YPDemoViewController.h"
-#import "YPNavigationController.h"
+#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 
 @interface AppDelegate ()
 
