@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "YPDemoViewController.h"
-#import "YPNavigationController.h"
+#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 
 @interface AppDelegate ()
 
@@ -23,6 +23,7 @@
     
     UIViewController *root = [YPDemoViewController new];
     UINavigationController *nav = [[YPNavigationController alloc] initWithRootViewController:root];
+    nav.view.backgroundColor = [UIColor whiteColor];
     _window.rootViewController = nav;
     [_window makeKeyAndVisible];
     

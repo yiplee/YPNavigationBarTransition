@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4E288849EF5177BECE833524 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */; };
+		E816932C208FF77800244575 /* YPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932A208FF77800244575 /* YPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E816932D208FF77800244575 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932B208FF77800244575 /* YPNavigationController.m */; };
+		E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */; };
+		E8169331208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */; };
+		E8169334208FFAA900244575 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8169333208FFAA900244575 /* YPNavigationController+Configure.m */; };
 		E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */; };
 		E82CC1421FF77A9100A0AE23 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */; };
 		E82CC1441FF77F2000A0AE23 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E82CC1431FF77F2000A0AE23 /* lakeside_sunset.png */; };
@@ -38,7 +43,6 @@
 		E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */; };
 		E8B064951FF2D054007332E8 /* barStyleDiffSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */; };
 		E8B064991FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */; };
-		E8BD65822089F73200E65DC6 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BD65812089F73200E65DC6 /* YPNavigationController.m */; };
 		F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,12 @@
 		A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.release.xcconfig"; sourceTree = "<group>"; };
 		D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		E816932A208FF77800244575 /* YPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
+		E816932B208FF77800244575 /* YPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
+		E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationControllerDelegateProxy.h; sourceTree = "<group>"; };
+		E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationControllerDelegateProxy.m; sourceTree = "<group>"; };
+		E8169332208FFAA900244575 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YPNavigationController+Configure.h"; sourceTree = "<group>"; };
+		E8169333208FFAA900244575 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YPNavigationController+Configure.m"; sourceTree = "<group>"; };
 		E823C3D81FF25B7F0079E90A /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationTitleLabel.h; sourceTree = "<group>"; };
 		E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationTitleLabel.m; sourceTree = "<group>"; };
 		E82CC1401FF77A9100A0AE23 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPGradientDemoViewController.h; sourceTree = "<group>"; };
@@ -103,8 +113,6 @@
 		E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barStyleDiffSpec.m; sourceTree = "<group>"; };
 		E8B064971FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentBlackBarStyleObject.h; sourceTree = "<group>"; };
 		E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentBlackBarStyleObject.m; sourceTree = "<group>"; };
-		E8BD65802089F73200E65DC6 /* YPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
-		E8BD65812089F73200E65DC6 /* YPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +179,8 @@
 		E8B064251FEF4FBC007332E8 /* YPNavigationBarTransition */ = {
 			isa = PBXGroup;
 			children = (
+				E816932A208FF77800244575 /* YPNavigationController.h */,
+				E816932B208FF77800244575 /* YPNavigationController.m */,
 				E8B064261FEF4FBC007332E8 /* YPNavigationBarTransition.h */,
 				E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */,
 				E8B0646F1FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h */,
@@ -203,6 +213,8 @@
 				E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */,
 				E8B064511FEF5039007332E8 /* Info.plist */,
 				E8B064521FEF5039007332E8 /* main.m */,
+				E8169332208FFAA900244575 /* YPNavigationController+Configure.h */,
+				E8169333208FFAA900244575 /* YPNavigationController+Configure.m */,
 				E823C3D81FF25B7F0079E90A /* YPNavigationTitleLabel.h */,
 				E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */,
 				E8B064821FF138E5007332E8 /* YPDemoViewController.h */,
@@ -213,8 +225,6 @@
 				E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */,
 				E82CC1401FF77A9100A0AE23 /* YPGradientDemoViewController.h */,
 				E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */,
-				E8BD65802089F73200E65DC6 /* YPNavigationController.h */,
-				E8BD65812089F73200E65DC6 /* YPNavigationController.m */,
 				E8B0648D1FF15D6E007332E8 /* cells */,
 			);
 			path = "YPNavigationBarTransition-Example";
@@ -232,6 +242,8 @@
 				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
 				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */,
+				E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */,
+				E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */,
 			);
 			path = internal;
 			sourceTree = "<group>";
@@ -275,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */,
+				E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */,
 				E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */,
 				E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */,
+				E816932C208FF77800244575 /* YPNavigationController.h in Headers */,
 				E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */,
 				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
 				E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */,
@@ -354,7 +368,7 @@
 		E8B0641A1FEF4FBC007332E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = yiplee;
 				TargetAttributes = {
 					E8B064221FEF4FBC007332E8 = {
@@ -524,7 +538,9 @@
 			files = (
 				E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */,
 				E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */,
+				E8169331208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m in Sources */,
 				E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */,
+				E816932D208FF77800244575 /* YPNavigationController.m in Sources */,
 				E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */,
 				E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */,
 				E8B0646A1FEFB7B9007332E8 /* UIImage+YPConfigure.m in Sources */,
@@ -549,8 +565,8 @@
 				E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */,
 				E8B064531FEF5039007332E8 /* main.m in Sources */,
 				E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */,
+				E8169334208FFAA900244575 /* YPNavigationController+Configure.m in Sources */,
 				E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */,
-				E8BD65822089F73200E65DC6 /* YPNavigationController.m in Sources */,
 				E82CC1421FF77A9100A0AE23 /* YPGradientDemoViewController.m in Sources */,
 				E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */,
 				E8B064451FEF5039007332E8 /* AppDelegate.m in Sources */,
@@ -594,6 +610,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -601,6 +618,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -653,6 +671,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -660,6 +679,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
