@@ -1,6 +1,6 @@
 PODS:
   - Kiwi (2.4.0)
-  - YPNavigationBarTransition (2.0.2)
+  - YPNavigationBarTransition (2.0.3)
 
 DEPENDENCIES:
   - Kiwi
@@ -12,8 +12,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  YPNavigationBarTransition: 69ccb459629075e16a632b553d3d9019cabb3327
+  YPNavigationBarTransition: bc8ae8a9b2f738900ef91b6811bc381f4effdca8
 
-PODFILE CHECKSUM: 9f4a50710959655015c48f294e66da280698b189
+PODFILE CHECKSUM: f6a4cf8d3273a18565e4238d3f0055a562e52119
 
 COCOAPODS: 1.3.1

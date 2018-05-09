@@ -8,3 +8,8 @@ end
 target 'YPNavigationBarTransition-Example' do
   pod 'YPNavigationBarTransition', :path => './YPNavigationBarTransition.podspec'
 end
+
+target 'SwiftNavigationBarTransition' do
+    pod 'YPNavigationBarTransition', :path => './YPNavigationBarTransition.podspec'
+end
+    
