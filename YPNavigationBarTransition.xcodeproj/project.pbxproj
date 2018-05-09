@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E288849EF5177BECE833524 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */; };
+		6DE16DA486697946A0D5A4BE /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F631DAB21892638D1C6DDA /* libPods-YPNavigationBarTransitionTests.a */; };
+		85197AD4C740D75A377A6808 /* Pods_SwiftNavigationBarTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92857CFEE6F7C62CD29E581 /* Pods_SwiftNavigationBarTransition.framework */; };
+		CE71B9AEF03C541FBFB42EC1 /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6598ADDEEC1E06843FB7C604 /* libPods-YPNavigationBarTransition-Example.a */; };
 		E816932C208FF77800244575 /* YPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932A208FF77800244575 /* YPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E816932D208FF77800244575 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932B208FF77800244575 /* YPNavigationController.m */; };
 		E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */; };
@@ -24,19 +26,19 @@
 		E8B064501FEF5039007332E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */; };
 		E8B064531FEF5039007332E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064521FEF5039007332E8 /* main.m */; };
 		E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */; };
 		E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */; };
-		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; };
 		E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */; };
-		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; };
 		E8B0646A1FEFB7B9007332E8 /* UIImage+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */; };
-		E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */; };
 		E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */; };
 		E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646F1FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
 		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */; };
-		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; };
 		E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064831FF138E5007332E8 /* YPDemoViewController.m */; };
 		E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
 		E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
@@ -47,8 +49,13 @@
 		E8FCC4ED20A33315007480EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FCC4EC20A33315007480EA /* ViewController.swift */; };
 		E8FCC4F220A33317007480EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FCC4F120A33317007480EA /* Assets.xcassets */; };
 		E8FCC4F520A33317007480EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FCC4F320A33317007480EA /* LaunchScreen.storyboard */; };
-		F1C1DB7475544594CBBB4218 /* libPods-SwiftNavigationBarTransition.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C903BFD5B7959D62EFE231 /* libPods-SwiftNavigationBarTransition.a */; };
-		F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */; };
+		E8FCC4FC20A35921007480EA /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */; };
+		E8FCC4FD20A35924007480EA /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064831FF138E5007332E8 /* YPDemoViewController.m */; };
+		E8FCC4FE20A35927007480EA /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
+		E8FCC4FF20A3592A007480EA /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
+		E8FCC50020A3592D007480EA /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */; };
+		E8FCC50220A35A75007480EA /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */; };
+		E8FCC50320A35B73007480EA /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E82CC1431FF77F2000A0AE23 /* lakeside_sunset.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,15 +69,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1396F39E8522E59913D07D9E /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		26D6DD1ECA9E4F82F481956C /* libPods-YPNavigationBarTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		560BFCBC34467B17047BA913 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.debug.xcconfig"; sourceTree = "<group>"; };
-		6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransitionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C903BFD5B7959D62EFE231 /* libPods-SwiftNavigationBarTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftNavigationBarTransition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.release.xcconfig"; sourceTree = "<group>"; };
-		D5A9A2EDFA6D060D0959B6C1 /* Pods-SwiftNavigationBarTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.release.xcconfig"; sourceTree = "<group>"; };
-		D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		08B63130EB6DB2EC03D2BE01 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3526F9E4089A554CE423319E /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		553CB76E7908CA7B79B29C3D /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		6598ADDEEC1E06843FB7C604 /* libPods-YPNavigationBarTransition-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		743DBCFB760AFAD8D0FC6B5D /* Pods-SwiftNavigationBarTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.release.xcconfig"; sourceTree = "<group>"; };
+		9E69FCF45C3C645D0959D6E0 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		B1D2D4673AEBF8A44A8F637F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.release.xcconfig"; sourceTree = "<group>"; };
+		C4F631DAB21892638D1C6DDA /* libPods-YPNavigationBarTransitionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransitionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92857CFEE6F7C62CD29E581 /* Pods_SwiftNavigationBarTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNavigationBarTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E816932A208FF77800244575 /* YPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
 		E816932B208FF77800244575 /* YPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationControllerDelegateProxy.h; sourceTree = "<group>"; };
@@ -127,7 +134,7 @@
 		E8FCC4F120A33317007480EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8FCC4F420A33317007480EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8FCC4F620A33317007480EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E8FCC50120A359C6007480EA /* YPBridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YPBridge-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B0642D1FEF4FBC007332E8 /* YPNavigationBarTransition.framework in Frameworks */,
-				4E288849EF5177BECE833524 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */,
+				6DE16DA486697946A0D5A4BE /* libPods-YPNavigationBarTransitionTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */,
+				CE71B9AEF03C541FBFB42EC1 /* libPods-YPNavigationBarTransition-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,20 +166,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F1C1DB7475544594CBBB4218 /* libPods-SwiftNavigationBarTransition.a in Frameworks */,
+				85197AD4C740D75A377A6808 /* Pods_SwiftNavigationBarTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE5B996B2CA6BF289968F94C /* Frameworks */ = {
+		2FC81AE02EBAB98E22FC40B2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26D6DD1ECA9E4F82F481956C /* libPods-YPNavigationBarTransition.a */,
-				A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */,
-				6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */,
-				B5C903BFD5B7959D62EFE231 /* libPods-SwiftNavigationBarTransition.a */,
+				D92857CFEE6F7C62CD29E581 /* Pods_SwiftNavigationBarTransition.framework */,
+				6598ADDEEC1E06843FB7C604 /* libPods-YPNavigationBarTransition-Example.a */,
+				C4F631DAB21892638D1C6DDA /* libPods-YPNavigationBarTransitionTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -185,8 +191,8 @@
 				E8B064421FEF5039007332E8 /* YPNavigationBarTransition-Example */,
 				E8FCC4E920A33315007480EA /* SwiftNavigationBarTransition */,
 				E8B064241FEF4FBC007332E8 /* Products */,
-				FD2D9A9F595738803EF822ED /* Pods */,
-				DE5B996B2CA6BF289968F94C /* Frameworks */,
+				F839EAA751E7E1B95F5CAF92 /* Pods */,
+				2FC81AE02EBAB98E22FC40B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -297,6 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				E8FCC4EA20A33315007480EA /* AppDelegate.swift */,
+				E8FCC50120A359C6007480EA /* YPBridge-Header.h */,
 				E8FCC4EC20A33315007480EA /* ViewController.swift */,
 				E8FCC4F120A33317007480EA /* Assets.xcassets */,
 				E8FCC4F320A33317007480EA /* LaunchScreen.storyboard */,
@@ -305,15 +312,15 @@
 			path = SwiftNavigationBarTransition;
 			sourceTree = "<group>";
 		};
-		FD2D9A9F595738803EF822ED /* Pods */ = {
+		F839EAA751E7E1B95F5CAF92 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1396F39E8522E59913D07D9E /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */,
-				BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */,
-				EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */,
-				D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */,
-				560BFCBC34467B17047BA913 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */,
-				D5A9A2EDFA6D060D0959B6C1 /* Pods-SwiftNavigationBarTransition.release.xcconfig */,
+				9E69FCF45C3C645D0959D6E0 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */,
+				743DBCFB760AFAD8D0FC6B5D /* Pods-SwiftNavigationBarTransition.release.xcconfig */,
+				08B63130EB6DB2EC03D2BE01 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */,
+				B1D2D4673AEBF8A44A8F637F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */,
+				3526F9E4089A554CE423319E /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */,
+				553CB76E7908CA7B79B29C3D /* Pods-YPNavigationBarTransitionTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -325,15 +332,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */,
 				E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */,
-				E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */,
 				E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */,
 				E816932C208FF77800244575 /* YPNavigationController.h in Headers */,
 				E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */,
-				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
 				E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */,
 				E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */,
+				E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */,
+				E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */,
+				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
 				E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */,
 				E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */,
 			);
@@ -364,12 +371,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B0643A1FEF4FBC007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransitionTests" */;
 			buildPhases = (
-				98578651A939BDD55552A10F /* [CP] Check Pods Manifest.lock */,
+				E88EB2DD01B13C9856F76D8F /* [CP] Check Pods Manifest.lock */,
 				E8B064281FEF4FBC007332E8 /* Sources */,
 				E8B064291FEF4FBC007332E8 /* Frameworks */,
 				E8B0642A1FEF4FBC007332E8 /* Resources */,
-				B64D9A6B71A20348D1674D1A /* [CP] Embed Pods Frameworks */,
-				465CB89B6EE992401273A2EB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -385,12 +390,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B064541FEF5039007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransition-Example" */;
 			buildPhases = (
-				112B24CEC41BEB3B7095DC3E /* [CP] Check Pods Manifest.lock */,
+				C6F5EC8B1C1005AD2549DEDA /* [CP] Check Pods Manifest.lock */,
 				E8B0643D1FEF5039007332E8 /* Sources */,
 				E8B0643E1FEF5039007332E8 /* Frameworks */,
 				E8B0643F1FEF5039007332E8 /* Resources */,
-				2DC1D99AD35F95234FC018B8 /* [CP] Embed Pods Frameworks */,
-				784C4BA1FD2734FBAC6E1C9F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -405,12 +408,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8FCC4F920A33317007480EA /* Build configuration list for PBXNativeTarget "SwiftNavigationBarTransition" */;
 			buildPhases = (
-				750B50DCBD2DCCEB78B4F881 /* [CP] Check Pods Manifest.lock */,
+				66555BD9431410B49A253FBA /* [CP] Check Pods Manifest.lock */,
 				E8FCC4E420A33315007480EA /* Sources */,
 				E8FCC4E520A33315007480EA /* Frameworks */,
 				E8FCC4E620A33315007480EA /* Resources */,
-				73CC9A51724C14982094BDF0 /* [CP] Embed Pods Frameworks */,
-				7DEFAE9324FA1B3E45FE7759 /* [CP] Copy Pods Resources */,
+				8F06B8BF2DCDAC9539AD3AE2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -500,6 +502,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8FCC4F520A33317007480EA /* LaunchScreen.storyboard in Resources */,
+				E8FCC50320A35B73007480EA /* lakeside_sunset.png in Resources */,
 				E8FCC4F220A33317007480EA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,70 +510,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		112B24CEC41BEB3B7095DC3E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YPNavigationBarTransition-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2DC1D99AD35F95234FC018B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		465CB89B6EE992401273A2EB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		73CC9A51724C14982094BDF0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		750B50DCBD2DCCEB78B4F881 /* [CP] Check Pods Manifest.lock */ = {
+		66555BD9431410B49A253FBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -588,37 +528,43 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		784C4BA1FD2734FBAC6E1C9F /* [CP] Copy Pods Resources */ = {
+		8F06B8BF2DCDAC9539AD3AE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YPNavigationBarTransition-framework/YPNavigationBarTransition.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPNavigationBarTransition.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7DEFAE9324FA1B3E45FE7759 /* [CP] Copy Pods Resources */ = {
+		C6F5EC8B1C1005AD2549DEDA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YPNavigationBarTransition-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		98578651A939BDD55552A10F /* [CP] Check Pods Manifest.lock */ = {
+		E88EB2DD01B13C9856F76D8F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -634,21 +580,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B64D9A6B71A20348D1674D1A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -699,7 +630,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8FCC4FC20A35921007480EA /* YPNavigationTitleLabel.m in Sources */,
+				E8FCC50020A3592D007480EA /* YPGradientDemoViewController.m in Sources */,
+				E8FCC4FE20A35927007480EA /* YPDemoConfigureViewController.m in Sources */,
+				E8FCC4FF20A3592A007480EA /* YPDemoContainerViewController.m in Sources */,
 				E8FCC4ED20A33315007480EA /* ViewController.swift in Sources */,
+				E8FCC50220A35A75007480EA /* YPDemoSwitchCell.m in Sources */,
+				E8FCC4FD20A35924007480EA /* YPDemoViewController.m in Sources */,
 				E8FCC4EB20A33315007480EA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -894,7 +831,7 @@
 		};
 		E8B0643B1FEF4FBC007332E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */;
+			baseConfigurationReference = 3526F9E4089A554CE423319E /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
@@ -908,7 +845,7 @@
 		};
 		E8B0643C1FEF4FBC007332E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */;
+			baseConfigurationReference = 553CB76E7908CA7B79B29C3D /* Pods-YPNavigationBarTransitionTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
@@ -922,7 +859,7 @@
 		};
 		E8B064551FEF5039007332E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1396F39E8522E59913D07D9E /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */;
+			baseConfigurationReference = 08B63130EB6DB2EC03D2BE01 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -938,7 +875,7 @@
 		};
 		E8B064561FEF5039007332E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */;
+			baseConfigurationReference = B1D2D4673AEBF8A44A8F637F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -954,18 +891,19 @@
 		};
 		E8FCC4F720A33317007480EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 560BFCBC34467B17047BA913 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */;
+			baseConfigurationReference = 9E69FCF45C3C645D0959D6E0 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
 				INFOPLIST_FILE = SwiftNavigationBarTransition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiplee.SwiftNavigationBarTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNavigationBarTransition/YPBridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -974,17 +912,18 @@
 		};
 		E8FCC4F820A33317007480EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5A9A2EDFA6D060D0959B6C1 /* Pods-SwiftNavigationBarTransition.release.xcconfig */;
+			baseConfigurationReference = 743DBCFB760AFAD8D0FC6B5D /* Pods-SwiftNavigationBarTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
 				INFOPLIST_FILE = SwiftNavigationBarTransition/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiplee.SwiftNavigationBarTransition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftNavigationBarTransition/YPBridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

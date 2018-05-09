@@ -6,14 +6,18 @@ DEPENDENCIES:
   - Kiwi
   - YPNavigationBarTransition (from `./YPNavigationBarTransition.podspec`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Kiwi
+
 EXTERNAL SOURCES:
   YPNavigationBarTransition:
-    :path: ./YPNavigationBarTransition.podspec
+    :path: "./YPNavigationBarTransition.podspec"
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  YPNavigationBarTransition: bc8ae8a9b2f738900ef91b6811bc381f4effdca8
+  YPNavigationBarTransition: 4460835f31c91ac8715b105942f4ca01223acea3
 
-PODFILE CHECKSUM: f6a4cf8d3273a18565e4238d3f0055a562e52119
+PODFILE CHECKSUM: 0b1b3acd282863f54eb028e93ae136e14eeb6b09
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.0

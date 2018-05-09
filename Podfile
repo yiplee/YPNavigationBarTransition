@@ -10,6 +10,7 @@ target 'YPNavigationBarTransition-Example' do
 end
 
 target 'SwiftNavigationBarTransition' do
+    use_frameworks!
     pod 'YPNavigationBarTransition', :path => './YPNavigationBarTransition.podspec'
 end
-    
+
