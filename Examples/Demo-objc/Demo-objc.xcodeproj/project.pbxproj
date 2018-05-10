@@ -12,14 +12,14 @@
 		E8B2E76B20A40E0F002F1456 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E76A20A40E0F002F1456 /* main.m */; };
 		E8B2E77720A40E88002F1456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E77420A40E88002F1456 /* Assets.xcassets */; };
 		E8B2E77820A40E88002F1456 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E77620A40E88002F1456 /* AppDelegate.m */; };
-		E8B2E78920A40EA5002F1456 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E77920A40EA3002F1456 /* YPDemoConfigureViewController.m */; };
-		E8B2E78A20A40EA5002F1456 /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E77A20A40EA3002F1456 /* YPNavigationTitleLabel.m */; };
-		E8B2E78B20A40EA5002F1456 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E77B20A40EA3002F1456 /* YPDemoContainerViewController.m */; };
-		E8B2E78C20A40EA5002F1456 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E78020A40EA3002F1456 /* YPDemoSwitchCell.m */; };
-		E8B2E78D20A40EA5002F1456 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E78220A40EA4002F1456 /* lakeside_sunset.png */; };
-		E8B2E78E20A40EA5002F1456 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E78320A40EA4002F1456 /* YPGradientDemoViewController.m */; };
-		E8B2E78F20A40EA5002F1456 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E78620A40EA4002F1456 /* YPDemoViewController.m */; };
-		E8B2E79020A40EA5002F1456 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E78720A40EA5002F1456 /* YPNavigationController+Configure.m */; };
+		E8B2E7F420A413FB002F1456 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7E620A413FA002F1456 /* YPDemoSwitchCell.m */; };
+		E8B2E7F520A413FB002F1456 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7E720A413FA002F1456 /* YPDemoViewController.m */; };
+		E8B2E7F620A413FB002F1456 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E7EA20A413FA002F1456 /* lakeside_sunset.png */; };
+		E8B2E7F720A413FB002F1456 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7EC20A413FA002F1456 /* YPDemoConfigureViewController.m */; };
+		E8B2E7F820A413FB002F1456 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7ED20A413FA002F1456 /* YPGradientDemoViewController.m */; };
+		E8B2E7F920A413FB002F1456 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7EF20A413FA002F1456 /* YPDemoContainerViewController.m */; };
+		E8B2E7FA20A413FB002F1456 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7F020A413FB002F1456 /* YPNavigationController+Configure.m */; };
+		E8B2E7FB20A413FB002F1456 /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7F320A413FB002F1456 /* YPNavigationTitleLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,21 +33,21 @@
 		E8B2E77420A40E88002F1456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8B2E77520A40E88002F1456 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E8B2E77620A40E88002F1456 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E8B2E77920A40EA3002F1456 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoConfigureViewController.m; sourceTree = "<group>"; };
-		E8B2E77A20A40EA3002F1456 /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNavigationTitleLabel.m; sourceTree = "<group>"; };
-		E8B2E77B20A40EA3002F1456 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoContainerViewController.m; sourceTree = "<group>"; };
-		E8B2E77C20A40EA3002F1456 /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNavigationTitleLabel.h; sourceTree = "<group>"; };
-		E8B2E77D20A40EA3002F1456 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoConfigureViewController.h; sourceTree = "<group>"; };
-		E8B2E77F20A40EA3002F1456 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
-		E8B2E78020A40EA3002F1456 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
-		E8B2E78120A40EA3002F1456 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YPNavigationController+Configure.h"; sourceTree = "<group>"; };
-		E8B2E78220A40EA4002F1456 /* lakeside_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lakeside_sunset.png; sourceTree = "<group>"; };
-		E8B2E78320A40EA4002F1456 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPGradientDemoViewController.m; sourceTree = "<group>"; };
-		E8B2E78420A40EA4002F1456 /* YPDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoViewController.h; sourceTree = "<group>"; };
-		E8B2E78520A40EA4002F1456 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPGradientDemoViewController.h; sourceTree = "<group>"; };
-		E8B2E78620A40EA4002F1456 /* YPDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoViewController.m; sourceTree = "<group>"; };
-		E8B2E78720A40EA5002F1456 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YPNavigationController+Configure.m"; sourceTree = "<group>"; };
-		E8B2E78820A40EA5002F1456 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoContainerViewController.h; sourceTree = "<group>"; };
+		E8B2E7E520A413FA002F1456 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
+		E8B2E7E620A413FA002F1456 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
+		E8B2E7E720A413FA002F1456 /* YPDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoViewController.m; path = ../../share/YPDemoViewController.m; sourceTree = "<group>"; };
+		E8B2E7E820A413FA002F1456 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoConfigureViewController.h; path = ../../share/YPDemoConfigureViewController.h; sourceTree = "<group>"; };
+		E8B2E7E920A413FA002F1456 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPGradientDemoViewController.h; path = ../../share/YPGradientDemoViewController.h; sourceTree = "<group>"; };
+		E8B2E7EA20A413FA002F1456 /* lakeside_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lakeside_sunset.png; path = ../../share/lakeside_sunset.png; sourceTree = "<group>"; };
+		E8B2E7EB20A413FA002F1456 /* YPDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoViewController.h; path = ../../share/YPDemoViewController.h; sourceTree = "<group>"; };
+		E8B2E7EC20A413FA002F1456 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoConfigureViewController.m; path = ../../share/YPDemoConfigureViewController.m; sourceTree = "<group>"; };
+		E8B2E7ED20A413FA002F1456 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPGradientDemoViewController.m; path = ../../share/YPGradientDemoViewController.m; sourceTree = "<group>"; };
+		E8B2E7EE20A413FA002F1456 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YPNavigationController+Configure.h"; path = "../../share/YPNavigationController+Configure.h"; sourceTree = "<group>"; };
+		E8B2E7EF20A413FA002F1456 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoContainerViewController.m; path = ../../share/YPDemoContainerViewController.m; sourceTree = "<group>"; };
+		E8B2E7F020A413FB002F1456 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YPNavigationController+Configure.m"; path = "../../share/YPNavigationController+Configure.m"; sourceTree = "<group>"; };
+		E8B2E7F120A413FB002F1456 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoContainerViewController.h; path = ../../share/YPDemoContainerViewController.h; sourceTree = "<group>"; };
+		E8B2E7F220A413FB002F1456 /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPNavigationTitleLabel.h; path = ../../share/YPNavigationTitleLabel.h; sourceTree = "<group>"; };
+		E8B2E7F320A413FB002F1456 /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPNavigationTitleLabel.m; path = ../../share/YPNavigationTitleLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,37 +100,38 @@
 		E8B2E75A20A40E0E002F1456 /* Demo-objc */ = {
 			isa = PBXGroup;
 			children = (
+				E8B2E7E420A413FA002F1456 /* cells */,
+				E8B2E7EA20A413FA002F1456 /* lakeside_sunset.png */,
+				E8B2E7E820A413FA002F1456 /* YPDemoConfigureViewController.h */,
+				E8B2E7EC20A413FA002F1456 /* YPDemoConfigureViewController.m */,
+				E8B2E7F120A413FB002F1456 /* YPDemoContainerViewController.h */,
+				E8B2E7EF20A413FA002F1456 /* YPDemoContainerViewController.m */,
+				E8B2E7EB20A413FA002F1456 /* YPDemoViewController.h */,
+				E8B2E7E720A413FA002F1456 /* YPDemoViewController.m */,
+				E8B2E7E920A413FA002F1456 /* YPGradientDemoViewController.h */,
+				E8B2E7ED20A413FA002F1456 /* YPGradientDemoViewController.m */,
+				E8B2E7EE20A413FA002F1456 /* YPNavigationController+Configure.h */,
+				E8B2E7F020A413FB002F1456 /* YPNavigationController+Configure.m */,
+				E8B2E7F220A413FB002F1456 /* YPNavigationTitleLabel.h */,
+				E8B2E7F320A413FB002F1456 /* YPNavigationTitleLabel.m */,
 				E8B2E77520A40E88002F1456 /* AppDelegate.h */,
 				E8B2E77620A40E88002F1456 /* AppDelegate.m */,
 				E8B2E77420A40E88002F1456 /* Assets.xcassets */,
 				E8B2E76620A40E0F002F1456 /* LaunchScreen.storyboard */,
 				E8B2E76920A40E0F002F1456 /* Info.plist */,
 				E8B2E76A20A40E0F002F1456 /* main.m */,
-				E8B2E77E20A40EA3002F1456 /* cells */,
-				E8B2E78220A40EA4002F1456 /* lakeside_sunset.png */,
-				E8B2E77D20A40EA3002F1456 /* YPDemoConfigureViewController.h */,
-				E8B2E77920A40EA3002F1456 /* YPDemoConfigureViewController.m */,
-				E8B2E78820A40EA5002F1456 /* YPDemoContainerViewController.h */,
-				E8B2E77B20A40EA3002F1456 /* YPDemoContainerViewController.m */,
-				E8B2E78420A40EA4002F1456 /* YPDemoViewController.h */,
-				E8B2E78620A40EA4002F1456 /* YPDemoViewController.m */,
-				E8B2E78520A40EA4002F1456 /* YPGradientDemoViewController.h */,
-				E8B2E78320A40EA4002F1456 /* YPGradientDemoViewController.m */,
-				E8B2E78120A40EA3002F1456 /* YPNavigationController+Configure.h */,
-				E8B2E78720A40EA5002F1456 /* YPNavigationController+Configure.m */,
-				E8B2E77C20A40EA3002F1456 /* YPNavigationTitleLabel.h */,
-				E8B2E77A20A40EA3002F1456 /* YPNavigationTitleLabel.m */,
 			);
 			path = "Demo-objc";
 			sourceTree = "<group>";
 		};
-		E8B2E77E20A40EA3002F1456 /* cells */ = {
+		E8B2E7E420A413FA002F1456 /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				E8B2E77F20A40EA3002F1456 /* YPDemoSwitchCell.h */,
-				E8B2E78020A40EA3002F1456 /* YPDemoSwitchCell.m */,
+				E8B2E7E520A413FA002F1456 /* YPDemoSwitchCell.h */,
+				E8B2E7E620A413FA002F1456 /* YPDemoSwitchCell.m */,
 			);
-			path = cells;
+			name = cells;
+			path = ../../share/cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B2E77720A40E88002F1456 /* Assets.xcassets in Resources */,
-				E8B2E78D20A40EA5002F1456 /* lakeside_sunset.png in Resources */,
+				E8B2E7F620A413FB002F1456 /* lakeside_sunset.png in Resources */,
 				E8B2E76820A40E0F002F1456 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,15 +245,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8B2E7FB20A413FB002F1456 /* YPNavigationTitleLabel.m in Sources */,
+				E8B2E7F920A413FB002F1456 /* YPDemoContainerViewController.m in Sources */,
+				E8B2E7F820A413FB002F1456 /* YPGradientDemoViewController.m in Sources */,
 				E8B2E77820A40E88002F1456 /* AppDelegate.m in Sources */,
-				E8B2E78E20A40EA5002F1456 /* YPGradientDemoViewController.m in Sources */,
-				E8B2E78C20A40EA5002F1456 /* YPDemoSwitchCell.m in Sources */,
+				E8B2E7FA20A413FB002F1456 /* YPNavigationController+Configure.m in Sources */,
+				E8B2E7F720A413FB002F1456 /* YPDemoConfigureViewController.m in Sources */,
+				E8B2E7F420A413FB002F1456 /* YPDemoSwitchCell.m in Sources */,
+				E8B2E7F520A413FB002F1456 /* YPDemoViewController.m in Sources */,
 				E8B2E76B20A40E0F002F1456 /* main.m in Sources */,
-				E8B2E79020A40EA5002F1456 /* YPNavigationController+Configure.m in Sources */,
-				E8B2E78A20A40EA5002F1456 /* YPNavigationTitleLabel.m in Sources */,
-				E8B2E78B20A40EA5002F1456 /* YPDemoContainerViewController.m in Sources */,
-				E8B2E78F20A40EA5002F1456 /* YPDemoViewController.m in Sources */,
-				E8B2E78920A40EA5002F1456 /* YPDemoConfigureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

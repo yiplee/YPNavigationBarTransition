@@ -11,14 +11,13 @@
 		E8B2E7A820A411AA002F1456 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E7A620A411AA002F1456 /* LaunchScreen.storyboard */; };
 		E8B2E7B220A411F9002F1456 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E7AF20A411F9002F1456 /* Assets.xcassets */; };
 		E8B2E7B320A411F9002F1456 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7B120A411F9002F1456 /* AppDelegate.swift */; };
-		E8B2E7C420A412A5002F1456 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7B420A412A3002F1456 /* YPDemoConfigureViewController.m */; };
-		E8B2E7C520A412A5002F1456 /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7B520A412A3002F1456 /* YPNavigationTitleLabel.m */; };
-		E8B2E7C620A412A5002F1456 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7B620A412A3002F1456 /* YPDemoContainerViewController.m */; };
-		E8B2E7C720A412A5002F1456 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7BB20A412A3002F1456 /* YPDemoSwitchCell.m */; };
-		E8B2E7C820A412A5002F1456 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E7BD20A412A4002F1456 /* lakeside_sunset.png */; };
-		E8B2E7C920A412A5002F1456 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7BE20A412A4002F1456 /* YPGradientDemoViewController.m */; };
-		E8B2E7CA20A412A5002F1456 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7C120A412A5002F1456 /* YPDemoViewController.m */; };
-		E8B2E7CB20A412A5002F1456 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7C220A412A5002F1456 /* YPNavigationController+Configure.m */; };
+		E8B2E7DC20A41378002F1456 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7CE20A41377002F1456 /* YPDemoSwitchCell.m */; };
+		E8B2E7DD20A41378002F1456 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7CF20A41377002F1456 /* YPDemoViewController.m */; };
+		E8B2E7DE20A41378002F1456 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E8B2E7D220A41377002F1456 /* lakeside_sunset.png */; };
+		E8B2E7DF20A41378002F1456 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7D420A41377002F1456 /* YPDemoConfigureViewController.m */; };
+		E8B2E7E020A41378002F1456 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7D520A41377002F1456 /* YPGradientDemoViewController.m */; };
+		E8B2E7E120A41378002F1456 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7D720A41377002F1456 /* YPDemoContainerViewController.m */; };
+		E8B2E7E320A41378002F1456 /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7DB20A41378002F1456 /* YPNavigationTitleLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,21 +29,19 @@
 		E8B2E7AF20A411F9002F1456 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8B2E7B020A411F9002F1456 /* YPBridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YPBridge-Header.h"; sourceTree = "<group>"; };
 		E8B2E7B120A411F9002F1456 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8B2E7B420A412A3002F1456 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoConfigureViewController.m; sourceTree = "<group>"; };
-		E8B2E7B520A412A3002F1456 /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNavigationTitleLabel.m; sourceTree = "<group>"; };
-		E8B2E7B620A412A3002F1456 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoContainerViewController.m; sourceTree = "<group>"; };
-		E8B2E7B720A412A3002F1456 /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNavigationTitleLabel.h; sourceTree = "<group>"; };
-		E8B2E7B820A412A3002F1456 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoConfigureViewController.h; sourceTree = "<group>"; };
-		E8B2E7BA20A412A3002F1456 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
-		E8B2E7BB20A412A3002F1456 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
-		E8B2E7BC20A412A4002F1456 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YPNavigationController+Configure.h"; sourceTree = "<group>"; };
-		E8B2E7BD20A412A4002F1456 /* lakeside_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lakeside_sunset.png; sourceTree = "<group>"; };
-		E8B2E7BE20A412A4002F1456 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPGradientDemoViewController.m; sourceTree = "<group>"; };
-		E8B2E7BF20A412A4002F1456 /* YPDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoViewController.h; sourceTree = "<group>"; };
-		E8B2E7C020A412A4002F1456 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPGradientDemoViewController.h; sourceTree = "<group>"; };
-		E8B2E7C120A412A5002F1456 /* YPDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoViewController.m; sourceTree = "<group>"; };
-		E8B2E7C220A412A5002F1456 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YPNavigationController+Configure.m"; sourceTree = "<group>"; };
-		E8B2E7C320A412A5002F1456 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoContainerViewController.h; sourceTree = "<group>"; };
+		E8B2E7CD20A41377002F1456 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
+		E8B2E7CE20A41377002F1456 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
+		E8B2E7CF20A41377002F1456 /* YPDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoViewController.m; path = ../../share/YPDemoViewController.m; sourceTree = "<group>"; };
+		E8B2E7D020A41377002F1456 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoConfigureViewController.h; path = ../../share/YPDemoConfigureViewController.h; sourceTree = "<group>"; };
+		E8B2E7D120A41377002F1456 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPGradientDemoViewController.h; path = ../../share/YPGradientDemoViewController.h; sourceTree = "<group>"; };
+		E8B2E7D220A41377002F1456 /* lakeside_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lakeside_sunset.png; path = ../../share/lakeside_sunset.png; sourceTree = "<group>"; };
+		E8B2E7D320A41377002F1456 /* YPDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoViewController.h; path = ../../share/YPDemoViewController.h; sourceTree = "<group>"; };
+		E8B2E7D420A41377002F1456 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoConfigureViewController.m; path = ../../share/YPDemoConfigureViewController.m; sourceTree = "<group>"; };
+		E8B2E7D520A41377002F1456 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPGradientDemoViewController.m; path = ../../share/YPGradientDemoViewController.m; sourceTree = "<group>"; };
+		E8B2E7D720A41377002F1456 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoContainerViewController.m; path = ../../share/YPDemoContainerViewController.m; sourceTree = "<group>"; };
+		E8B2E7D920A41378002F1456 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoContainerViewController.h; path = ../../share/YPDemoContainerViewController.h; sourceTree = "<group>"; };
+		E8B2E7DA20A41378002F1456 /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPNavigationTitleLabel.h; path = ../../share/YPNavigationTitleLabel.h; sourceTree = "<group>"; };
+		E8B2E7DB20A41378002F1456 /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPNavigationTitleLabel.m; path = ../../share/YPNavigationTitleLabel.m; sourceTree = "<group>"; };
 		E9CA5E30AAD4EDDD29FCE4DA /* Pods_Demo_swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,36 +95,35 @@
 		E8B2E79C20A411A9002F1456 /* Demo-swift */ = {
 			isa = PBXGroup;
 			children = (
+				E8B2E7CC20A41377002F1456 /* cells */,
+				E8B2E7D220A41377002F1456 /* lakeside_sunset.png */,
+				E8B2E7D020A41377002F1456 /* YPDemoConfigureViewController.h */,
+				E8B2E7D420A41377002F1456 /* YPDemoConfigureViewController.m */,
+				E8B2E7D920A41378002F1456 /* YPDemoContainerViewController.h */,
+				E8B2E7D720A41377002F1456 /* YPDemoContainerViewController.m */,
+				E8B2E7D320A41377002F1456 /* YPDemoViewController.h */,
+				E8B2E7CF20A41377002F1456 /* YPDemoViewController.m */,
+				E8B2E7D120A41377002F1456 /* YPGradientDemoViewController.h */,
+				E8B2E7D520A41377002F1456 /* YPGradientDemoViewController.m */,
+				E8B2E7DA20A41378002F1456 /* YPNavigationTitleLabel.h */,
+				E8B2E7DB20A41378002F1456 /* YPNavigationTitleLabel.m */,
 				E8B2E7B120A411F9002F1456 /* AppDelegate.swift */,
 				E8B2E7AF20A411F9002F1456 /* Assets.xcassets */,
 				E8B2E7B020A411F9002F1456 /* YPBridge-Header.h */,
-				E8B2E7B920A412A3002F1456 /* cells */,
-				E8B2E7BD20A412A4002F1456 /* lakeside_sunset.png */,
-				E8B2E7B820A412A3002F1456 /* YPDemoConfigureViewController.h */,
-				E8B2E7B420A412A3002F1456 /* YPDemoConfigureViewController.m */,
-				E8B2E7C320A412A5002F1456 /* YPDemoContainerViewController.h */,
-				E8B2E7B620A412A3002F1456 /* YPDemoContainerViewController.m */,
-				E8B2E7BF20A412A4002F1456 /* YPDemoViewController.h */,
-				E8B2E7C120A412A5002F1456 /* YPDemoViewController.m */,
-				E8B2E7C020A412A4002F1456 /* YPGradientDemoViewController.h */,
-				E8B2E7BE20A412A4002F1456 /* YPGradientDemoViewController.m */,
-				E8B2E7BC20A412A4002F1456 /* YPNavigationController+Configure.h */,
-				E8B2E7C220A412A5002F1456 /* YPNavigationController+Configure.m */,
-				E8B2E7B720A412A3002F1456 /* YPNavigationTitleLabel.h */,
-				E8B2E7B520A412A3002F1456 /* YPNavigationTitleLabel.m */,
 				E8B2E7A620A411AA002F1456 /* LaunchScreen.storyboard */,
 				E8B2E7A920A411AA002F1456 /* Info.plist */,
 			);
 			path = "Demo-swift";
 			sourceTree = "<group>";
 		};
-		E8B2E7B920A412A3002F1456 /* cells */ = {
+		E8B2E7CC20A41377002F1456 /* cells */ = {
 			isa = PBXGroup;
 			children = (
-				E8B2E7BA20A412A3002F1456 /* YPDemoSwitchCell.h */,
-				E8B2E7BB20A412A3002F1456 /* YPDemoSwitchCell.m */,
+				E8B2E7CD20A41377002F1456 /* YPDemoSwitchCell.h */,
+				E8B2E7CE20A41377002F1456 /* YPDemoSwitchCell.m */,
 			);
-			path = cells;
+			name = cells;
+			path = ../../share/cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B2E7B220A411F9002F1456 /* Assets.xcassets in Resources */,
-				E8B2E7C820A412A5002F1456 /* lakeside_sunset.png in Resources */,
+				E8B2E7DE20A41378002F1456 /* lakeside_sunset.png in Resources */,
 				E8B2E7A820A411AA002F1456 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,14 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B2E7C920A412A5002F1456 /* YPGradientDemoViewController.m in Sources */,
-				E8B2E7C720A412A5002F1456 /* YPDemoSwitchCell.m in Sources */,
-				E8B2E7C520A412A5002F1456 /* YPNavigationTitleLabel.m in Sources */,
-				E8B2E7CB20A412A5002F1456 /* YPNavigationController+Configure.m in Sources */,
 				E8B2E7B320A411F9002F1456 /* AppDelegate.swift in Sources */,
-				E8B2E7C620A412A5002F1456 /* YPDemoContainerViewController.m in Sources */,
-				E8B2E7C420A412A5002F1456 /* YPDemoConfigureViewController.m in Sources */,
-				E8B2E7CA20A412A5002F1456 /* YPDemoViewController.m in Sources */,
+				E8B2E7DF20A41378002F1456 /* YPDemoConfigureViewController.m in Sources */,
+				E8B2E7E120A41378002F1456 /* YPDemoContainerViewController.m in Sources */,
+				E8B2E7DC20A41378002F1456 /* YPDemoSwitchCell.m in Sources */,
+				E8B2E7E020A41378002F1456 /* YPGradientDemoViewController.m in Sources */,
+				E8B2E7E320A41378002F1456 /* YPNavigationTitleLabel.m in Sources */,
+				E8B2E7DD20A41378002F1456 /* YPDemoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

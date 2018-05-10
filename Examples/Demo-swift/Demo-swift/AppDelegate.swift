@@ -19,9 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow.init(frame: frame)
         
         let root = YPDemoViewController.init()
-        root.title = "hahah"
-        root.view.backgroundColor = UIColor.white
         let nav = YPNavigationController.init(rootViewController: root)
+        nav.view.backgroundColor = UIColor.white
         
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
