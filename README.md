@@ -28,6 +28,7 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
 - Pure color bar 支持设置 navigation bar 背景颜色
 - Background image bar 支持设置 navigation bar 背景图片
 - Update navigationBar style **dynamicly** 可以动态调整 navigation bar 样式
+- Written in Objective-C with full Swift interop support
 
 ### 不同颜色和透明度的 bar 之间的切换
 
