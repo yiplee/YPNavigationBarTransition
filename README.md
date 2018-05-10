@@ -97,7 +97,7 @@ import YPNavigationBarTransition
 ### 3. Implement Protocol YPNavigationBarConfigureStyle for YPNavigationController in Category
 
 ```objc
-// objc
+// objc (this will be your app's default navigationbar style)
 @implementation YPNavigationController (Configure)
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
@@ -110,7 +110,7 @@ import YPNavigationBarTransition
 ```
 
 ```swift
-// swift
+// swift (this will be your app's default navigationbar style)
 extension YPNavigationController : NavigationBarConfigureStyle {
     public func yp_navigtionBarConfiguration() -> YPNavigationBarConfigurations {
         return [.styleBlack]
