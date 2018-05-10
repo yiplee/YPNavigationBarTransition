@@ -83,18 +83,21 @@ github "yiplee/YPNavigationBarTransition" ~> 2.0
 ### 1. Import Fraemwork
 
 ```objc
+// objc
 #import <YPNavigationBarTransition/YPNavigationBarTransition.h>
 ```
 
 ```swift
+// swift
 import YPNavigationBarTransition
 ```
 
-### 2. Use YPNavigationController as you base navigation controller instead of UINavigationController
+### 2. Replace UINavigationController with YPNavigationController
 
-### 3. Implement Protocol YPNavigationBarConfigureStyle for YPNavigationController in Category as your app's default navigation bar style
+### 3. Implement Protocol YPNavigationBarConfigureStyle for YPNavigationController in Category
 
 ```objc
+// objc
 @implementation YPNavigationController (Configure)
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
@@ -107,6 +110,7 @@ import YPNavigationBarTransition
 ```
 
 ```swift
+// swift
 extension YPNavigationController : NavigationBarConfigureStyle {
     public func yp_navigtionBarConfiguration() -> YPNavigationBarConfigurations {
         return [.styleBlack]
@@ -118,13 +122,11 @@ extension YPNavigationController : NavigationBarConfigureStyle {
 }
 ```
 
-### 4. Implement Protocol YPNavigationBarConfigureStyle for YPNavigationController's childViewControllers as your needed
-
 ## Build Examples
 
 1. Run ```Pod install```
 2. Open YPNavigationBarTransition.xcworkspace
-3. Select target YPNavigationBarTransition-Example if you are looking for Objective-C demos and SwiftNavigationBarTransition for Swift
+3. Select target YPNavigationBarTransition-Example if you are looking for Objective-C Demo OR SwiftNavigationBarTransition for Swift
 
 
 - [example projects](https://github.com/yiplee/YPNavigationBarTransition/tree/master/YPNavigationBarTransition-Example)
