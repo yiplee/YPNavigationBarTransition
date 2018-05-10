@@ -80,7 +80,7 @@ github "yiplee/YPNavigationBarTransition" ~> 2.0
 
 ## Getting Started
 
-### 1. Import Fraemwork
+### 1. Import Framework
 
 ```objc
 // objc
