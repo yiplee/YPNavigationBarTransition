@@ -6,11 +6,3 @@ target 'YPNavigationBarTransitionTests' do
   pod 'Kiwi', :inhibit_warnings => true
 end
 
-target 'YPNavigationBarTransition-Example' do
-  pod 'YPNavigationBarTransition', :path => './YPNavigationBarTransition.podspec'
-end
-
-target 'SwiftNavigationBarTransition' do
-    pod 'YPNavigationBarTransition', :path => './YPNavigationBarTransition.podspec'
-end
-
