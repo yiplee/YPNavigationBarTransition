@@ -20,7 +20,7 @@
 		E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */; };
 		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */; };
-		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B0646A1FEFB7B9007332E8 /* UIImage+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */; };
 		E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */; };
@@ -145,6 +145,8 @@
 				E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */,
 				E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */,
 				E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */,
+				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
+				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B064271FEF4FBC007332E8 /* Info.plist */,
 				E8B0647E1FF08B68007332E8 /* internal */,
 			);
@@ -170,8 +172,6 @@
 				E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */,
 				E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */,
 				E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */,
-				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
-				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */,
 				E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */,
 				E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */,

@@ -1,0 +1,16 @@
+PODS:
+  - YPNavigationBarTransition (2.0.4)
+
+DEPENDENCIES:
+  - YPNavigationBarTransition (from `../../YPNavigationBarTransition.podspec`)
+
+EXTERNAL SOURCES:
+  YPNavigationBarTransition:
+    :path: "../../YPNavigationBarTransition.podspec"
+
+SPEC CHECKSUMS:
+  YPNavigationBarTransition: d602611df1196bf79c36b9c97c701444972773ca
+
+PODFILE CHECKSUM: 69c4ffe249ac62559c7e1e17dca8a825dbf16040
+
+COCOAPODS: 1.5.0
