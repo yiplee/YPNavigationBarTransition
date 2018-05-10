@@ -9,7 +9,6 @@
 #import "YPGradientDemoViewController.h"
 #import "YPNavigationTitleLabel.h"
 #import "YPDemoConfigureViewController.h"
-#import "UIImage+YPConfigure.h"
 
 @interface YPGradientDemoViewController ()<UITableViewDelegate>
 

@@ -65,6 +65,8 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
 The preferred installation method is with [CocoaPods](https://cocoapods.org). Add the following to your `Podfile`:
 
 ```ruby
+# use_frameworks! is needed for swift projects
+use_frameworks!
 pod 'YPNavigationBarTransition', '~> 2.0'
 ```
 
@@ -77,6 +79,55 @@ github "yiplee/YPNavigationBarTransition" ~> 2.0
 ```
 
 ## Getting Started
+
+### 1. Import Fraemwork
+
+```objc
+// objc
+#import <YPNavigationBarTransition/YPNavigationBarTransition.h>
+```
+
+```swift
+// swift
+import YPNavigationBarTransition
+```
+
+### 2. Replace UINavigationController with YPNavigationController
+
+### 3. Implement Protocol YPNavigationBarConfigureStyle for YPNavigationController in Category
+
+```objc
+// objc
+@implementation YPNavigationController (Configure)
+
+- (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
+    return YPNavigationBarStyleBlack | YPNavigationBarBackgroundStyleTranslucent | YPNavigationBarBackgroundStyleNone;
+}
+
+- (UIColor *) yp_navigationBarTintColor {
+    return [UIColor whiteColor];
+}
+```
+
+```swift
+// swift
+extension YPNavigationController : NavigationBarConfigureStyle {
+    public func yp_navigtionBarConfiguration() -> YPNavigationBarConfigurations {
+        return [.styleBlack]
+    }
+
+    public func yp_navigationBarTintColor() -> UIColor! {
+        return UIColor.white
+    }
+}
+```
+
+## Build Examples
+
+1. Run ```Pod install```
+2. Open YPNavigationBarTransition.xcworkspace
+3. Select target YPNavigationBarTransition-Example if you are looking for Objective-C Demo OR SwiftNavigationBarTransition for Swift
+
 
 - [example projects](https://github.com/yiplee/YPNavigationBarTransition/tree/master/YPNavigationBarTransition-Example)
 - [How To Use 中文](https://github.com/yiplee/YPNavigationBarTransition/blob/master/docs/how_to_use_CN.markdown)

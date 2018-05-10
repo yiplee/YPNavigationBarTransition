@@ -26,6 +26,7 @@ SOFTWARE.
 
 NS_ASSUME_NONNULL_BEGIN
 
+NS_SWIFT_NAME(NavigationBarTransitionCenter)
 @interface YPNavigationBarTransitionCenter : NSObject
 
 - (instancetype) init NS_UNAVAILABLE;

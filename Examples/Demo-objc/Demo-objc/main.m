@@ -1,9 +1,9 @@
 //
 //  main.m
-//  YPNavigationBarTransition-Example
+//  Demo-objc
 //
-//  Created by Guoyin Lee on 24/12/2017.
-//  Copyright © 2017 yiplee. All rights reserved.
+//  Created by Guoyin Lee on 2018/5/10.
+//  Copyright © 2018 yiplee. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

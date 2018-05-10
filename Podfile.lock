@@ -1,19 +1,12 @@
 PODS:
   - Kiwi (2.4.0)
-  - YPNavigationBarTransition (2.0.2)
 
 DEPENDENCIES:
   - Kiwi
-  - YPNavigationBarTransition (from `./YPNavigationBarTransition.podspec`)
-
-EXTERNAL SOURCES:
-  YPNavigationBarTransition:
-    :path: ./YPNavigationBarTransition.podspec
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  YPNavigationBarTransition: 69ccb459629075e16a632b553d3d9019cabb3327
 
-PODFILE CHECKSUM: 9f4a50710959655015c48f294e66da280698b189
+PODFILE CHECKSUM: cc67ff09cb9339e0ee42d87c7af45db04b395224
 
 COCOAPODS: 1.3.1

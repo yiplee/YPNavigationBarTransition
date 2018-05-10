@@ -7,28 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4E288849EF5177BECE833524 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */; };
+		94F2E2C4A480CB379F91383E /* Pods_YPNavigationBarTransitionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A721C792468896088A036960 /* Pods_YPNavigationBarTransitionTests.framework */; };
 		E816932C208FF77800244575 /* YPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932A208FF77800244575 /* YPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E816932D208FF77800244575 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932B208FF77800244575 /* YPNavigationController.m */; };
-		E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */; };
+		E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8169331208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */; };
-		E8169334208FFAA900244575 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8169333208FFAA900244575 /* YPNavigationController+Configure.m */; };
-		E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */; };
-		E82CC1421FF77A9100A0AE23 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */; };
-		E82CC1441FF77F2000A0AE23 /* lakeside_sunset.png in Resources */ = {isa = PBXBuildFile; fileRef = E82CC1431FF77F2000A0AE23 /* lakeside_sunset.png */; };
 		E82CC1471FF7E9F500A0AE23 /* ColorNavigationBarStyleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E82CC1461FF7E9F500A0AE23 /* ColorNavigationBarStyleObject.m */; };
 		E8B0642D1FEF4FBC007332E8 /* YPNavigationBarTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8B064231FEF4FBC007332E8 /* YPNavigationBarTransition.framework */; };
 		E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064261FEF4FBC007332E8 /* YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B064451FEF5039007332E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064441FEF5039007332E8 /* AppDelegate.m */; };
-		E8B0644D1FEF5039007332E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B0644C1FEF5039007332E8 /* Assets.xcassets */; };
-		E8B064501FEF5039007332E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */; };
-		E8B064531FEF5039007332E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064521FEF5039007332E8 /* main.m */; };
 		E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */; };
 		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */; };
-		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B0646A1FEFB7B9007332E8 /* UIImage+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */; };
 		E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */; };
@@ -37,13 +29,8 @@
 		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */; };
 		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064831FF138E5007332E8 /* YPDemoViewController.m */; };
-		E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
-		E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
-		E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */; };
 		E8B064951FF2D054007332E8 /* barStyleDiffSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */; };
 		E8B064991FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */; };
-		F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,23 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1396F39E8522E59913D07D9E /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		26D6DD1ECA9E4F82F481956C /* libPods-YPNavigationBarTransition.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransitionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.release.xcconfig"; sourceTree = "<group>"; };
-		D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		917CA8B734106B8E544A7005 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A721C792468896088A036960 /* Pods_YPNavigationBarTransitionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YPNavigationBarTransitionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E816932A208FF77800244575 /* YPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
 		E816932B208FF77800244575 /* YPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationControllerDelegateProxy.h; sourceTree = "<group>"; };
 		E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationControllerDelegateProxy.m; sourceTree = "<group>"; };
-		E8169332208FFAA900244575 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YPNavigationController+Configure.h"; sourceTree = "<group>"; };
-		E8169333208FFAA900244575 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "YPNavigationController+Configure.m"; sourceTree = "<group>"; };
-		E823C3D81FF25B7F0079E90A /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationTitleLabel.h; sourceTree = "<group>"; };
-		E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPNavigationTitleLabel.m; sourceTree = "<group>"; };
-		E82CC1401FF77A9100A0AE23 /* YPGradientDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPGradientDemoViewController.h; sourceTree = "<group>"; };
-		E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPGradientDemoViewController.m; sourceTree = "<group>"; };
-		E82CC1431FF77F2000A0AE23 /* lakeside_sunset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lakeside_sunset.png; sourceTree = "<group>"; };
 		E82CC1451FF7E9F500A0AE23 /* ColorNavigationBarStyleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorNavigationBarStyleObject.h; sourceTree = "<group>"; };
 		E82CC1461FF7E9F500A0AE23 /* ColorNavigationBarStyleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorNavigationBarStyleObject.m; sourceTree = "<group>"; };
 		E8B064231FEF4FBC007332E8 /* YPNavigationBarTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YPNavigationBarTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,13 +57,6 @@
 		E8B064271FEF4FBC007332E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8B0642C1FEF4FBC007332E8 /* YPNavigationBarTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YPNavigationBarTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8B064331FEF4FBC007332E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8B064411FEF5039007332E8 /* YPNavigationBarTransition-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YPNavigationBarTransition-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E8B064431FEF5039007332E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E8B064441FEF5039007332E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E8B0644C1FEF5039007332E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E8B0644F1FEF5039007332E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E8B064511FEF5039007332E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8B064521FEF5039007332E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationBarProtocol.h; sourceTree = "<group>"; };
 		E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPBarConfiguration.h; sourceTree = "<group>"; };
 		E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPBarConfiguration.m; sourceTree = "<group>"; };
@@ -102,18 +71,10 @@
 		E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YPNavigationBarTransition.h"; sourceTree = "<group>"; };
 		E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YPNavigationBarTransition.m"; sourceTree = "<group>"; };
 		E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationBarTransitionCenterInternal.h; sourceTree = "<group>"; };
-		E8B064821FF138E5007332E8 /* YPDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoViewController.h; sourceTree = "<group>"; };
-		E8B064831FF138E5007332E8 /* YPDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoViewController.m; sourceTree = "<group>"; };
-		E8B064851FF14C85007332E8 /* YPDemoConfigureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoConfigureViewController.h; sourceTree = "<group>"; };
-		E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoConfigureViewController.m; sourceTree = "<group>"; };
-		E8B064881FF14C9D007332E8 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoContainerViewController.h; sourceTree = "<group>"; };
-		E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoContainerViewController.m; sourceTree = "<group>"; };
-		E8B0648E1FF15D8B007332E8 /* YPDemoSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPDemoSwitchCell.h; sourceTree = "<group>"; };
-		E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YPDemoSwitchCell.m; sourceTree = "<group>"; };
 		E8B064941FF2D054007332E8 /* barStyleDiffSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = barStyleDiffSpec.m; sourceTree = "<group>"; };
 		E8B064971FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TranslucentBlackBarStyleObject.h; sourceTree = "<group>"; };
 		E8B064981FF2D1EC007332E8 /* TranslucentBlackBarStyleObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TranslucentBlackBarStyleObject.m; sourceTree = "<group>"; };
-		EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F32DE0788B02669B174D74CC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,29 +90,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B0642D1FEF4FBC007332E8 /* YPNavigationBarTransition.framework in Frameworks */,
-				4E288849EF5177BECE833524 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E8B0643E1FEF5039007332E8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F9E1D6034F9D51F2F838F55E /* libPods-YPNavigationBarTransition-Example.a in Frameworks */,
+				94F2E2C4A480CB379F91383E /* Pods_YPNavigationBarTransitionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DE5B996B2CA6BF289968F94C /* Frameworks */ = {
+		926F6D078CE76879235FF979 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				26D6DD1ECA9E4F82F481956C /* libPods-YPNavigationBarTransition.a */,
-				A73D57A1216987034EA0AC0F /* libPods-YPNavigationBarTransition-Example.a */,
-				6FA232F9EAA767FF51FFD15B /* libPods-YPNavigationBarTransitionTests.a */,
+				A721C792468896088A036960 /* Pods_YPNavigationBarTransitionTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1701DF74667EC58AEA105DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				917CA8B734106B8E544A7005 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */,
+				F32DE0788B02669B174D74CC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E8B064191FEF4FBC007332E8 = {
@@ -159,10 +119,9 @@
 			children = (
 				E8B064251FEF4FBC007332E8 /* YPNavigationBarTransition */,
 				E8B064301FEF4FBC007332E8 /* YPNavigationBarTransitionTests */,
-				E8B064421FEF5039007332E8 /* YPNavigationBarTransition-Example */,
 				E8B064241FEF4FBC007332E8 /* Products */,
-				FD2D9A9F595738803EF822ED /* Pods */,
-				DE5B996B2CA6BF289968F94C /* Frameworks */,
+				E1701DF74667EC58AEA105DE /* Pods */,
+				926F6D078CE76879235FF979 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,7 +130,6 @@
 			children = (
 				E8B064231FEF4FBC007332E8 /* YPNavigationBarTransition.framework */,
 				E8B0642C1FEF4FBC007332E8 /* YPNavigationBarTransitionTests.xctest */,
-				E8B064411FEF5039007332E8 /* YPNavigationBarTransition-Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,6 +145,8 @@
 				E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */,
 				E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */,
 				E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */,
+				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
+				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B064271FEF4FBC007332E8 /* Info.plist */,
 				E8B0647E1FF08B68007332E8 /* internal */,
 			);
@@ -203,33 +163,6 @@
 			path = YPNavigationBarTransitionTests;
 			sourceTree = "<group>";
 		};
-		E8B064421FEF5039007332E8 /* YPNavigationBarTransition-Example */ = {
-			isa = PBXGroup;
-			children = (
-				E82CC1431FF77F2000A0AE23 /* lakeside_sunset.png */,
-				E8B064431FEF5039007332E8 /* AppDelegate.h */,
-				E8B064441FEF5039007332E8 /* AppDelegate.m */,
-				E8B0644C1FEF5039007332E8 /* Assets.xcassets */,
-				E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */,
-				E8B064511FEF5039007332E8 /* Info.plist */,
-				E8B064521FEF5039007332E8 /* main.m */,
-				E8169332208FFAA900244575 /* YPNavigationController+Configure.h */,
-				E8169333208FFAA900244575 /* YPNavigationController+Configure.m */,
-				E823C3D81FF25B7F0079E90A /* YPNavigationTitleLabel.h */,
-				E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */,
-				E8B064821FF138E5007332E8 /* YPDemoViewController.h */,
-				E8B064831FF138E5007332E8 /* YPDemoViewController.m */,
-				E8B064851FF14C85007332E8 /* YPDemoConfigureViewController.h */,
-				E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */,
-				E8B064881FF14C9D007332E8 /* YPDemoContainerViewController.h */,
-				E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */,
-				E82CC1401FF77A9100A0AE23 /* YPGradientDemoViewController.h */,
-				E82CC1411FF77A9100A0AE23 /* YPGradientDemoViewController.m */,
-				E8B0648D1FF15D6E007332E8 /* cells */,
-			);
-			path = "YPNavigationBarTransition-Example";
-			sourceTree = "<group>";
-		};
 		E8B0647E1FF08B68007332E8 /* internal */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,22 +172,11 @@
 				E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */,
 				E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */,
 				E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */,
-				E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */,
-				E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */,
 				E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */,
 				E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */,
 				E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */,
 			);
 			path = internal;
-			sourceTree = "<group>";
-		};
-		E8B0648D1FF15D6E007332E8 /* cells */ = {
-			isa = PBXGroup;
-			children = (
-				E8B0648E1FF15D8B007332E8 /* YPDemoSwitchCell.h */,
-				E8B0648F1FF15D8B007332E8 /* YPDemoSwitchCell.m */,
-			);
-			path = cells;
 			sourceTree = "<group>";
 		};
 		E8B064961FF2D1A7007332E8 /* objects */ = {
@@ -268,17 +190,6 @@
 			path = objects;
 			sourceTree = "<group>";
 		};
-		FD2D9A9F595738803EF822ED /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1396F39E8522E59913D07D9E /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */,
-				BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */,
-				EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */,
-				D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -286,15 +197,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */,
-				E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */,
-				E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */,
 				E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */,
 				E816932C208FF77800244575 /* YPNavigationController.h in Headers */,
 				E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */,
-				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
 				E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */,
 				E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */,
+				E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */,
+				E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */,
+				E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */,
+				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
 				E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */,
 				E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */,
 			);
@@ -325,12 +236,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B0643A1FEF4FBC007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransitionTests" */;
 			buildPhases = (
-				98578651A939BDD55552A10F /* [CP] Check Pods Manifest.lock */,
+				257E187891D1CBC5C2D6AC9D /* [CP] Check Pods Manifest.lock */,
 				E8B064281FEF4FBC007332E8 /* Sources */,
 				E8B064291FEF4FBC007332E8 /* Frameworks */,
 				E8B0642A1FEF4FBC007332E8 /* Resources */,
-				B64D9A6B71A20348D1674D1A /* [CP] Embed Pods Frameworks */,
-				465CB89B6EE992401273A2EB /* [CP] Copy Pods Resources */,
+				86785830A35C515D0AF8F4DE /* [CP] Embed Pods Frameworks */,
+				CA496DB27B90D65C6BFC8A14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,32 +253,13 @@
 			productReference = E8B0642C1FEF4FBC007332E8 /* YPNavigationBarTransitionTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E8B064401FEF5039007332E8 /* YPNavigationBarTransition-Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E8B064541FEF5039007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransition-Example" */;
-			buildPhases = (
-				112B24CEC41BEB3B7095DC3E /* [CP] Check Pods Manifest.lock */,
-				E8B0643D1FEF5039007332E8 /* Sources */,
-				E8B0643E1FEF5039007332E8 /* Frameworks */,
-				E8B0643F1FEF5039007332E8 /* Resources */,
-				2DC1D99AD35F95234FC018B8 /* [CP] Embed Pods Frameworks */,
-				784C4BA1FD2734FBAC6E1C9F /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "YPNavigationBarTransition-Example";
-			productName = "YPNavigationBarTransition-Example";
-			productReference = E8B064411FEF5039007332E8 /* YPNavigationBarTransition-Example.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E8B0641A1FEF4FBC007332E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = yiplee;
 				TargetAttributes = {
@@ -376,10 +268,6 @@
 						ProvisioningStyle = Automatic;
 					};
 					E8B0642B1FEF4FBC007332E8 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					E8B064401FEF5039007332E8 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -400,7 +288,6 @@
 			targets = (
 				E8B064221FEF4FBC007332E8 /* YPNavigationBarTransition */,
 				E8B0642B1FEF4FBC007332E8 /* YPNavigationBarTransitionTests */,
-				E8B064401FEF5039007332E8 /* YPNavigationBarTransition-Example */,
 			);
 		};
 /* End PBXProject section */
@@ -420,83 +307,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8B0643F1FEF5039007332E8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8B064501FEF5039007332E8 /* LaunchScreen.storyboard in Resources */,
-				E82CC1441FF77F2000A0AE23 /* lakeside_sunset.png in Resources */,
-				E8B0644D1FEF5039007332E8 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		112B24CEC41BEB3B7095DC3E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YPNavigationBarTransition-Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2DC1D99AD35F95234FC018B8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		465CB89B6EE992401273A2EB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		784C4BA1FD2734FBAC6E1C9F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		98578651A939BDD55552A10F /* [CP] Check Pods Manifest.lock */ = {
+		257E187891D1CBC5C2D6AC9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -514,19 +328,37 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B64D9A6B71A20348D1674D1A /* [CP] Embed Pods Frameworks */ = {
+		86785830A35C515D0AF8F4DE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kiwi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA496DB27B90D65C6BFC8A14 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -557,22 +389,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8B0643D1FEF5039007332E8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */,
-				E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */,
-				E8B064531FEF5039007332E8 /* main.m in Sources */,
-				E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */,
-				E8169334208FFAA900244575 /* YPNavigationController+Configure.m in Sources */,
-				E8B064901FF15D8B007332E8 /* YPDemoSwitchCell.m in Sources */,
-				E82CC1421FF77A9100A0AE23 /* YPGradientDemoViewController.m in Sources */,
-				E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */,
-				E8B064451FEF5039007332E8 /* AppDelegate.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -582,17 +398,6 @@
 			targetProxy = E8B0642E1FEF4FBC007332E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8B0644F1FEF5039007332E8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E8B064351FEF4FBC007332E8 /* Debug */ = {
@@ -755,7 +560,7 @@
 		};
 		E8B0643B1FEF4FBC007332E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFB685581D272240FC5230E6 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */;
+			baseConfigurationReference = 917CA8B734106B8E544A7005 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
@@ -769,45 +574,13 @@
 		};
 		E8B0643C1FEF4FBC007332E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7DDD0C649C350E28900B7FC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */;
+			baseConfigurationReference = F32DE0788B02669B174D74CC /* Pods-YPNavigationBarTransitionTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
 				INFOPLIST_FILE = YPNavigationBarTransitionTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yiplee.YPNavigationBarTransitionTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		E8B064551FEF5039007332E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1396F39E8522E59913D07D9E /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KZX9YZ3397;
-				INFOPLIST_FILE = "YPNavigationBarTransition-Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yiplee.YPNavigationBarTransition-Example";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		E8B064561FEF5039007332E8 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA7D547D0E529108A8B8216F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KZX9YZ3397;
-				INFOPLIST_FILE = "YPNavigationBarTransition-Example/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.yiplee.YPNavigationBarTransition-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -839,15 +612,6 @@
 			buildConfigurations = (
 				E8B0643B1FEF4FBC007332E8 /* Debug */,
 				E8B0643C1FEF4FBC007332E8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E8B064541FEF5039007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransition-Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E8B064551FEF5039007332E8 /* Debug */,
-				E8B064561FEF5039007332E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

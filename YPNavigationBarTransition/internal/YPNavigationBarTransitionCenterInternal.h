@@ -23,7 +23,7 @@ SOFTWARE.
 */
 
 #import <YPNavigationBarTransition/YPNavigationBarTransitionCenter.h>
-#import "YPBarConfiguration.h"
+#import <YPNavigationBarTransition/YPBarConfiguration.h>
 
 BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to);
 

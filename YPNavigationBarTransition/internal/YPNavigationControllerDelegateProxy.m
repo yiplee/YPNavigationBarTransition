@@ -7,7 +7,7 @@
 //
 
 #import "YPNavigationControllerDelegateProxy.h"
-#import "YPNavigationController.h"
+#import <YPNavigationBarTransition/YPNavigationController.h>
 
 static BOOL isInterceptedSelector(SEL sel) {
     return (

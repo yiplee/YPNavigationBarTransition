@@ -25,7 +25,8 @@ SOFTWARE.
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSUInteger, YPNavigationBarConfigurations) {
+NS_SWIFT_NAME(NavigationBarConfigurations)
+typedef NS_OPTIONS(NSUInteger, YPNavigationBarConfigurations) {
     YPNavigationBarShow   = 0,          // show navigationBar
     YPNavigationBarHidden = 1,          // hide navigationBar
     
@@ -45,6 +46,7 @@ typedef NS_ENUM(NSUInteger, YPNavigationBarConfigurations) {
     YPNavigationBarConfigurationsDefault = 0,
 };
 
+NS_SWIFT_NAME(NavigationBarConfigureStyle)
 @protocol YPNavigationBarConfigureStyle <NSObject>
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration;

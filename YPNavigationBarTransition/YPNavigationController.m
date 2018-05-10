@@ -37,9 +37,7 @@ UINavigationControllerDelegate
         self.delegate = self;
     }
     
-    if (!self.interactivePopGestureRecognizer.delegate) {
-        self.interactivePopGestureRecognizer.delegate = self;
-    }
+    self.interactivePopGestureRecognizer.delegate = self;
 }
 
 - (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
