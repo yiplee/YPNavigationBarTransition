@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6DE16DA486697946A0D5A4BE /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C4F631DAB21892638D1C6DDA /* libPods-YPNavigationBarTransitionTests.a */; };
-		85197AD4C740D75A377A6808 /* Pods_SwiftNavigationBarTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D92857CFEE6F7C62CD29E581 /* Pods_SwiftNavigationBarTransition.framework */; };
-		C3714BB763414AAF055510DE /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A4FEDB97945FC1BB0A8C48 /* libPods-YPNavigationBarTransition-Example.a */; };
+		082863275658D395CCBD113E /* Pods_SwiftNavigationBarTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE6AF1F2931F5A3E9524BAE /* Pods_SwiftNavigationBarTransition.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		89A387D90F94B5A5BA9428A1 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE0BD70565A8FB017FA8B975 /* libPods-YPNavigationBarTransitionTests.a */; };
+		C86688B1CCE4CF9D512A94DB /* libPods-YPNavigationBarTransition-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E478AEDD57192C868874877 /* libPods-YPNavigationBarTransition-Example.a */; };
 		E816932C208FF77800244575 /* YPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932A208FF77800244575 /* YPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E816932D208FF77800244575 /* YPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932B208FF77800244575 /* YPNavigationController.m */; };
-		E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */; };
+		E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8169331208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E816932F208FF7BA00244575 /* YPNavigationControllerDelegateProxy.m */; };
 		E8169334208FFAA900244575 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8169333208FFAA900244575 /* YPNavigationController+Configure.m */; };
 		E823C3DA1FF25B7F0079E90A /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E823C3D91FF25B7F0079E90A /* YPNavigationTitleLabel.m */; };
@@ -26,19 +26,19 @@
 		E8B064501FEF5039007332E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B0644E1FEF5039007332E8 /* LaunchScreen.storyboard */; };
 		E8B064531FEF5039007332E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064521FEF5039007332E8 /* main.m */; };
 		E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645C1FEF5349007332E8 /* YPNavigationBarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */; };
+		E8B064601FEFA95E007332E8 /* YPBarConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0645E1FEFA95E007332E8 /* YPBarConfiguration.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064611FEFA95E007332E8 /* YPBarConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0645F1FEFA95E007332E8 /* YPBarConfiguration.m */; };
-		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; };
+		E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064631FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064661FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064641FEFB6A0007332E8 /* UINavigationBar+YPConfigure.m */; };
-		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; };
+		E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064671FEFB7B9007332E8 /* UIImage+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B0646A1FEFB7B9007332E8 /* UIImage+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064681FEFB7B9007332E8 /* UIImage+YPConfigure.m */; };
-		E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */; };
+		E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646B1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B0646E1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B0646C1FEFCA0C007332E8 /* UIToolbar+YPConfigure.m */; };
 		E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0646F1FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064721FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064701FEFCB19007332E8 /* YPNavigationBarTransitionCenter.m */; };
 		E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B064741FEFE1DE007332E8 /* UIViewController+YPNavigationBarTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E8B064771FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064751FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.m */; };
-		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; };
+		E8B0647D1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = E8B0647C1FF03693007332E8 /* YPNavigationBarTransitionCenterInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		E8B064841FF138E5007332E8 /* YPDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064831FF138E5007332E8 /* YPDemoViewController.m */; };
 		E8B064871FF14C85007332E8 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064861FF14C85007332E8 /* YPDemoConfigureViewController.m */; };
 		E8B0648A1FF14C9D007332E8 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B064891FF14C9D007332E8 /* YPDemoContainerViewController.m */; };
@@ -69,15 +69,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08B63130EB6DB2EC03D2BE01 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3526F9E4089A554CE423319E /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
-		54A4FEDB97945FC1BB0A8C48 /* libPods-YPNavigationBarTransition-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		553CB76E7908CA7B79B29C3D /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
-		743DBCFB760AFAD8D0FC6B5D /* Pods-SwiftNavigationBarTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.release.xcconfig"; sourceTree = "<group>"; };
-		9E69FCF45C3C645D0959D6E0 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.debug.xcconfig"; sourceTree = "<group>"; };
-		B1D2D4673AEBF8A44A8F637F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.release.xcconfig"; sourceTree = "<group>"; };
-		C4F631DAB21892638D1C6DDA /* libPods-YPNavigationBarTransitionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransitionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D92857CFEE6F7C62CD29E581 /* Pods_SwiftNavigationBarTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNavigationBarTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0162EC821476791B189D222F /* Pods-YPNavigationBarTransitionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.release.xcconfig"; sourceTree = "<group>"; };
+		2BE6AF1F2931F5A3E9524BAE /* Pods_SwiftNavigationBarTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNavigationBarTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B027F98DD1FA6D10C6EE64C /* Pods-YPNavigationBarTransition-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.release.xcconfig"; sourceTree = "<group>"; };
+		61ABA791E59A842EFA71B2C8 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransitionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E478AEDD57192C868874877 /* libPods-YPNavigationBarTransition-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransition-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80E95C2B8AB913C138E05C8 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YPNavigationBarTransition-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DB3574A2904FB78A11A0963E /* Pods-SwiftNavigationBarTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.debug.xcconfig"; sourceTree = "<group>"; };
+		DE0BD70565A8FB017FA8B975 /* libPods-YPNavigationBarTransitionTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YPNavigationBarTransitionTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E816932A208FF77800244575 /* YPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPNavigationController.h; sourceTree = "<group>"; };
 		E816932B208FF77800244575 /* YPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPNavigationController.m; sourceTree = "<group>"; };
 		E816932E208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YPNavigationControllerDelegateProxy.h; sourceTree = "<group>"; };
@@ -135,6 +134,7 @@
 		E8FCC4F420A33317007480EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8FCC4F620A33317007480EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8FCC50120A359C6007480EA /* YPBridge-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YPBridge-Header.h"; sourceTree = "<group>"; };
+		FFCA6E800EF1CCD868EC33C5 /* Pods-SwiftNavigationBarTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNavigationBarTransition.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8B0642D1FEF4FBC007332E8 /* YPNavigationBarTransition.framework in Frameworks */,
-				6DE16DA486697946A0D5A4BE /* libPods-YPNavigationBarTransitionTests.a in Frameworks */,
+				89A387D90F94B5A5BA9428A1 /* libPods-YPNavigationBarTransitionTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3714BB763414AAF055510DE /* libPods-YPNavigationBarTransition-Example.a in Frameworks */,
+				C86688B1CCE4CF9D512A94DB /* libPods-YPNavigationBarTransition-Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,21 +166,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85197AD4C740D75A377A6808 /* Pods_SwiftNavigationBarTransition.framework in Frameworks */,
+				082863275658D395CCBD113E /* Pods_SwiftNavigationBarTransition.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FC81AE02EBAB98E22FC40B2 /* Frameworks */ = {
+		26645A60C9AF5FE932D37C84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D92857CFEE6F7C62CD29E581 /* Pods_SwiftNavigationBarTransition.framework */,
-				C4F631DAB21892638D1C6DDA /* libPods-YPNavigationBarTransitionTests.a */,
-				54A4FEDB97945FC1BB0A8C48 /* libPods-YPNavigationBarTransition-Example.a */,
+				2BE6AF1F2931F5A3E9524BAE /* Pods_SwiftNavigationBarTransition.framework */,
+				8E478AEDD57192C868874877 /* libPods-YPNavigationBarTransition-Example.a */,
+				DE0BD70565A8FB017FA8B975 /* libPods-YPNavigationBarTransitionTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		711C16B05785567AB2470A3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB3574A2904FB78A11A0963E /* Pods-SwiftNavigationBarTransition.debug.xcconfig */,
+				FFCA6E800EF1CCD868EC33C5 /* Pods-SwiftNavigationBarTransition.release.xcconfig */,
+				D80E95C2B8AB913C138E05C8 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */,
+				4B027F98DD1FA6D10C6EE64C /* Pods-YPNavigationBarTransition-Example.release.xcconfig */,
+				61ABA791E59A842EFA71B2C8 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */,
+				0162EC821476791B189D222F /* Pods-YPNavigationBarTransitionTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		E8B064191FEF4FBC007332E8 = {
@@ -191,8 +204,8 @@
 				E8B064421FEF5039007332E8 /* YPNavigationBarTransition-Example */,
 				E8FCC4E920A33315007480EA /* SwiftNavigationBarTransition */,
 				E8B064241FEF4FBC007332E8 /* Products */,
-				F839EAA751E7E1B95F5CAF92 /* Pods */,
-				2FC81AE02EBAB98E22FC40B2 /* Frameworks */,
+				711C16B05785567AB2470A3C /* Pods */,
+				26645A60C9AF5FE932D37C84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,19 +325,6 @@
 			path = SwiftNavigationBarTransition;
 			sourceTree = "<group>";
 		};
-		F839EAA751E7E1B95F5CAF92 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9E69FCF45C3C645D0959D6E0 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */,
-				743DBCFB760AFAD8D0FC6B5D /* Pods-SwiftNavigationBarTransition.release.xcconfig */,
-				08B63130EB6DB2EC03D2BE01 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */,
-				B1D2D4673AEBF8A44A8F637F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */,
-				3526F9E4089A554CE423319E /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */,
-				553CB76E7908CA7B79B29C3D /* Pods-YPNavigationBarTransitionTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -332,12 +332,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */,
 				E8B064341FEF4FBC007332E8 /* YPNavigationBarTransition.h in Headers */,
 				E816932C208FF77800244575 /* YPNavigationController.h in Headers */,
 				E8B064761FEFE1DF007332E8 /* UIViewController+YPNavigationBarTransition.h in Headers */,
 				E8B0645D1FEF5349007332E8 /* YPNavigationBarProtocol.h in Headers */,
 				E8B064711FEFCB19007332E8 /* YPNavigationBarTransitionCenter.h in Headers */,
+				E8169330208FF7BA00244575 /* YPNavigationControllerDelegateProxy.h in Headers */,
 				E8B0646D1FEFCA0C007332E8 /* UIToolbar+YPConfigure.h in Headers */,
 				E8B064651FEFB6A0007332E8 /* UINavigationBar+YPConfigure.h in Headers */,
 				E8B064691FEFB7B9007332E8 /* UIImage+YPConfigure.h in Headers */,
@@ -371,7 +371,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B0643A1FEF4FBC007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransitionTests" */;
 			buildPhases = (
-				E88EB2DD01B13C9856F76D8F /* [CP] Check Pods Manifest.lock */,
+				4D9DC1D9C1B41F3355271117 /* [CP] Check Pods Manifest.lock */,
 				E8B064281FEF4FBC007332E8 /* Sources */,
 				E8B064291FEF4FBC007332E8 /* Frameworks */,
 				E8B0642A1FEF4FBC007332E8 /* Resources */,
@@ -390,7 +390,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8B064541FEF5039007332E8 /* Build configuration list for PBXNativeTarget "YPNavigationBarTransition-Example" */;
 			buildPhases = (
-				C6F5EC8B1C1005AD2549DEDA /* [CP] Check Pods Manifest.lock */,
+				9AF9DC45041DF99F0611B407 /* [CP] Check Pods Manifest.lock */,
 				E8B0643D1FEF5039007332E8 /* Sources */,
 				E8B0643E1FEF5039007332E8 /* Frameworks */,
 				E8B0643F1FEF5039007332E8 /* Resources */,
@@ -408,11 +408,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E8FCC4F920A33317007480EA /* Build configuration list for PBXNativeTarget "SwiftNavigationBarTransition" */;
 			buildPhases = (
-				66555BD9431410B49A253FBA /* [CP] Check Pods Manifest.lock */,
+				9EBC9D5AA98393BD84F59A9A /* [CP] Check Pods Manifest.lock */,
 				E8FCC4E420A33315007480EA /* Sources */,
 				E8FCC4E520A33315007480EA /* Frameworks */,
 				E8FCC4E620A33315007480EA /* Resources */,
-				8F06B8BF2DCDAC9539AD3AE2 /* [CP] Embed Pods Frameworks */,
+				9287806DBCDDD6F0234F276F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,7 +510,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		66555BD9431410B49A253FBA /* [CP] Check Pods Manifest.lock */ = {
+		4D9DC1D9C1B41F3355271117 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,14 +521,14 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftNavigationBarTransition-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-YPNavigationBarTransitionTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8F06B8BF2DCDAC9539AD3AE2 /* [CP] Embed Pods Frameworks */ = {
+		9287806DBCDDD6F0234F276F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -546,7 +546,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C6F5EC8B1C1005AD2549DEDA /* [CP] Check Pods Manifest.lock */ = {
+		9AF9DC45041DF99F0611B407 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -564,7 +564,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E88EB2DD01B13C9856F76D8F /* [CP] Check Pods Manifest.lock */ = {
+		9EBC9D5AA98393BD84F59A9A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -575,7 +575,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-YPNavigationBarTransitionTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SwiftNavigationBarTransition-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -831,7 +831,7 @@
 		};
 		E8B0643B1FEF4FBC007332E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3526F9E4089A554CE423319E /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */;
+			baseConfigurationReference = 61ABA791E59A842EFA71B2C8 /* Pods-YPNavigationBarTransitionTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
@@ -845,7 +845,7 @@
 		};
 		E8B0643C1FEF4FBC007332E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 553CB76E7908CA7B79B29C3D /* Pods-YPNavigationBarTransitionTests.release.xcconfig */;
+			baseConfigurationReference = 0162EC821476791B189D222F /* Pods-YPNavigationBarTransitionTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KZX9YZ3397;
@@ -859,7 +859,7 @@
 		};
 		E8B064551FEF5039007332E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08B63130EB6DB2EC03D2BE01 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */;
+			baseConfigurationReference = D80E95C2B8AB913C138E05C8 /* Pods-YPNavigationBarTransition-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -875,7 +875,7 @@
 		};
 		E8B064561FEF5039007332E8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1D2D4673AEBF8A44A8F637F /* Pods-YPNavigationBarTransition-Example.release.xcconfig */;
+			baseConfigurationReference = 4B027F98DD1FA6D10C6EE64C /* Pods-YPNavigationBarTransition-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -891,7 +891,7 @@
 		};
 		E8FCC4F720A33317007480EA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E69FCF45C3C645D0959D6E0 /* Pods-SwiftNavigationBarTransition.debug.xcconfig */;
+			baseConfigurationReference = DB3574A2904FB78A11A0963E /* Pods-SwiftNavigationBarTransition.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -912,7 +912,7 @@
 		};
 		E8FCC4F820A33317007480EA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 743DBCFB760AFAD8D0FC6B5D /* Pods-SwiftNavigationBarTransition.release.xcconfig */;
+			baseConfigurationReference = FFCA6E800EF1CCD868EC33C5 /* Pods-SwiftNavigationBarTransition.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_WEAK = YES;

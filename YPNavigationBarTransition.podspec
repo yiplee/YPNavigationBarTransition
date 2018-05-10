@@ -26,6 +26,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/yiplee/YPNavigationBarTransition.git", :tag => s.version.to_s}
 
   s.source_files  = "YPNavigationBarTransition/**/*.{h,m}"
+  s.public_header_files = 'YPNavigationBarTransition/*.h'
   s.private_header_files = "YPNavigationBarTransition/internal/*.h"
 
   s.frameworks = "UIKit" ,"Foundation"

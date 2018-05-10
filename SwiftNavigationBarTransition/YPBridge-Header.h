@@ -9,8 +9,6 @@
 #ifndef YPBridge_Header_h
 #define YPBridge_Header_h
 
-//#import "YPNavigationTitleLabel.h"
 #import "YPDemoViewController.h"
-//#import "YPDemoConfigureViewController.h"
 
 #endif /* YPBridge_Header_h */

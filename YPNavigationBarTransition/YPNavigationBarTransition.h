@@ -24,26 +24,15 @@ SOFTWARE.
 
 #import <UIKit/UIKit.h>
 
-#if __has_include(<YPNavigationBarTransition/YPNavigationBarTransition.h>)
-
 //! Project version number for YPNavigationBarTransition.
 FOUNDATION_EXPORT double YPNavigationBarTransitionVersionNumber;
 
 //! Project version string for YPNavigationBarTransition.
 FOUNDATION_EXPORT const unsigned char YPNavigationBarTransitionVersionString[];
-
+//
 #import <YPNavigationBarTransition/YPNavigationBarProtocol.h>
 #import <YPNavigationBarTransition/YPNavigationController.h>
 #import <YPNavigationBarTransition/YPNavigationBarTransitionCenter.h>
 #import <YPNavigationBarTransition/UIViewController+YPNavigationBarTransition.h>
-
-#else
-
-#import "YPNavigationBarProtocol.h"
-#import "YPNavigationController.h"
-#import "YPNavigationBarTransitionCenter.h"
-#import "UIViewController+YPNavigationBarTransition.h"
-
-#endif
 
 
