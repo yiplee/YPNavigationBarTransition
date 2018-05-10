@@ -69,14 +69,14 @@ bar style 是 YPNavigationBarStyleLight 的话，将使用黑色作为 tintColor
 ## 动态改变 NavigationBar 的样式 ##
 
 在合适的时机调用 UIViewController 的方法 yp_refreshNavigationBarStyle，即可将 UIViewController 实现的 ```YPNavigationBarConfigureStyle``` 当前
-样式同步到 navigation bar 上。参考 Example 里面的 [YPGradientDemoViewController](https://github.com/yiplee/YPNavigationBarTransition/blob/c1c1b4d839fe79848d08791b99bd648e3fb013e8/YPNavigationBarTransition-Example/YPGradientDemoViewController.m#L149)
+样式同步到 navigation bar 上。参考 Example 里面的 [YPGradientDemoViewController](https://github.com/yiplee/YPNavigationBarTransition/blob/master/Examples/share/YPGradientDemoViewController.m#L148)
 
 ## 最佳实践 ##
 
 **默认 YPNavigationBarConfigureStyle 实现**  自 **2.0.2** 版本开始，封装了 center 的 YPNavigationController 已内置在 framework 内，只需要给 YPNavigationController 加一个 Category 实现YPNavigationBarConfigureStyle 协议即可。
 
 **NavigationItem Title** 建议使用一个 UILabel 作为 navigationItem 的 titleView 来展现页面 title，这样可以让页面完全自己控制 title 的颜色、
-字体等等，并且还可以实现 subtitle。可以参考 Example 里面的 [YPNavigationTitleLabel](https://github.com/yiplee/YPNavigationBarTransition/blob/master/YPNavigationBarTransition-Example/YPNavigationTitleLabel.m)。
+字体等等，并且还可以实现 subtitle。可以参考 Example 里面的 [YPNavigationTitleLabel](https://github.com/yiplee/YPNavigationBarTransition/blob/master/Examples/share/YPNavigationTitleLabel.m)。
 
 **ScrollView 跳动问题** 在转场过程中，navigationBar 的 translucent 属性可能发生了改变，
 然后导致了 scrollView 的 frame 和 contentInset 发生改变，页面展示内容位置变化。如果遇到这种情况，建议设置对应 controller 的 extendedLayoutIncludesOpaqueBars （IB 里面的 under opaque bar） 为 YES，即可避开这个问题。 

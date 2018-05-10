@@ -122,14 +122,7 @@ extension YPNavigationController : NavigationBarConfigureStyle {
 }
 ```
 
-## Build Examples
-
-1. Run ```Pod install```
-2. Open YPNavigationBarTransition.xcworkspace
-3. Select target YPNavigationBarTransition-Example if you are looking for Objective-C Demo OR SwiftNavigationBarTransition for Swift
-
-
-- [example projects](https://github.com/yiplee/YPNavigationBarTransition/tree/master/YPNavigationBarTransition-Example)
+- [example projects](https://github.com/yiplee/YPNavigationBarTransition/tree/master/Examples)
 - [How To Use 中文](https://github.com/yiplee/YPNavigationBarTransition/blob/master/docs/how_to_use_CN.markdown)
 
 ## License
