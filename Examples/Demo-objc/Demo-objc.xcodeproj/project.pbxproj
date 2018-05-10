@@ -18,8 +18,8 @@
 		E8B2E7F720A413FB002F1456 /* YPDemoConfigureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7EC20A413FA002F1456 /* YPDemoConfigureViewController.m */; };
 		E8B2E7F820A413FB002F1456 /* YPGradientDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7ED20A413FA002F1456 /* YPGradientDemoViewController.m */; };
 		E8B2E7F920A413FB002F1456 /* YPDemoContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7EF20A413FA002F1456 /* YPDemoContainerViewController.m */; };
-		E8B2E7FA20A413FB002F1456 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7F020A413FB002F1456 /* YPNavigationController+Configure.m */; };
 		E8B2E7FB20A413FB002F1456 /* YPNavigationTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7F320A413FB002F1456 /* YPNavigationTitleLabel.m */; };
+		E8B2E7FE20A41518002F1456 /* YPNavigationController+Configure.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B2E7FC20A41517002F1456 /* YPNavigationController+Configure.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,12 +42,12 @@
 		E8B2E7EB20A413FA002F1456 /* YPDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoViewController.h; path = ../../share/YPDemoViewController.h; sourceTree = "<group>"; };
 		E8B2E7EC20A413FA002F1456 /* YPDemoConfigureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoConfigureViewController.m; path = ../../share/YPDemoConfigureViewController.m; sourceTree = "<group>"; };
 		E8B2E7ED20A413FA002F1456 /* YPGradientDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPGradientDemoViewController.m; path = ../../share/YPGradientDemoViewController.m; sourceTree = "<group>"; };
-		E8B2E7EE20A413FA002F1456 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "YPNavigationController+Configure.h"; path = "../../share/YPNavigationController+Configure.h"; sourceTree = "<group>"; };
 		E8B2E7EF20A413FA002F1456 /* YPDemoContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPDemoContainerViewController.m; path = ../../share/YPDemoContainerViewController.m; sourceTree = "<group>"; };
-		E8B2E7F020A413FB002F1456 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "YPNavigationController+Configure.m"; path = "../../share/YPNavigationController+Configure.m"; sourceTree = "<group>"; };
 		E8B2E7F120A413FB002F1456 /* YPDemoContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPDemoContainerViewController.h; path = ../../share/YPDemoContainerViewController.h; sourceTree = "<group>"; };
 		E8B2E7F220A413FB002F1456 /* YPNavigationTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YPNavigationTitleLabel.h; path = ../../share/YPNavigationTitleLabel.h; sourceTree = "<group>"; };
 		E8B2E7F320A413FB002F1456 /* YPNavigationTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YPNavigationTitleLabel.m; path = ../../share/YPNavigationTitleLabel.m; sourceTree = "<group>"; };
+		E8B2E7FC20A41517002F1456 /* YPNavigationController+Configure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "YPNavigationController+Configure.m"; sourceTree = "<group>"; };
+		E8B2E7FD20A41518002F1456 /* YPNavigationController+Configure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YPNavigationController+Configure.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +110,10 @@
 				E8B2E7E720A413FA002F1456 /* YPDemoViewController.m */,
 				E8B2E7E920A413FA002F1456 /* YPGradientDemoViewController.h */,
 				E8B2E7ED20A413FA002F1456 /* YPGradientDemoViewController.m */,
-				E8B2E7EE20A413FA002F1456 /* YPNavigationController+Configure.h */,
-				E8B2E7F020A413FB002F1456 /* YPNavigationController+Configure.m */,
 				E8B2E7F220A413FB002F1456 /* YPNavigationTitleLabel.h */,
 				E8B2E7F320A413FB002F1456 /* YPNavigationTitleLabel.m */,
+				E8B2E7FD20A41518002F1456 /* YPNavigationController+Configure.h */,
+				E8B2E7FC20A41517002F1456 /* YPNavigationController+Configure.m */,
 				E8B2E77520A40E88002F1456 /* AppDelegate.h */,
 				E8B2E77620A40E88002F1456 /* AppDelegate.m */,
 				E8B2E77420A40E88002F1456 /* Assets.xcassets */,
@@ -249,7 +249,7 @@
 				E8B2E7F920A413FB002F1456 /* YPDemoContainerViewController.m in Sources */,
 				E8B2E7F820A413FB002F1456 /* YPGradientDemoViewController.m in Sources */,
 				E8B2E77820A40E88002F1456 /* AppDelegate.m in Sources */,
-				E8B2E7FA20A413FB002F1456 /* YPNavigationController+Configure.m in Sources */,
+				E8B2E7FE20A41518002F1456 /* YPNavigationController+Configure.m in Sources */,
 				E8B2E7F720A413FB002F1456 /* YPDemoConfigureViewController.m in Sources */,
 				E8B2E7F420A413FB002F1456 /* YPDemoSwitchCell.m in Sources */,
 				E8B2E7F520A413FB002F1456 /* YPDemoViewController.m in Sources */,
