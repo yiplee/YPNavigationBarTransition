@@ -375,6 +375,8 @@
 				E8B064281FEF4FBC007332E8 /* Sources */,
 				E8B064291FEF4FBC007332E8 /* Frameworks */,
 				E8B0642A1FEF4FBC007332E8 /* Resources */,
+				432B7FC62B0BACCF3950FAB3 /* [CP] Embed Pods Frameworks */,
+				4CD9B1EB8ED485E39385FA52 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -394,6 +396,8 @@
 				E8B0643D1FEF5039007332E8 /* Sources */,
 				E8B0643E1FEF5039007332E8 /* Frameworks */,
 				E8B0643F1FEF5039007332E8 /* Resources */,
+				9BC0301BE0979DD3E7EB1BD5 /* [CP] Embed Pods Frameworks */,
+				84D5CEBFB2B4CC453E434DEE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,6 +417,7 @@
 				E8FCC4E520A33315007480EA /* Frameworks */,
 				E8FCC4E620A33315007480EA /* Resources */,
 				8F06B8BF2DCDAC9539AD3AE2 /* [CP] Embed Pods Frameworks */,
+				72984D3144D0F0D18B179DF5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -510,6 +515,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		432B7FC62B0BACCF3950FAB3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CD9B1EB8ED485E39385FA52 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		66555BD9431410B49A253FBA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +563,36 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		72984D3144D0F0D18B179DF5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84D5CEBFB2B4CC453E434DEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		8F06B8BF2DCDAC9539AD3AE2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,6 +609,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNavigationBarTransition/Pods-SwiftNavigationBarTransition-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BC0301BE0979DD3E7EB1BD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransition-Example/Pods-YPNavigationBarTransition-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6F5EC8B1C1005AD2549DEDA /* [CP] Check Pods Manifest.lock */ = {
