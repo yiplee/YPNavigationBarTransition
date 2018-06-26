@@ -109,12 +109,6 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 - (void) navigationController:(UINavigationController *)navigationController
        willShowViewController:(UIViewController *)viewController
                      animated:(BOOL)animated {
-    if (!animated) {
-        // If animated if false, navigation controller will call did show immediately
-        // So Fake bar is not needed any more
-        // just return is ok
-        return;
-    }
     
     YPBarConfiguration *currentConfigure = [navigationController.navigationBar currentBarConfigure] ?: self.defaultBarConfigure;
     YPBarConfiguration *showConfigure = self.defaultBarConfigure;
@@ -148,6 +142,13 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         [navigationBar yp_applyBarConfiguration:transparentConfigure ?: showConfigure];
     } else {
         [navigationBar yp_adjustWithBarStyle:showConfigure.barStyle tintColor:currentConfigure.tintColor];
+    }
+    
+    if (!animated) {
+        // If animated if false, navigation controller will call did show immediately
+        // So Fake bar is not needed any more
+        // just return is ok
+        return;
     }
     
     [navigationController.transitionCoordinator
