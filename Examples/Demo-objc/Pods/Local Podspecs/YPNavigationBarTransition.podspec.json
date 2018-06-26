@@ -1,6 +1,6 @@
 {
   "name": "YPNavigationBarTransition",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "summary": "A Fully functional UINavigationBar framework for making bar transition more natural!",
   "description": "A Fully functional UINavigationBar framework for making bar transition more natural! You don't need to call any UINavigationBar api, implementing YPNavigationBarConfigureStyle protocol for your view controller instead.",
   "homepage": "http://github.com/yiplee/YPNavigationBarTransition",
@@ -21,7 +21,7 @@
   },
   "source": {
     "git": "https://github.com/yiplee/YPNavigationBarTransition.git",
-    "tag": "2.0.5"
+    "tag": "2.0.6"
   },
   "source_files": "YPNavigationBarTransition/**/*.{h,m}",
   "public_header_files": "YPNavigationBarTransition/*.h",
