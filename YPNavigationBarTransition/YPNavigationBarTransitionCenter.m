@@ -1,26 +1,26 @@
 /*
-MIT License
-
-Copyright (c) 2017 yiplee
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-*/
+ MIT License
+ 
+ Copyright (c) 2017 yiplee
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ 
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ 
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+ */
 
 #import "UIToolbar+YPConfigure.h"
 #import "UINavigationBar+YPConfigure.h"
@@ -106,6 +106,8 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 
 #pragma mark - transition
 
+static void * boundsContext = &boundsContext;
+
 - (void) navigationController:(UINavigationController *)navigationController
        willShowViewController:(UIViewController *)viewController
                      animated:(BOOL)animated {
@@ -174,14 +176,20 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
                  if (!CGRectIsNull(fakeBarFrame)) {
                      if (toVC.extendedLayoutIncludesOpaqueBars ||
                          showConfigure.translucent) {
-                         fakeBarFrame.origin.y = 0;
+                         fakeBarFrame.origin.y = toVC.view.bounds.origin.y;
                      }
+                     
                      UIToolbar *fakeBar = self.toViewControllerFakeBar;
                      [fakeBar yp_applyBarConfiguration:showConfigure];
                      fakeBar.frame = fakeBarFrame;
                      [toVC.view addSubview:fakeBar];
                  }
              }
+             
+             [toVC.view addObserver:self
+                         forKeyPath:NSStringFromSelector(@selector(bounds))
+                            options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                            context:boundsContext];
              
              [UIView setAnimationsEnabled:YES];
          }
@@ -193,6 +201,13 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
              if (currentConfigure.hidden != navigationController.navigationBarHidden) {
                  [navigationController setNavigationBarHidden:showConfigure.hidden animated:animated];
              }
+         }
+         
+         if (showFakeBar) {
+             UIViewController *const toVC  = [context viewControllerForKey:UITransitionContextToViewControllerKey];
+             [toVC.view removeObserver:self
+                            forKeyPath:NSStringFromSelector(@selector(bounds))
+                               context:boundsContext];
          }
          
          if (self) self->_isTransitionNavigationBar = NO;
@@ -234,4 +249,27 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     _isTransitionNavigationBar = NO;
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath
+                      ofObject:(id)object
+                        change:(NSDictionary *)change
+                       context:(void *)context {
+    if (context == boundsContext) {
+        UIView *view = (UIView*)object;
+        UIToolbar *fakeBar = self.toViewControllerFakeBar;
+        
+        if (fakeBar.superview == view) {
+            CGRect fakeBarFrame = fakeBar.frame;
+            
+            CGRect old = [change[NSKeyValueChangeOldKey] CGRectValue];
+            CGRect new = [change[NSKeyValueChangeNewKey] CGRectValue];
+            CGFloat offset = new.origin.y - old.origin.y;
+            if (offset != 0) {
+                fakeBarFrame.origin.y += offset;
+                fakeBar.frame = fakeBarFrame;
+            }
+        }
+    }
+}
+
 @end
+
