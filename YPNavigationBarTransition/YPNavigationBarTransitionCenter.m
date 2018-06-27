@@ -174,7 +174,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
                  if (!CGRectIsNull(fakeBarFrame)) {
                      if (toVC.extendedLayoutIncludesOpaqueBars ||
                          showConfigure.translucent) {
-                         fakeBarFrame.origin.y = 0;
+                         fakeBarFrame.origin.y = toVC.view.bounds.origin.y;
                      }
                      UIToolbar *fakeBar = self.toViewControllerFakeBar;
                      [fakeBar yp_applyBarConfiguration:showConfigure];
