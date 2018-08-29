@@ -39,6 +39,7 @@ typedef NS_ENUM(NSUInteger, YPNavigationBarConfigurations) {
     YPNavigationBarConfigurationsDefault = 0,
     /*
      *  是否显示 UINavigationBar 下方的横线，默认不显示
+     *  在全透明 （Transparent） 的时候，将忽略 shadow image 的设置
      */
      YPNavigationBarShowShadowImage = 1 << 20,
 };
