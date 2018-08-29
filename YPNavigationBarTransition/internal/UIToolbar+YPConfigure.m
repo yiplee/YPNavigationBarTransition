@@ -45,7 +45,8 @@ SOFTWARE.
         [self setBackgroundImage:backgroundImage forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     }
     
-    [self setShadowImage:transpanrentImage forToolbarPosition:UIBarPositionAny];
+    UIImage* shadowImage = configure.shadowImage ? nil : transpanrentImage;
+    [self setShadowImage:shadowImage forToolbarPosition:UIBarPositionAny];
 }
 
 @end

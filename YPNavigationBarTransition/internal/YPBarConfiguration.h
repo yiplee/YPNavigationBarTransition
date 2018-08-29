@@ -32,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) UIBarStyle barStyle;
 @property (nonatomic, assign, readonly) BOOL translucent;
 @property (nonatomic, assign, readonly) BOOL transparent;
+@property (nonatomic, assign, readonly) BOOL shadowImage;
 @property (nonatomic, strong, readonly) UIColor *tintColor;
 @property (nonatomic, strong, readonly, nullable) UIColor *backgroundColor;
 @property (nonatomic, strong, readonly, nullable) UIImage *backgroundImage;

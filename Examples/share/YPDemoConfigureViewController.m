@@ -73,7 +73,7 @@ UITableViewDataSource
     YPDemoContainerViewController *controller = [YPDemoContainerViewController new];
     controller.title = @"Color";
     
-    YPNavigationBarConfigurations conf = YPNavigationBarConfigurationsDefault;
+    YPNavigationBarConfigurations conf = YPNavigationBarShowShadowImage;
     if (_barHidden) {
         conf |= YPNavigationBarHidden;
     }
