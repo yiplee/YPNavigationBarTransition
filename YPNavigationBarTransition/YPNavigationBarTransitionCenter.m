@@ -63,6 +63,10 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
     return showFakeBar;
 }
 
+static struct {
+    __unsafe_unretained UIViewController *toVC;
+} ctx;
+
 @implementation YPNavigationBarTransitionCenter
 
 - (instancetype) initWithDefaultBarConfiguration:(id<YPNavigationBarConfigureStyle>)_default {
@@ -105,8 +109,6 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
 }
 
 #pragma mark - transition
-
-static void * boundsContext = &boundsContext;
 
 - (void) navigationController:(UINavigationController *)navigationController
        willShowViewController:(UIViewController *)viewController
@@ -186,10 +188,15 @@ static void * boundsContext = &boundsContext;
                  }
              }
              
+             ctx.toVC = toVC;
              [toVC.view addObserver:self
                          forKeyPath:NSStringFromSelector(@selector(bounds))
                             options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-                            context:boundsContext];
+                            context:&ctx];
+             [toVC.view addObserver:self
+                         forKeyPath:NSStringFromSelector(@selector(frame))
+                            options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
+                            context:&ctx];
              
              [UIView setAnimationsEnabled:YES];
          }
@@ -207,7 +214,10 @@ static void * boundsContext = &boundsContext;
              UIViewController *const toVC  = [context viewControllerForKey:UITransitionContextToViewControllerKey];
              [toVC.view removeObserver:self
                             forKeyPath:NSStringFromSelector(@selector(bounds))
-                               context:boundsContext];
+                               context:&ctx];
+             [toVC.view removeObserver:self
+                            forKeyPath:NSStringFromSelector(@selector(frame))
+                               context:&ctx];
          }
          
          if (self) self->_isTransitionNavigationBar = NO;
@@ -253,18 +263,13 @@ static void * boundsContext = &boundsContext;
                       ofObject:(id)object
                         change:(NSDictionary *)change
                        context:(void *)context {
-    if (context == boundsContext) {
-        UIView *view = (UIView*)object;
+    if (context == &ctx) {
+        UIViewController *tovc = ctx.toVC;
         UIToolbar *fakeBar = self.toViewControllerFakeBar;
-        
-        if (fakeBar.superview == view) {
-            CGRect fakeBarFrame = fakeBar.frame;
-            
-            CGRect old = [change[NSKeyValueChangeOldKey] CGRectValue];
-            CGRect new = [change[NSKeyValueChangeNewKey] CGRectValue];
-            CGFloat offset = new.origin.y - old.origin.y;
-            if (offset != 0) {
-                fakeBarFrame.origin.y += offset;
+        if (fakeBar.superview == tovc.view) {
+            UINavigationBar *bar = tovc.navigationController.navigationBar;
+            CGRect fakeBarFrame = [tovc yp_fakeBarFrameForNavigationBar:bar];
+            if (!CGRectIsNull(fakeBarFrame)) {
                 fakeBar.frame = fakeBarFrame;
             }
         }
