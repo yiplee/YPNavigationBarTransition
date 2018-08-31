@@ -55,6 +55,9 @@ SOFTWARE.
         
         _transparent = (configurations & YPNavigationBarBackgroundStyleTransparent) > 0;
         if (_transparent) break;
+        
+        // show shadow image only if not transparent
+        _shadowImage = (configurations & YPNavigationBarShowShadowImage) > 0;
         _translucent = (configurations & YPNavigationBarBackgroundStyleOpaque) == 0;
         
         if ((configurations & YPNavigationBarBackgroundStyleImage) > 0 && backgroundImage) {

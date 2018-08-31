@@ -63,7 +63,7 @@ SOFTWARE.
         [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
     }
     
-    self.shadowImage = transpanrentImage;
+    self.shadowImage = configure.shadowImage ? nil : transpanrentImage;
     
     [self setCurrentBarConfigure:configure];
 }

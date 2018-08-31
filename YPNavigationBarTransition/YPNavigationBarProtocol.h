@@ -43,6 +43,9 @@ typedef NS_OPTIONS(NSUInteger, YPNavigationBarConfigurations) {
     YPNavigationBarBackgroundStyleColor = 1 << 16,
     YPNavigationBarBackgroundStyleImage = 2 << 16,
     
+    // shadow image
+    YPNavigationBarShowShadowImage = 1 << 20,
+    
     YPNavigationBarConfigurationsDefault = 0,
 };
 
