@@ -29,6 +29,7 @@ UITableViewDataSource
     BOOL _barHidden;
     BOOL _transparent;
     BOOL _translucent;
+    BOOL _shadowImage;
     UIBarStyle _barStyle;
     
     NSArray<NSDictionary *> *_colors;
@@ -73,7 +74,7 @@ UITableViewDataSource
     YPDemoContainerViewController *controller = [YPDemoContainerViewController new];
     controller.title = @"Color";
     
-    YPNavigationBarConfigurations conf = YPNavigationBarShowShadowImage;
+    YPNavigationBarConfigurations conf = YPNavigationBarConfigurationsDefault;
     if (_barHidden) {
         conf |= YPNavigationBarHidden;
     }
@@ -86,6 +87,10 @@ UITableViewDataSource
     
     if (_barStyle == UIBarStyleBlack) {
         conf |= YPNavigationBarStyleBlack;
+    }
+    
+    if (_shadowImage) {
+        conf |= YPNavigationBarShowShadowImage;
     }
     
     if (color) conf |= YPNavigationBarBackgroundStyleColor;
@@ -113,6 +118,10 @@ UITableViewDataSource
     
     if (_barStyle == UIBarStyleBlack) {
         conf |= YPNavigationBarStyleBlack;
+    }
+    
+    if (_shadowImage) {
+        conf |= YPNavigationBarShowShadowImage;
     }
     
     conf |= YPNavigationBarBackgroundStyleImage;
@@ -143,8 +152,10 @@ UITableViewDataSource
         }
     } else if (tag == 2) {
         _translucent = sender.isOn;
-    } else {
+    } else if (tag == 3) {
         _barStyle = sender.isOn ? UIBarStyleBlack : UIBarStyleDefault;
+    } else {
+        _shadowImage = sender.isOn;
     }
 }
 
@@ -155,7 +166,7 @@ UITableViewDataSource
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    if (section == 0) return 4;
+    if (section == 0) return 5;
     else if (section == 1) return _colors.count;
     else if (section == 2) return _imageNames.count;
     else if (section == 3) return 1;
@@ -181,9 +192,12 @@ UITableViewDataSource
         } else if (row == 2) {
             title = @"Translucent";
             isOn = _translucent;
-        } else {
+        } else if (row == 3) {
             title = @"Black Bar Style";
             isOn = _barStyle == UIBarStyleBlack;
+        } else {
+            title = @"Shadow Image";
+            isOn = _shadowImage;
         }
         
         cell.textLabel.text = title;
