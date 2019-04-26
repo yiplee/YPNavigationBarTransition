@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let frame = UIScreen.main.bounds
         window = UIWindow.init(frame: frame)
         
-        let root = YPDemoViewController.init()
-        let nav = YPNavigationController.init(rootViewController: root)
-        nav.view.backgroundColor = UIColor.white
+        let root = YPDemoViewController()
+        let nav = YPNavigationController(rootViewController: root)
+        nav.view.backgroundColor = .white
         
         window?.rootViewController = nav
         window?.makeKeyAndVisible()
@@ -35,7 +35,7 @@ extension YPNavigationController : NavigationBarConfigureStyle {
     }
     
     public func yp_navigationBarTintColor() -> UIColor! {
-        return UIColor.white
+        return .white
     }
 }
 
