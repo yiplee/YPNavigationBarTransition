@@ -241,7 +241,6 @@
 				E8B064291FEF4FBC007332E8 /* Frameworks */,
 				E8B0642A1FEF4FBC007332E8 /* Resources */,
 				86785830A35C515D0AF8F4DE /* [CP] Embed Pods Frameworks */,
-				CA496DB27B90D65C6BFC8A14 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -334,7 +333,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Kiwi/Kiwi.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -343,22 +342,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CA496DB27B90D65C6BFC8A14 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YPNavigationBarTransitionTests/Pods-YPNavigationBarTransitionTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

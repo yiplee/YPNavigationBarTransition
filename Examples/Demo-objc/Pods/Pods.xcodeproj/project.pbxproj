@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,7 +48,7 @@
 /* Begin PBXFileReference section */
 		037A18622F817BE49EC4669DE91C30DD /* Pods-Demo-objc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Demo-objc-dummy.m"; sourceTree = "<group>"; };
 		07B5DD0B9199B4216F10E27D29987044 /* YPNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YPNavigationController.m; path = YPNavigationBarTransition/YPNavigationController.m; sourceTree = "<group>"; };
-		0C7262394DCB5A06DB3DABA724319DB9 /* YPNavigationBarTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YPNavigationBarTransition.framework; path = YPNavigationBarTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C7262394DCB5A06DB3DABA724319DB9 /* YPNavigationBarTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YPNavigationBarTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1769928D20076474F5A31D378825DCD7 /* Pods-Demo-objc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Demo-objc-acknowledgements.plist"; sourceTree = "<group>"; };
 		1AA8B1009AB66CE78DACDA83BDD20545 /* UIImage+YPConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+YPConfigure.m"; path = "YPNavigationBarTransition/UIImage+YPConfigure.m"; sourceTree = "<group>"; };
 		225EBAF075EEB2DDFE6BC3C389E520DB /* UIViewController+YPNavigationBarTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+YPNavigationBarTransition.m"; path = "YPNavigationBarTransition/UIViewController+YPNavigationBarTransition.m"; sourceTree = "<group>"; };
@@ -62,20 +62,20 @@
 		5F0161CB8DBCF045E20ABCA3CEF6B5AC /* UIViewController+YPNavigationBarTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+YPNavigationBarTransition.h"; path = "YPNavigationBarTransition/UIViewController+YPNavigationBarTransition.h"; sourceTree = "<group>"; };
 		720193D0EF7D3D7AF86CF05A59D5A932 /* how_to_use_CN.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = how_to_use_CN.markdown; path = docs/how_to_use_CN.markdown; sourceTree = "<group>"; };
 		76EA270E5371DFBC840EBBE496543583 /* YPBarConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YPBarConfiguration.h; sourceTree = "<group>"; };
-		774A203F20920E4FB711AD57886D8DDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		774A203F20920E4FB711AD57886D8DDB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7EC5856B37B6941AC548D5951090F80E /* Pods-Demo-objc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Demo-objc-resources.sh"; sourceTree = "<group>"; };
 		85D20D84820A63B68BF2DF98B908D735 /* Pods-Demo-objc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Demo-objc.release.xcconfig"; sourceTree = "<group>"; };
-		8ABA0A78E2865B96AFB63387DD17C276 /* Pods_Demo_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Demo_objc.framework; path = "Pods-Demo-objc.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ABA0A78E2865B96AFB63387DD17C276 /* Pods_Demo_objc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_objc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6A724FE8C5F73975136108F0DC76FD /* UIToolbar+YPConfigure.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+YPConfigure.h"; sourceTree = "<group>"; };
 		908E902E026C5C22904CF9014A5604AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		955964D9970408A5F230AC6C0D166F2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		955964D9970408A5F230AC6C0D166F2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		98A5376516F8712A77A5B8DC98C198F3 /* Pods-Demo-objc.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Demo-objc.modulemap"; sourceTree = "<group>"; };
 		9C45223E56876CCF899E227D1E3967D5 /* YPNavigationBarTransition-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPNavigationBarTransition-umbrella.h"; sourceTree = "<group>"; };
 		A0BE29006C0E48C19B502B500E2D6AD4 /* Pods-Demo-objc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Demo-objc-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A52890DC463EE4E74039B74B4D0597E1 /* YPNavigationBarTransitionCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YPNavigationBarTransitionCenter.h; path = YPNavigationBarTransition/YPNavigationBarTransitionCenter.h; sourceTree = "<group>"; };
 		A536BD242DC044EA663BB7973DCDC697 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A8A0475891022338E0A06C64466C9F62 /* YPNavigationBarTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = YPNavigationBarTransition.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8A0475891022338E0A06C64466C9F62 /* YPNavigationBarTransition.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = YPNavigationBarTransition.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B38C689E8D7E7BBA8289955320DFAB75 /* YPNavigationBarTransition-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YPNavigationBarTransition-prefix.pch"; sourceTree = "<group>"; };
 		BC2C02191C153C1554B35DEE8B2D09D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		BC5850495B360C481C03A46B9517EC7A /* UIToolbar+YPConfigure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+YPConfigure.m"; sourceTree = "<group>"; };
@@ -324,14 +324,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1110;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 8F119725BF21AD706B21C00F531E71DA /* Products */;
@@ -415,11 +416,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Demo-objc/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Demo-objc/Pods-Demo-objc.modulemap";
 				OTHER_LDFLAGS = "";
@@ -453,11 +450,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Demo-objc/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Demo-objc/Pods-Demo-objc.modulemap";
 				OTHER_LDFLAGS = "";
@@ -490,11 +483,7 @@
 				INFOPLIST_FILE = "Target Support Files/YPNavigationBarTransition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/YPNavigationBarTransition/YPNavigationBarTransition.modulemap";
 				PRODUCT_MODULE_NAME = YPNavigationBarTransition;
 				PRODUCT_NAME = YPNavigationBarTransition;
@@ -511,6 +500,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -570,6 +560,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -647,11 +638,7 @@
 				INFOPLIST_FILE = "Target Support Files/YPNavigationBarTransition/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/YPNavigationBarTransition/YPNavigationBarTransition.modulemap";
 				PRODUCT_MODULE_NAME = YPNavigationBarTransition;
 				PRODUCT_NAME = YPNavigationBarTransition;
