@@ -29,6 +29,13 @@ SOFTWARE.
 @implementation UINavigationBar (YPConfigure)
 
 - (void) yp_adjustWithBarStyle:(UIBarStyle)barStyle tintColor:(UIColor *)tintColor {
+    if (@available(iOS 13.0, *)) {
+        self.standardAppearance.largeTitleTextAttributes = @{NSForegroundColorAttributeName: tintColor};
+        self.standardAppearance.titleTextAttributes = @{NSForegroundColorAttributeName: tintColor};
+        
+        self.overrideUserInterfaceStyle = barStyle == UIBarStyleBlack ? UIUserInterfaceStyleDark : UIUserInterfaceStyleLight;
+    }
+    
     self.barStyle = barStyle;
     self.tintColor = tintColor;
 }
@@ -48,10 +55,24 @@ SOFTWARE.
     
     UIView *barBackgroundView = [self yp_backgroundView];
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
+
+    if (@available(iOS 13.0, *)) {
+        /*
+         注释下一行，DynamicGradientBar不正常，其他常规页面正常
+         启用下一行，DynamicGradientBar正常了，其他常规页面不正常
+         */
+//         self.standardAppearance.backgroundEffect = nil;
+    }
+    
     if (configure.transparent) {
         barBackgroundView.alpha = 0;
         self.translucent = YES;
-        [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
+        
+        if (@available(iOS 13.0, *)) {
+            [self.standardAppearance setBackgroundImage:transpanrentImage];
+        }else{
+            [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
+        }
     } else {
         barBackgroundView.alpha = 1;
         self.translucent = configure.translucent;
@@ -60,10 +81,19 @@ SOFTWARE.
             backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
         }
         
-        [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+        if (@available(iOS 13.0, *)) {
+            [self.standardAppearance setBackgroundImage:backgroundImage];
+        }else{
+            [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+        }
     }
     
-    self.shadowImage = configure.shadowImage ? nil : transpanrentImage;
+    if (@available(iOS 13.0, *)) {
+        self.standardAppearance.shadowImage = configure.shadowImage ? nil : transpanrentImage;
+        self.standardAppearance.shadowColor = nil;
+    }else{
+        self.shadowImage = configure.shadowImage ? nil : transpanrentImage;
+    }
     
     [self setCurrentBarConfigure:configure];
 }
