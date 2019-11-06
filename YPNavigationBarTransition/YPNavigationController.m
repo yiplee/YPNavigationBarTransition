@@ -20,6 +20,7 @@ UINavigationControllerDelegate
 @property (nonatomic, strong) YPNavigationBarTransitionCenter *center;
 @property (nonatomic, weak, nullable) id<UINavigationControllerDelegate> navigationDelegate;
 @property (nonatomic, strong, nullable) YPNavigationControllerDelegateProxy *delegateProxy;
+@property (assign) BOOL isAnimation;
 
 @end
 
@@ -36,8 +37,18 @@ UINavigationControllerDelegate
     if (!self.delegate) {
         self.delegate = self;
     }
-    
+    self.isAnimation = NO;
     self.interactivePopGestureRecognizer.delegate = self;
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
+    self.isAnimation = YES;
+    [super pushViewController:viewController animated:animated];
+}
+
+- (UIViewController *)popViewControllerAnimated:(BOOL)animated {
+    self.isAnimation = YES;
+    return [super popViewControllerAnimated:animated];
 }
 
 - (void) setDelegate:(id<UINavigationControllerDelegate>)delegate {
@@ -83,12 +94,16 @@ UINavigationControllerDelegate
     [_center navigationController:navigationController
            didShowViewController:viewController
                          animated:animated];
+    self.isAnimation = NO;
 }
 
 #pragma mark - UIGestureRecognizerDelegate
 
 - (BOOL) gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
     if (gestureRecognizer == self.interactivePopGestureRecognizer) {
+        if ([gestureRecognizer isKindOfClass:UIScreenEdgePanGestureRecognizer.class] && self.isAnimation) {
+            return NO;
+        }
         return self.viewControllers.count > 1;
     }
     
