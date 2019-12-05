@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class YPNavigationController;
 @protocol UINavigationControllerDelegate;
 
@@ -17,5 +19,7 @@
                               interceptor:(YPNavigationController *)interceptor;
 - (instancetype) init NS_UNAVAILABLE;
 + (instancetype) new NS_UNAVAILABLE;
+
+NS_ASSUME_NONNULL_END
 
 @end

@@ -220,7 +220,7 @@ static struct {
                                context:&ctx];
          }
          
-         if (self) self->_isTransitionNavigationBar = NO;
+         if (self) self.isTransitionNavigationBar = NO;
      }];
     
     void (^popInteractionEndBlock)(id<UIViewControllerTransitionCoordinatorContext>) =
