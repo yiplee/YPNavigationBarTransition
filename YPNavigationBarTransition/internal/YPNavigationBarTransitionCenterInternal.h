@@ -27,13 +27,7 @@ SOFTWARE.
 
 BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to);
 
-@interface YPNavigationBarTransitionCenter ()
-<
-UIToolbarDelegate
->
-{
-    BOOL _isTransitionNavigationBar;
-}
+@interface YPNavigationBarTransitionCenter () <UIToolbarDelegate> 
 
 @property (nonatomic, strong) UIToolbar *fromViewControllerFakeBar;
 @property (nonatomic, strong) UIToolbar *toViewControllerFakeBar;

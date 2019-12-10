@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 NS_SWIFT_NAME(NavigationBarTransitionCenter)
 @interface YPNavigationBarTransitionCenter : NSObject
 
+@property (nonatomic, assign) BOOL isTransitionNavigationBar;
+
 - (instancetype) init NS_UNAVAILABLE;
 + (instancetype) new NS_UNAVAILABLE;
 - (instancetype) initWithDefaultBarConfiguration:(id<YPNavigationBarConfigureStyle>)_default NS_DESIGNATED_INITIALIZER;
