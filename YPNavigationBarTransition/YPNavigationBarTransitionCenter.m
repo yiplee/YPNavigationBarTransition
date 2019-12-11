@@ -41,20 +41,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
         if (from.useSystemBarBackground && to.useSystemBarBackground) {
             showFakeBar = from.barStyle != to.barStyle;
         } else if (from.backgroundImage && to.backgroundImage) {
-            NSString *const fromImageName = from.backgroundImageIdentifier;
-            NSString *const toImageName   = to.backgroundImageIdentifier;
-            if (fromImageName && toImageName) {
-                showFakeBar = ![fromImageName isEqualToString:toImageName];
-                break;
-            }
-            
-            NSData *const fromImageData = UIImagePNGRepresentation(from.backgroundImage);
-            NSData *const toImageData = UIImagePNGRepresentation(to.backgroundImage);
-            if ([fromImageData isEqualToData:toImageData]) {
-                break;
-            }
-            
-            showFakeBar = YES;
+            showFakeBar = ![from.backgroundImage isEqual:to.backgroundImage];
         } else if (![from.backgroundColor isEqual:to.backgroundColor]) {
             showFakeBar = YES;
         }
@@ -138,8 +125,7 @@ static struct {
         transparentConfigure = [[YPBarConfiguration alloc] initWithBarConfigurations:transparentConf
                                                                            tintColor:showConfigure.tintColor
                                                                      backgroundColor:nil
-                                                                     backgroundImage:nil
-                                                           backgroundImageIdentifier:nil];
+                                                                     backgroundImage:nil];
     }
     
     if (!showConfigure.hidden) {

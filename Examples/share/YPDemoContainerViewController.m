@@ -77,9 +77,9 @@
     return _backgroundColor;
 }
 
-- (UIImage *) yp_navigationBackgroundImageWithIdentifier:(NSString *__autoreleasing *)identifier {
-    if (identifier) *identifier = _backgroundImageName;
+- (UIImage *)yp_navigationBackgroundImage {
     return _backgroundImage;
 }
+
 
 @end

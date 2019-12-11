@@ -129,7 +129,6 @@ UITableViewDataSource
     controller.configurations = conf;
     controller.backgroundImage = [[UIImage imageNamed:imageName] resizableImageWithCapInsets:UIEdgeInsetsZero
                                                                                 resizingMode:UIImageResizingModeStretch];
-    controller.backgroundImageName = imageName;
     
     [self.navigationController pushViewController:controller animated:YES];
 }

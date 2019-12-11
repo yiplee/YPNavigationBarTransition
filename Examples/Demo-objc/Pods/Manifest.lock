@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../YPNavigationBarTransition.podspec"
 
 SPEC CHECKSUMS:
-  YPNavigationBarTransition: 8507462c2b2b2ec088fff0f1db6da4ce96e6f7d0
+  YPNavigationBarTransition: 928a8a3d944cecfd2f10a0847710384a9cdf9039
 
 PODFILE CHECKSUM: 69c4ffe249ac62559c7e1e17dca8a825dbf16040
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
