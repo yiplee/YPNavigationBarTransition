@@ -30,13 +30,15 @@ SOFTWARE.
     return [self initWithBarConfigurations:YPNavigationBarConfigurationsDefault
                                  tintColor:nil
                            backgroundColor:nil
-                           backgroundImage:nil];
+                           backgroundImage:nil
+                 backgroundImageIdentifier:nil];
 }
 
 - (instancetype) initWithBarConfigurations:(YPNavigationBarConfigurations)configurations
                                  tintColor:(UIColor *)tintColor
                            backgroundColor:(UIColor *)backgroundColor
-                           backgroundImage:(UIImage *)backgroundImage {
+                           backgroundImage:(UIImage *)backgroundImage
+                 backgroundImageIdentifier:(NSString *)backgroundImageIdentifier {
     self = [super init];
     if (!self) return nil;
     
@@ -60,6 +62,7 @@ SOFTWARE.
         
         if ((configurations & YPNavigationBarBackgroundStyleImage) > 0 && backgroundImage) {
             _backgroundImage = backgroundImage;
+            _backgroundImageIdentifier = [backgroundImageIdentifier copy];
         } else if (configurations & YPNavigationBarBackgroundStyleColor){
             _backgroundColor = backgroundColor;
         }
@@ -77,18 +80,12 @@ SOFTWARE.
     UIColor *tintColor = [owner yp_navigationBarTintColor];
     
     UIImage *backgroundImage  = nil;
+    NSString *imageIdentifier = nil;
     UIColor *backgroundColor = nil;
     
     if (!(configurations & YPNavigationBarBackgroundStyleTransparent)) {
         if (configurations & YPNavigationBarBackgroundStyleImage) {
-            if ([owner respondsToSelector:@selector(yp_navigationBackgroundImage)]) {
-                backgroundImage = [owner yp_navigationBackgroundImage];
-            } else if ([owner respondsToSelector:@selector(yp_navigationBackgroundImageWithIdentifier:)]) {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wdeprecated-declarations"
-                backgroundImage = [owner yp_navigationBackgroundImageWithIdentifier:nil];
-#pragma clang diagnostic pop
-            }
+            backgroundImage = [owner yp_navigationBackgroundImageWithIdentifier:&imageIdentifier];
         } else if (configurations & YPNavigationBarBackgroundStyleColor) {
             backgroundColor = [owner yp_navigationBackgroundColor];
         }
@@ -97,7 +94,8 @@ SOFTWARE.
     return [self initWithBarConfigurations:configurations
                                  tintColor:tintColor
                            backgroundColor:backgroundColor
-                           backgroundImage:backgroundImage];
+                           backgroundImage:backgroundImage
+                 backgroundImageIdentifier:imageIdentifier];
 }
 
 - (BOOL) isVisible {

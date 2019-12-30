@@ -36,13 +36,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) UIColor *tintColor;
 @property (nonatomic, strong, readonly, nullable) UIColor *backgroundColor;
 @property (nonatomic, strong, readonly, nullable) UIImage *backgroundImage;
+@property (nonatomic, strong, readonly, nullable) NSString *backgroundImageIdentifier;
 
 - (instancetype) init NS_UNAVAILABLE;
 - (instancetype) initWithBarConfigurations:(YPNavigationBarConfigurations)configurations
                                  tintColor:(nullable UIColor*) tintColor
                            backgroundColor:(nullable UIColor *)backgroundColor
-                           backgroundImage:(nullable UIImage *)backgroundImage NS_DESIGNATED_INITIALIZER;
-
+                           backgroundImage:(nullable UIImage *)backgroundImage
+                 backgroundImageIdentifier:(nullable NSString*)backgroundImageIdentifier NS_DESIGNATED_INITIALIZER;
 @end
 
 @interface YPBarConfiguration (YPBarTransition)

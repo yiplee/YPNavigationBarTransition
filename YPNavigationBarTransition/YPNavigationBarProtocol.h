@@ -59,10 +59,9 @@ NS_SWIFT_NAME(NavigationBarConfigureStyle)
 @optional
 
 /*
- *  identifier 用来比较 image 是否是同
+ *  identifier 用来比较image的name是否是同，如果不传，会使用image的isEqual来比较
  */
-- (UIImage *) yp_navigationBackgroundImageWithIdentifier:(NSString **)identifier __attribute__((deprecated("请使用`yp_navigationBackgroundImage`替代")));
-- (UIImage *) yp_navigationBackgroundImage;
+- (UIImage *) yp_navigationBackgroundImageWithIdentifier:(NSString **)identifier;
 
 - (UIColor *) yp_navigationBackgroundColor;
 

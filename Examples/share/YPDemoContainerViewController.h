@@ -15,5 +15,6 @@
 @property (nonatomic, strong) UIColor *tintColor;
 @property (nonatomic, strong) UIColor *backgroundColor;
 @property (nonatomic, strong) UIImage *backgroundImage;
+@property (nonatomic, copy)  NSString *backgroundImageName;
 
 @end

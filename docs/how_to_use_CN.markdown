@@ -58,11 +58,10 @@ typedef NS_ENUM(NSUInteger, YPNavigationBarConfigurations) {
 bar style 是 YPNavigationBarStyleLight 的话，将使用黑色作为 tintColor。
 
 ```objective-c
-- (UIImage *) yp_navigationBackgroundImage;
+- (UIImage *) yp_navigationBackgroundImageWithIdentifier:(NSString **)identifier;
 ```
 
-**[optional]** navigation bar background image, 在判断是否需要使用 fake bar 的时候需要用到。如果 bar configuration
-使用了 YPNavigationBarBackgroundStyleImage，这个方法一定要实现。
+**[optional]** navigation bar background image,`identifier`作为 image 的 id 使用，同 id 的图片看作是同一张图片，在判断是否需要使用 fake bar 的时候需要用到。如果 bar configuration使用了 YPNavigationBarBackgroundStyleImage，这个方法一定要实现。
 
 ```objective-c
 - (UIColor *) yp_navigationBackgroundColor;
