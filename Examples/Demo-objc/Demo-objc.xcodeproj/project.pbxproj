@@ -207,17 +207,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Demo-objc/Pods-Demo-objc-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/YPNavigationBarTransition/YPNavigationBarTransition.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo-objc/Pods-Demo-objc-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YPNavigationBarTransition.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Demo-objc/Pods-Demo-objc-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Demo-objc/Pods-Demo-objc-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Demo-objc/Pods-Demo-objc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		58D4F4A91BF578E3A2FF9031 /* [CP] Check Pods Manifest.lock */ = {

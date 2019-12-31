@@ -44,7 +44,6 @@ NS_ASSUME_NONNULL_BEGIN
                            backgroundColor:(nullable UIColor *)backgroundColor
                            backgroundImage:(nullable UIImage *)backgroundImage
                  backgroundImageIdentifier:(nullable NSString*)backgroundImageIdentifier NS_DESIGNATED_INITIALIZER;
-
 @end
 
 @interface YPBarConfiguration (YPBarTransition)

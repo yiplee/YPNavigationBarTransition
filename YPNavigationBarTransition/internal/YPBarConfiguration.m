@@ -38,7 +38,7 @@ SOFTWARE.
                                  tintColor:(UIColor *)tintColor
                            backgroundColor:(UIColor *)backgroundColor
                            backgroundImage:(UIImage *)backgroundImage
-                 backgroundImageIdentifier:(NSString *)backgroundImageIdentifier{
+                 backgroundImageIdentifier:(NSString *)backgroundImageIdentifier {
     self = [super init];
     if (!self) return nil;
     

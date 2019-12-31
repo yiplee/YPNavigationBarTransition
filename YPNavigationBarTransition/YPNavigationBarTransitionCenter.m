@@ -48,13 +48,7 @@ BOOL YPTransitionNeedShowFakeBar(YPBarConfiguration *from,YPBarConfiguration *to
                 break;
             }
             
-            NSData *const fromImageData = UIImagePNGRepresentation(from.backgroundImage);
-            NSData *const toImageData = UIImagePNGRepresentation(to.backgroundImage);
-            if ([fromImageData isEqualToData:toImageData]) {
-                break;
-            }
-            
-            showFakeBar = YES;
+            showFakeBar = ![from.backgroundImage isEqual:to.backgroundImage];
         } else if (![from.backgroundColor isEqual:to.backgroundColor]) {
             showFakeBar = YES;
         }
