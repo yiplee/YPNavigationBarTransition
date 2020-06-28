@@ -191,7 +191,7 @@ static struct {
                          forKeyPath:NSStringFromSelector(@selector(frame))
                             options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
                             context:&ctx];
-             
+              
              [UIView setAnimationsEnabled:YES];
          }
      } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
@@ -204,7 +204,7 @@ static struct {
              }
          }
          
-         if (showFakeBar) {
+         if (showFakeBar && ctx.toVC != nil) {
              UIViewController *const toVC  = [context viewControllerForKey:UITransitionContextToViewControllerKey];
              [toVC.view removeObserver:self
                             forKeyPath:NSStringFromSelector(@selector(bounds))
