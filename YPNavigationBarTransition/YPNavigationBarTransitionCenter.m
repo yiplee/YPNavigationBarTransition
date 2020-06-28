@@ -204,8 +204,8 @@ static struct {
              }
          }
          
-         if (showFakeBar && ctx.toVC != nil) {
-             UIViewController *const toVC  = [context viewControllerForKey:UITransitionContextToViewControllerKey];
+         UIViewController *const toVC  = [context viewControllerForKey:UITransitionContextToViewControllerKey];
+         if (showFakeBar && ctx.toVC == toVC) {
              [toVC.view removeObserver:self
                             forKeyPath:NSStringFromSelector(@selector(bounds))
                                context:&ctx];
