@@ -51,7 +51,14 @@ SOFTWARE.
     if (configure.transparent) {
         barBackgroundView.alpha = 0;
         self.translucent = YES;
-        [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
+        if (@available(iOS 13.0, *)) {
+            UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
+            appearance.backgroundImage = transpanrentImage;
+            self.scrollEdgeAppearance = appearance;
+            self.standardAppearance = appearance;
+        } else {
+            [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
+        }
     } else {
         barBackgroundView.alpha = 1;
         self.translucent = configure.translucent;
@@ -59,8 +66,14 @@ SOFTWARE.
         if (!backgroundImage && configure.backgroundColor) {
             backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
         }
-        
-        [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+        if (@available(iOS 13.0, *)) {
+            UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
+            appearance.backgroundImage = transpanrentImage;
+            self.scrollEdgeAppearance = appearance;
+            self.standardAppearance = appearance;
+        } else {
+            [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+        }
     }
     
     self.shadowImage = configure.shadowImage ? nil : transpanrentImage;
