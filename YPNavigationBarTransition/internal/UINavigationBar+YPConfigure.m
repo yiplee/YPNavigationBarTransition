@@ -54,6 +54,10 @@ SOFTWARE.
         if (@available(iOS 13.0, *)) {
             UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
             appearance.backgroundImage = transpanrentImage;
+            appearance.shadowImage = transpanrentImage;
+            appearance.backgroundEffect = nil;
+            appearance.backgroundColor = configure.backgroundColor;
+            appearance.shadowColor = configure.backgroundColor;
             self.scrollEdgeAppearance = appearance;
             self.standardAppearance = appearance;
         } else {
@@ -69,6 +73,10 @@ SOFTWARE.
         if (@available(iOS 13.0, *)) {
             UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
             appearance.backgroundImage = transpanrentImage;
+            appearance.shadowImage = transpanrentImage;
+            appearance.backgroundEffect = nil;
+            appearance.backgroundColor = configure.backgroundColor;
+            appearance.shadowColor = configure.backgroundColor;
             self.scrollEdgeAppearance = appearance;
             self.standardAppearance = appearance;
         } else {
