@@ -53,8 +53,6 @@ SOFTWARE.
         if (@available(iOS 13.0, *)) {
             UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
             [appearance configureWithTransparentBackground];
-            appearance.backgroundColor = configure.backgroundColor;
-            appearance.backgroundImage = transpanrentImage;
             self.scrollEdgeAppearance = appearance;
             self.standardAppearance = appearance;
         } else {
@@ -67,7 +65,8 @@ SOFTWARE.
             UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
             if (configure.translucent) {
                 [appearance configureWithDefaultBackground];
-                appearance.backgroundEffect = [UIBlurEffect effectWithStyle:configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark];
+                UIBlurEffectStyle effectStyle = configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark;
+                appearance.backgroundEffect = [UIBlurEffect effectWithStyle:effectStyle];
             } else {
                 [appearance configureWithOpaqueBackground];
             }

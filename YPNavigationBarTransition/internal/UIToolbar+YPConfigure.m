@@ -36,8 +36,6 @@ SOFTWARE.
         if (@available(iOS 13.0, *)) {
             UIToolbarAppearance *appearance = [[self standardAppearance] copy];
             [appearance configureWithTransparentBackground];
-            appearance.backgroundColor = configure.backgroundColor;
-            appearance.backgroundImage = transpanrentImage;
             if (@available(iOS 15.0, *)) {
                 self.scrollEdgeAppearance = appearance;
             }
@@ -51,7 +49,8 @@ SOFTWARE.
             UIToolbarAppearance *appearance = [[self standardAppearance] copy];
             if (configure.translucent) {
                 [appearance configureWithDefaultBackground];
-                appearance.backgroundEffect = [UIBlurEffect effectWithStyle:configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark];
+                UIBlurEffectStyle effectStyle = configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark;
+                appearance.backgroundEffect = [UIBlurEffect effectWithStyle:effectStyle];
             } else {
                 [appearance configureWithOpaqueBackground];
             }
