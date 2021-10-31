@@ -155,15 +155,24 @@
 
 - (YPNavigationBarConfigurations) yp_navigtionBarConfiguration {
     YPNavigationBarConfigurations configurations = YPNavigationBarShow;
-    if (_gradientProgress < 0.5) {
-        configurations |= YPNavigationBarStyleBlack;
-    }
-    
-    if (_gradientProgress == 1) {
-        configurations |= YPNavigationBarBackgroundStyleOpaque;
-    }
+    if (@available(iOS 13.0, *)) {
+        if (_gradientProgress <= 0) {
+            configurations |= YPNavigationBarBackgroundStyleTransparent;
+        } else {
+            configurations |= YPNavigationBarBackgroundStyleOpaque;
+            configurations |= YPNavigationBarBackgroundStyleColor;
+        }
+    } else {
+        if (_gradientProgress < 0.5) {
+            configurations |= YPNavigationBarStyleBlack;
+        }
+        
+        if (_gradientProgress == 1) {
+            configurations |= YPNavigationBarBackgroundStyleOpaque;
+        }
 
-    configurations |= YPNavigationBarBackgroundStyleColor;
+        configurations |= YPNavigationBarBackgroundStyleColor;
+    }
     return configurations;
 }
 
