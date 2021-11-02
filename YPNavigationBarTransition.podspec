@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "YPNavigationBarTransition"
-  s.version      = "2.2.2"
+  s.version      = "2.2.3"
   s.summary      = "A Fully functional UINavigationBar framework for making bar transition more natural!"
   s.description  = "A Fully functional UINavigationBar framework for making bar transition more natural! You don't need to call any UINavigationBar api, implementing YPNavigationBarConfigureStyle protocol for your view controller instead."               
 
