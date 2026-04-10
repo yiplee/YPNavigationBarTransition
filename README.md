@@ -56,8 +56,8 @@ A Fully functional `UINavigationBar` framework for making bar transition more na
 
 ## Requirements
 
-- Xcode 9.0+
-- iOS 8.0+
+- Xcode 14+ (recommended)
+- iOS 15.0+
 
 ## Installation
 
@@ -68,7 +68,7 @@ The preferred installation method is with [CocoaPods](https://cocoapods.org). Ad
 ```ruby
 # use_frameworks! is needed for swift projects
 use_frameworks!
-pod 'YPNavigationBarTransition', '~> 2.0'
+pod 'YPNavigationBarTransition', '~> 3.0'
 ```
 
 ### Carthage
@@ -76,7 +76,7 @@ pod 'YPNavigationBarTransition', '~> 2.0'
 For [Carthage](https://github.com/Carthage/Carthage), add the following to your `Cartfile`:
 
 ```ruby
-github "yiplee/YPNavigationBarTransition" ~> 2.0
+github "yiplee/YPNavigationBarTransition" ~> 3.0
 ```
 
 ## Getting Started

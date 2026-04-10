@@ -226,14 +226,7 @@ static struct {
         }
     };
     
-    if (@available(iOS 10,*)) {
-        [navigationController.transitionCoordinator notifyWhenInteractionChangesUsingBlock:popInteractionEndBlock];
-    } else {
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored "-Wdeprecated-declarations"
-        [navigationController.transitionCoordinator notifyWhenInteractionEndsUsingBlock:popInteractionEndBlock];
-#pragma GCC diagnostic pop
-    }
+    [navigationController.transitionCoordinator notifyWhenInteractionChangesUsingBlock:popInteractionEndBlock];
 }
 
 - (void) navigationController:(UINavigationController *)navigationController

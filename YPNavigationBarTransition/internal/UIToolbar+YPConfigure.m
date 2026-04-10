@@ -33,48 +33,30 @@ SOFTWARE.
     
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
-        if (@available(iOS 13.0, *)) {
-            UIToolbarAppearance *appearance = [[self standardAppearance] copy];
-            [appearance configureWithTransparentBackground];
-            if (@available(iOS 15.0, *)) {
-                self.scrollEdgeAppearance = appearance;
-            }
-            self.standardAppearance = appearance;
-        } else {
-            self.translucent = YES;
-            [self setBackgroundImage:transpanrentImage forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
-        }
+        UIToolbarAppearance *appearance = [[self standardAppearance] copy];
+        [appearance configureWithTransparentBackground];
+        self.scrollEdgeAppearance = appearance;
+        self.standardAppearance = appearance;
     } else {
-        if (@available(iOS 13.0, *)) {
-            UIToolbarAppearance *appearance = [[self standardAppearance] copy];
-            if (configure.translucent) {
-                [appearance configureWithDefaultBackground];
-                UIBlurEffectStyle effectStyle = configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark;
-                appearance.backgroundEffect = [UIBlurEffect effectWithStyle:effectStyle];
-            } else {
-                [appearance configureWithOpaqueBackground];
-            }
-            if (configure.backgroundImage) {
-                appearance.backgroundImage = configure.backgroundImage;
-            } else if (configure.backgroundColor) {
-                appearance.backgroundColor = configure.backgroundColor;
-            }
-            if (!configure.shadowImage) {
-                appearance.shadowImage = nil;
-                appearance.shadowColor = nil;
-            }
-            if (@available(iOS 15.0, *)) {
-                self.scrollEdgeAppearance = appearance;
-            }
-            self.standardAppearance = appearance;
+        UIToolbarAppearance *appearance = [[self standardAppearance] copy];
+        if (configure.translucent) {
+            [appearance configureWithDefaultBackground];
+            UIBlurEffectStyle effectStyle = configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark;
+            appearance.backgroundEffect = [UIBlurEffect effectWithStyle:effectStyle];
         } else {
-            self.translucent = configure.translucent;
-            UIImage* backgroundImage = configure.backgroundImage;
-            if (!backgroundImage && configure.backgroundColor) {
-                backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
-            }
-            [self setBackgroundImage:backgroundImage forToolbarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+            [appearance configureWithOpaqueBackground];
         }
+        if (configure.backgroundImage) {
+            appearance.backgroundImage = configure.backgroundImage;
+        } else if (configure.backgroundColor) {
+            appearance.backgroundColor = configure.backgroundColor;
+        }
+        if (!configure.shadowImage) {
+            appearance.shadowImage = nil;
+            appearance.shadowColor = nil;
+        }
+        self.scrollEdgeAppearance = appearance;
+        self.standardAppearance = appearance;
     }
     
     UIImage* shadowImage = configure.shadowImage ? nil : transpanrentImage;

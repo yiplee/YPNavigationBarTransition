@@ -55,7 +55,12 @@ SOFTWARE.
     if (!navigationBar) return CGRectNull;
     
     UIView *backgroundView = [navigationBar yp_backgroundView];
-    CGRect frame = [backgroundView.superview convertRect:backgroundView.frame toView:self.view];
+    CGRect frame;
+    if (backgroundView && backgroundView.superview) {
+        frame = [backgroundView.superview convertRect:backgroundView.frame toView:self.view];
+    } else {
+        frame = [navigationBar convertRect:navigationBar.bounds toView:self.view];
+    }
     frame.origin.x = self.view.bounds.origin.x;
     return frame;
 }

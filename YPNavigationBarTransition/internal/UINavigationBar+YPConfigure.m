@@ -26,6 +26,19 @@ SOFTWARE.
 #import "UIImage+YPConfigure.h"
 #import <objc/runtime.h>
 
+/// Resolves the bar background container without KVC to private `_backgroundView`.
+/// Matches subviews whose class name indicates a bar background (e.g. `_UIBarBackground`).
+static UIView *YPResolvedNavigationBarBackgroundView(UINavigationBar *bar) {
+    for (UIView *subview in bar.subviews) {
+        NSString *name = NSStringFromClass([subview class]);
+        NSRange r = [name rangeOfString:@"Background" options:NSCaseInsensitiveSearch];
+        if (r.location != NSNotFound) {
+            return subview;
+        }
+    }
+    return bar.subviews.firstObject;
+}
+
 @implementation UINavigationBar (YPConfigure)
 
 - (void) yp_adjustWithBarStyle:(UIBarStyle)barStyle tintColor:(UIColor *)tintColor {
@@ -34,61 +47,42 @@ SOFTWARE.
 }
 
 - (UIView *) yp_backgroundView {
-    return [self valueForKey:@"_backgroundView"];
+    return YPResolvedNavigationBarBackgroundView(self);
 }
 
 - (void) yp_applyBarConfiguration:(YPBarConfiguration *)configure {
 #if DEBUG
-    if (@available(iOS 11,*)) {
-        NSAssert(!self.prefersLargeTitles, @"large titles is not supported");
-    }
+    NSAssert(!self.prefersLargeTitles, @"large titles is not supported");
 #endif
     
     [self yp_adjustWithBarStyle:configure.barStyle tintColor:configure.tintColor];
     
-    UIView *barBackgroundView = [self yp_backgroundView];
     UIImage* const transpanrentImage = [UIImage yp_transparentImage];
     if (configure.transparent) {
-        barBackgroundView.alpha = 0;
-        if (@available(iOS 13.0, *)) {
-            UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
-            [appearance configureWithTransparentBackground];
-            self.scrollEdgeAppearance = appearance;
-            self.standardAppearance = appearance;
-        } else {
-            self.translucent = YES;
-            [self setBackgroundImage:transpanrentImage forBarMetrics:UIBarMetricsDefault];
-        }
+        UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
+        [appearance configureWithTransparentBackground];
+        self.scrollEdgeAppearance = appearance;
+        self.standardAppearance = appearance;
     } else {
-        barBackgroundView.alpha = 1;
-        if (@available(iOS 13.0, *)) {
-            UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
-            if (configure.translucent) {
-                [appearance configureWithDefaultBackground];
-                UIBlurEffectStyle effectStyle = configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark;
-                appearance.backgroundEffect = [UIBlurEffect effectWithStyle:effectStyle];
-            } else {
-                [appearance configureWithOpaqueBackground];
-            }
-            if (configure.backgroundImage) {
-                appearance.backgroundImage = configure.backgroundImage;
-            } else if (configure.backgroundColor) {
-                appearance.backgroundColor = configure.backgroundColor;
-            }
-            if (!configure.shadowImage) {
-                appearance.shadowImage = nil;
-                appearance.shadowColor = nil;
-            }
-            self.scrollEdgeAppearance = appearance;
-            self.standardAppearance = appearance;
+        UINavigationBarAppearance *appearance = [[self standardAppearance] copy];
+        if (configure.translucent) {
+            [appearance configureWithDefaultBackground];
+            UIBlurEffectStyle effectStyle = configure.barStyle == UIBarStyleDefault ? UIBlurEffectStyleLight : UIBlurEffectStyleDark;
+            appearance.backgroundEffect = [UIBlurEffect effectWithStyle:effectStyle];
         } else {
-            self.translucent = configure.translucent;
-            UIImage* backgroundImage = configure.backgroundImage;
-            if (!backgroundImage && configure.backgroundColor) {
-                backgroundImage = [UIImage yp_imageWithColor:configure.backgroundColor];
-            }
-            [self setBackgroundImage:backgroundImage forBarMetrics:UIBarMetricsDefault];
+            [appearance configureWithOpaqueBackground];
         }
+        if (configure.backgroundImage) {
+            appearance.backgroundImage = configure.backgroundImage;
+        } else if (configure.backgroundColor) {
+            appearance.backgroundColor = configure.backgroundColor;
+        }
+        if (!configure.shadowImage) {
+            appearance.shadowImage = nil;
+            appearance.shadowColor = nil;
+        }
+        self.scrollEdgeAppearance = appearance;
+        self.standardAppearance = appearance;
     }
     
     self.shadowImage = configure.shadowImage ? nil : transpanrentImage;
